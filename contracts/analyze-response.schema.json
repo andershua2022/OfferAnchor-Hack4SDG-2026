@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OfferAnchor AnalyzeResponse 2.0.0",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "contractVersion",
+        "requestId",
+        "revision",
+        "status",
+        "mode",
+        "extraction",
+        "guidance",
+        "referenceIds",
+        "routeIds",
+        "provenance"
+      ],
+      "properties": {
+        "contractVersion": {
+          "const": "2.0.0"
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{8,64}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "status": {
+          "const": "complete"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "live",
+            "simulation"
+          ]
+        },
+        "extraction": {
+          "$ref": "extraction.schema.json"
+        },
+        "guidance": {
+          "type": "string",
+          "enum": [
+            "pause_requested_action",
+            "clarify_before_action",
+            "no_personal_financial_request_identified"
+          ]
+        },
+        "referenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "minItems": 0,
+          "maxItems": 6
+        },
+        "routeIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "minItems": 0,
+          "maxItems": 6
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "modelId",
+            "promptVersion",
+            "libraryVersion"
+          ],
+          "properties": {
+            "modelId": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "maxLength": 120
+            },
+            "promptVersion": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64
+            },
+            "libraryVersion": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "contractVersion",
+        "requestId",
+        "revision",
+        "status",
+        "errorCode",
+        "retryable"
+      ],
+      "properties": {
+        "contractVersion": {
+          "const": "2.0.0"
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{8,64}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "status": {
+          "const": "incomplete"
+        },
+        "errorCode": {
+          "type": "string",
+          "enum": [
+            "invalid_input",
+            "unauthorized",
+            "quota_exceeded",
+            "configuration_unavailable",
+            "provider_error",
+            "timeout",
+            "invalid_output",
+            "invalid_citation",
+            "cancelled",
+            "simulation_unsupported"
+          ]
+        },
+        "retryable": {
+          "type": "boolean"
+        }
+      }
+    }
+  ]
+}

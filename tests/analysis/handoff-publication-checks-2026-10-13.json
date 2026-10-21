@@ -1,0 +1,61 @@
+{
+  "scope": "isolated GitHub handoff snapshot, zero new model calls",
+  "baseCommit": "cea38e23e2f629f3062b433b80b4a66976d1604a",
+  "branch": "handoff/ai-ds-dase-20261013",
+  "checks": [
+    {
+      "name": "offline-tests",
+      "exitCode": 0,
+      "tests": 32,
+      "pass": 32,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "name": "generated-types",
+      "exitCode": 0
+    },
+    {
+      "name": "inventory",
+      "exitCode": 0,
+      "records": 18,
+      "baseFamilies": 14,
+      "independentGold": false
+    },
+    {
+      "name": "simulation",
+      "exitCode": 0,
+      "attempts": 8,
+      "completeValid": 8,
+      "modelCalls": 0,
+      "independentAccuracy": null,
+      "releaseApproved": false
+    },
+    {
+      "name": "authored",
+      "exitCode": 0,
+      "attempts": 9,
+      "completeValid": 9,
+      "modelCalls": 0,
+      "independentAccuracy": null,
+      "releaseApproved": false
+    },
+    {
+      "name": "score-pending",
+      "exitCode": 0,
+      "attempts": 9,
+      "completeValid": 9,
+      "modelCalls": 0,
+      "independentAccuracy": null,
+      "releaseApproved": false
+    }
+  ],
+  "sanitizedProbeRows": 12,
+  "runtimeHashesMatch": 41,
+  "allContentStillDraft": true,
+  "sourceWorktreeChanged": false,
+  "mainMerged": false,
+  "independentAccuracy": null,
+  "studentSessionsConductedByThisHandoff": 0,
+  "teamStudentStudyStatus": "not verified by this upload"
+}

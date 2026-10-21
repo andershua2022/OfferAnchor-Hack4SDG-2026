@@ -1,0 +1,94 @@
+{
+  "actions": [
+    {
+      "id": "A1",
+      "actor": "applicant",
+      "verb": "borrow",
+      "polarity": "requested",
+      "resource": "personal_borrowing",
+      "recipient": "unknown",
+      "purpose": "Apply for a loan personally as an onboarding instruction.",
+      "citations": [
+        {
+          "evidenceId": "E2",
+          "quote": "Apply for a personal loan in your own name.",
+          "occurrence": 1
+        }
+      ],
+      "mechanism": "personal_borrowing"
+    },
+    {
+      "id": "A2",
+      "actor": "applicant",
+      "verb": "transfer",
+      "polarity": "requested",
+      "resource": "personal_borrowing",
+      "recipient": "third_party",
+      "purpose": "Transfer the borrowed proceeds to a nominated account.",
+      "citations": [
+        {
+          "evidenceId": "E2",
+          "quote": "Transfer the borrowed funds to the account nominated by our coordinator.",
+          "occurrence": 1
+        }
+      ],
+      "mechanism": "personal_borrowing"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "kind": "advertised_duty",
+      "text": "Prepare supplier spreadsheets.",
+      "status": "stated_in_input",
+      "citations": [
+        {
+          "evidenceId": "E1",
+          "quote": "You will prepare supplier spreadsheets.",
+          "occurrence": 1
+        }
+      ],
+      "relatedActionIds": []
+    },
+    {
+      "id": "C2",
+      "kind": "repayment_promise",
+      "text": "The recruiter promises company repayment; it is not independently confirmed.",
+      "status": "stated_in_input",
+      "citations": [
+        {
+          "evidenceId": "E3",
+          "quote": "The company will pay your monthly loan repayments.",
+          "occurrence": 1
+        }
+      ],
+      "relatedActionIds": []
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "D1",
+      "earlierClaimId": "C1",
+      "laterActionId": "A1",
+      "explanation": "The later instruction introduces personal borrowing beyond the advertised spreadsheet duty."
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "U1",
+      "issue": "Whether the recruiter and this financial instruction are authorized remains unconfirmed.",
+      "priority": "context",
+      "kind": "employer_authorization",
+      "relatedActionIds": []
+    },
+    {
+      "id": "U2",
+      "issue": "The repayment arrangement is only a recruiter claim.",
+      "priority": "context",
+      "kind": "repayment_verification",
+      "relatedActionIds": []
+    }
+  ],
+  "questions": [],
+  "relationships": []
+}

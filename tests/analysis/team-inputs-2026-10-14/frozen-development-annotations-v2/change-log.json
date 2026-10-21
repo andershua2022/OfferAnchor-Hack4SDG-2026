@@ -1,0 +1,48 @@
+{
+  "version": "OfferAnchor-development-annotations-frozen-v2",
+  "supersedes": "OfferAnchor-development-annotations-frozen-v1",
+  "issueId": "DEV03_UNSPECIFIED_FUNDS",
+  "status": "resolved_in_Design_frozen_reference_v2",
+  "caseId": "DEV03",
+  "actionId": "GA1",
+  "inputSha256": "c84b12f1edafe0bd867407320f4162c6bd5e6f244e4e329338a902ee80eaab8f",
+  "before": {
+    "resource": "personal_money",
+    "mechanism": "task_recharge",
+    "expected_guidance": "pause_requested_action",
+    "critical_unknowns": "none",
+    "required_independent_question": "Verify with your bank or an independent channel whether a personal payment to unlock tasks/commission was requested.",
+    "notes": "Source-backed development review candidate; retain the original case-level interpretation. No independent/human approval is asserted. Repair derived from DASE input; preserve its original independent/draft round separately."
+  },
+  "after": {
+    "resource": "unknown",
+    "mechanism": "unclear",
+    "expected_guidance": "clarify_before_action",
+    "critical_unknowns": "resource/funds unknown",
+    "required_independent_question": "Does this payment have to come from your own money, or will the company provide the funds?",
+    "notes": "DEV03_UNSPECIFIED_FUNDS: payment is explicitly requested to unlock tasks/commission, but ownership or origin of the funds is not stated. Preserve applicant/pay/requested and the exact quotation. Do not infer personal_money. Current contract requires mechanism unclear with unknown funds; add an action-linked blocking resource unknown and clarify before action. Human Design direction and DASE receipt are recorded; v1 remains immutable."
+  },
+  "sourceQuote": "Pay HKD 2800 to unlock the next tasks and withdraw your commission.",
+  "unchanged": [
+    "actor=applicant",
+    "verb=pay",
+    "polarity=requested",
+    "citation_ranges=E1:0:67",
+    "unverified unlock/commission context",
+    "all 18 inputs and hashes",
+    "all grouping/partitions/primary variants",
+    "all other 17 case judgments"
+  ],
+  "reason": "Source contains a payment condition without an explicit origin of funds. resource=unknown needs blocking clarification. task_recharge requires personal_money under contract 2.0.0, so the compatible mechanism is unclear, not a changed schema/policy.",
+  "aggregationBoundary": "The Design reference dispute is closed by this v2. DASE/AI-DS must actually import and acknowledge this exact version and update old disputed/demo expectations before reporting its derived measures. Keep all 18 development records and 14 primary base families; never silently remove DEV03 or claim improved accuracy. Existing/old-reference results retain their version and unresolved/excluded status; any reinterpretation is declared, not a new run.",
+  "notApplied": [
+    "fraud/confidence score",
+    "keyword-only high-risk rule",
+    "24h/72h automatic escalation"
+  ],
+  "consumerFollowups": {
+    "DASE": "Import/hash-check v2; update DEV03 demo author expectation and record actual import; preserve demo order; use declared scoring boundary.",
+    "AI-DS": "Consume the new frozen reference; update own integration issue/reference binding without rewriting v1 or policy.",
+    "CS": "Use existing unknown/clarify state; actually verify downstream behavior; no implemented-app check is claimed."
+  }
+}

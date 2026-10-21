@@ -1,0 +1,80 @@
+[
+  {
+    "key": "guidance.no_personal_financial_request_identified",
+    "before": {
+      "en-HK": "No personal payment, borrowing or account-control request within this tool's scope was identified in the selected text. This does not establish the safety of the job, sender or other data requests.",
+      "zh-Hant-HK": "在所選文字中，未識別到本工具範圍內的個人付款、借貸或戶口控制要求。這不代表工作、發訊者或其他資料要求安全。"
+    },
+    "proposed": {
+      "en-HK": "No personal payment, borrowing or bank-account control request covered by this tool was identified in your selected text. This analysis covers only that text: the sender’s identity, promises and the job remain independently unverified. Other data requests still need separate checking.",
+      "zh-Hant-HK": "在你選取的文字中，未識別到本工具涵蓋的個人付款、借貸或銀行戶口控制要求。這次分析只涵蓋所選文字；對方身份、承諾及工作尚未獨立核實，其他資料要求仍需另行查核。"
+    },
+    "disposition": "接受改善可读性的方向，但不采用“没有要求”的确定断言；保留未识别、范围及其他资料要求边界。OTP 是账户控制的例子，不是控制权对象。",
+    "status": "Design_human_meaning_accepted_Communication_review_pending"
+  },
+  {
+    "key": "knowledge.cards.K_TASK_RECHARGE.question",
+    "before": {
+      "en-HK": "Pause this payment. Why is your own money required before tasks or earnings? Ask an independent adviser to help check through a reliable channel you found yourself.",
+      "zh-Hant-HK": "先暫停這項付款。為何要用自己的錢才能做任務或取得收益？請透過自行找到的可靠渠道，請獨立人士協助核實。"
+    },
+    "proposed": {
+      "en-HK": "Pause this payment. Why is your own money required before tasks or earnings? Ask an independent adviser to help check through a reliable channel you found yourself.",
+      "zh-Hant-HK": "先暫停這項付款。為何要用自己的錢才能做任務或取得收益？請自行尋找可靠渠道，並找獨立人士協助核實。"
+    },
+    "disposition": "删除重复的“请”，保持暂停付款、独立人士与自行取得渠道的含义；英文原意不变。",
+    "status": "Design_human_meaning_accepted_Communication_review_pending"
+  },
+  {
+    "key": "brief.boundary",
+    "before": {
+      "en-HK": "Prepared from selected material. Employer identity, repayment and outside events are not independently verified. Unresolved checks remain listed. Copying, opening a route or a contact report does not establish verification.",
+      "zh-Hant-HK": "摘要只根據所選資料製作。僱主身份、還款及外部事件尚未獨立核實；未解決事項仍會列出。複製、開啟連結或自行報告聯絡結果不代表核實成功。"
+    },
+    "proposed": {
+      "en-HK": "Prepared from selected material. Employer identity, repayment and outside events are not independently verified. Unresolved checks remain listed. Copying, using a checking channel or a contact report does not establish verification.",
+      "zh-Hant-HK": "摘要只根據所選資料製作。僱主身份、還款及外部事件尚未獨立核實；未解決事項仍會列出。複製、使用核查渠道或自行報告聯絡結果不代表核實成功。"
+    },
+    "disposition": "改为“使用核查渠道”以覆盖电话及网页；不采用生硬的“开启渠道”，英文同步明确。",
+    "status": "Design_human_meaning_accepted_Communication_review_pending"
+  },
+  {
+    "key": "errors.invalid_input",
+    "before": {
+      "en-HK": "Check the required source and text limits.",
+      "zh-Hant-HK": "請檢查必要原文及字數上限。"
+    },
+    "proposed": {
+      "en-HK": "Check the required source and the limits on entries, text length and data size.",
+      "zh-Hant-HK": "請檢查必要原文，以及條數、文字長度與容量上限。"
+    },
+    "disposition": "两种语言同步覆盖条数、文字长度、容量；不把 UTF-16 技术计量混入通用提示或改变输入限额。",
+    "status": "Design_human_meaning_accepted_Communication_review_pending"
+  },
+  {
+    "key": "guidance.clarify_before_action",
+    "before": {
+      "en-HK": "Clarify the details affecting personal financial exposure before deciding what to do next.",
+      "zh-Hant-HK": "先釐清會影響個人財務風險的資料，再決定下一步。"
+    },
+    "proposed": {
+      "en-HK": "Clarify the details affecting personal financial exposure before deciding what to do next.",
+      "zh-Hant-HK": "先釐清會影響個人財務風險的細節，再決定下一步。"
+    },
+    "disposition": "把资料改为细节，不暗示必须提交更多材料；英文原意不变。",
+    "status": "Design_human_meaning_accepted_Communication_review_pending"
+  },
+  {
+    "key": "input.outcome",
+    "before": {
+      "en-HK": "Add my contact/action report",
+      "zh-Hant-HK": "補充我的聯絡或行動紀錄"
+    },
+    "proposed": {
+      "en-HK": "Add my contact results or action report",
+      "zh-Hant-HK": "補充我的聯絡結果或行動紀錄"
+    },
+    "disposition": "明确是用户自报联络结果或行动，不证明实际送达或核实成功。",
+    "status": "Design_human_meaning_accepted_Communication_review_pending"
+  }
+]

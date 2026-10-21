@@ -1,0 +1,30 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "fixture_task_zh",
+  "revision": 1,
+  "locale": "zh-Hant-HK",
+  "clarificationsUsed": 0,
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "advertisement",
+      "label": "Fictional internship advertisement",
+      "sequence": 1,
+      "text": "研究助理實習：每週整理產品研究試算表。"
+    },
+    {
+      "id": "E2",
+      "kind": "offer",
+      "label": "Fictional onboarding offer",
+      "sequence": 2,
+      "text": "入職培訓期間，你會記錄產品訂單。訊息聲稱先前佣金已支付。"
+    },
+    {
+      "id": "E3",
+      "kind": "instruction",
+      "label": "Fictional latest instruction",
+      "sequence": 3,
+      "text": "要開放下一批任務及佣金，請先完成產品訂單。請用自己的港幣2800元轉賬至協調員指定戶口。我們會連同佣金退還款項。"
+    }
+  ]
+}

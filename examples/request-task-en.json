@@ -1,0 +1,30 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "fixture_task_en",
+  "revision": 1,
+  "locale": "en-HK",
+  "clarificationsUsed": 0,
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "advertisement",
+      "label": "Fictional internship advertisement",
+      "sequence": 1,
+      "text": "Research assistant internship: prepare a weekly product research spreadsheet."
+    },
+    {
+      "id": "E2",
+      "kind": "offer",
+      "label": "Fictional onboarding offer",
+      "sequence": 2,
+      "text": "You will record product orders during onboarding. The earlier commission is shown as paid in the message."
+    },
+    {
+      "id": "E3",
+      "kind": "instruction",
+      "label": "Fictional latest instruction",
+      "sequence": 3,
+      "text": "To release the next batch and commission, complete the product order first. Use HKD 2800 from your own funds and transfer it to the coordinator account. We will return the amount with commission."
+    }
+  ]
+}

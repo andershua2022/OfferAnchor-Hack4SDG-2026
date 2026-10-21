@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {test} from 'node:test';
+import {prepareComposer} from '../../frontend/workspace/composer-state';
+import {initialState,previewReducer} from '../../app/fixture-preview';
+const draft={latest:'',advert:'',offer:''};
+const file={id:'file-01',name:'private-name.txt',size:100,text:'Pay HK$800 from your own account before work.',target:'instruction' as const,reviewed:false,ready:true,reading:false,error:'',origin:'local' as const};
+test('readable attachments alone need neither extra typed text nor a compulsory confirmation click',()=>{const result=prepareComposer(initialState(),draft,[file]);assert.equal(result.error,null);assert.equal(result.state!.request.evidence.length,1);assert.equal(result.state!.request.evidence[0].text,file.text);assert.ok(!JSON.stringify(result.state).includes(file.name));assert.ok(!result.state!.request.evidence[0].label.includes('user-reviewed'));assert.equal(result.attachedEvidenceIds?.[file.id],'E1');});
+test('committed attachments remain available without being appended a second time',()=>{const first=prepareComposer(initialState(),draft,[file]);assert.ok(first.state);const result=prepareComposer(first.state,draft,[{...file,committedEvidenceId:'E1'}]);assert.equal(result.error,null);assert.deepEqual(result.state!.request.evidence,first.state.request.evidence);assert.deepEqual(result.attachedEvidenceIds,{});});
+test('unclear, oversized, pending and failed attachments cannot be silently included',()=>{for(const change of [{ready:false},{reading:true},{error:'Unreadable'},{text:'x'.repeat(4001)},{text:''}])assert.ok(prepareComposer(initialState(),draft,[{...file,...change}]).error);});
+test('machine image text retains its origin and retires an existing result when added',()=>{const base=previewReducer(initialState(),{type:'load',fixtureId:'task-en'}),result=prepareComposer(base,draft,[{...file,origin:'vision'}]);assert.equal(result.error,null);assert.ok(result.state!.request.evidence.at(-1)!.label.includes('machine-read'));assert.ok(result.state!.request.revision>base.request.revision);assert.equal(result.state!.outcome,null);});

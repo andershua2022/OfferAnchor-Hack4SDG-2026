@@ -1,0 +1,107 @@
+{
+  "project": "OfferAnchor",
+  "revision": "2026-10-14-r5",
+  "checkedUtc": "2026-10-14T01:15:37.280064+00:00",
+  "scope": "Producer teammate-input engineering integration; not independent accuracy or CS application acceptance",
+  "observedChecks": [
+    {
+      "name": "offline-tests",
+      "exitCode": 0,
+      "status": "passed",
+      "tests": 377,
+      "pass": 377,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "name": "generated-types",
+      "exitCode": 0,
+      "status": "passed"
+    },
+    {
+      "name": "strict-types",
+      "exitCode": 0,
+      "status": "passed"
+    }
+  ],
+  "runtimeHashesMatched": true,
+  "currentRuntimeFileCount": 41,
+  "simulationsComplete": 8,
+  "DesignReviewedLocalePairs": 103,
+  "DesignReviewBasis": "original exact-byte-bound member self-report",
+  "developmentRecords": 18,
+  "developmentActionRows": 28,
+  "developmentBaseFamilies": 14,
+  "controlRecords": 10,
+  "controlFamilies": 6,
+  "DEV03Adjudication": "pending; original v1 preserved; overall percentage blocked",
+  "browserReviewPage": {
+    "checkedUtc": "2026-10-14T01:04:10.138542+00:00",
+    "browser": "isolated headless Chrome",
+    "page": "tests/analysis/acceptance-review-2026-10-14-r5/review.html",
+    "pageSha256": "af00d535837a5a87367b3078938ac9edcfe0d2d8fd0bd499fdbb7f65e65314d4",
+    "actualRenderedFooterMatchesCheckpoint": true,
+    "actualRenderedContentItems": 11,
+    "unsignedReviewState": true,
+    "humanReviewOrCSAppValidation": false,
+    "viewport": [
+      1200,
+      1000
+    ],
+    "modelCalls": 0,
+    "sourceStringsOnly": true
+  },
+  "productionApprovalApplied": false,
+  "CSConsumerAcceptance": false,
+  "DASEConsumerAcknowledgement": false,
+  "independentAccuracy": null,
+  "newModelCalls": 0,
+  "cumulativeHistoricalModelAttempts": 66,
+  "heldOutPrivateTextRead": false,
+  "rawIndependentAnnotationFilesRead": false,
+  "mainMerged": false,
+  "r5Publication": "verified candidate; actual remote state recorded separately",
+  "publicReceivingChecks": [
+    {
+      "name": "receiving-tests",
+      "exitCode": 0,
+      "status": "passed",
+      "tests": 59,
+      "pass": 59,
+      "fail": 0
+    },
+    {
+      "name": "generated-types",
+      "exitCode": 0,
+      "status": "passed"
+    },
+    {
+      "name": "integration",
+      "exitCode": 0,
+      "status": "passed"
+    },
+    {
+      "name": "inventory",
+      "exitCode": 0,
+      "status": "passed"
+    },
+    {
+      "name": "content-status",
+      "exitCode": 0,
+      "status": "passed"
+    },
+    {
+      "name": "recorded",
+      "exitCode": 0,
+      "status": "passed"
+    },
+    {
+      "name": "simulation",
+      "exitCode": 0,
+      "status": "passed"
+    }
+  ],
+  "localLinksChecked": 64,
+  "publicReceivingTestsPassed": 59,
+  "publicReceivingZeroModelCalls": true
+}

@@ -1,0 +1,213 @@
+{
+  "project": "OfferAnchor",
+  "recordType": "Design_actual_human_language_review",
+  "reviewerId": "Design",
+  "humanReviewDate": "2026-10-13",
+  "humanReviewTime": "not_supplied",
+  "recordedUtc": "2026-10-13T15:59:48.303485+00:00",
+  "humanReadingAttested": true,
+  "evidence": [
+    "User: 已完成人工复核，进行下一步",
+    "User clarification: 采用六处修改候选，其余原有文字接受",
+    "31-pair worksheet: 31 actual 接受 choices; reading range 1-31; date 2026/10/13"
+  ],
+  "baseCommit": "9be9b67b1bff1b09a163904f4116ba92a62526ea",
+  "baseCheckpoint": "fd9879c1165e73925e2485708916aab11f40f66d521000a41bf5155410d31158",
+  "sourceWorksheetHashes": {
+    "72": "1658a535643f4808eab848c644c4efbee95ec585681bc1469ceb19ec19d90e8e",
+    "31": "708568c41556ef87afb170066fcf296726a06c106e0b0c22e1374ed4958990ec"
+  },
+  "candidateLocaleHashes": {
+    "en-HK": "c7370d68255304d6d09c332432ca1e8868bf6076c34126a585b3aea07fb79bd6",
+    "zh-Hant-HK": "1056d06f5122707e589a4bdb5d80af0b707c4e6c1d31eefbcfe3b744ac364a62"
+  },
+  "groups": [
+    {
+      "group": "app",
+      "pairCount": 4,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "input",
+      "pairCount": 11,
+      "baseDecision": "needs_change",
+      "changedKeys": [
+        "input.outcome"
+      ],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "state",
+      "pairCount": 7,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "guidance",
+      "pairCount": 6,
+      "baseDecision": "needs_change",
+      "changedKeys": [
+        "guidance.clarify_before_action",
+        "guidance.no_personal_financial_request_identified"
+      ],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "brief",
+      "pairCount": 10,
+      "baseDecision": "needs_change",
+      "changedKeys": [
+        "brief.boundary"
+      ],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "privacy",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "errors",
+      "pairCount": 10,
+      "baseDecision": "needs_change",
+      "changedKeys": [
+        "errors.invalid_input"
+      ],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.cards.K_TASK_RECHARGE",
+      "pairCount": 2,
+      "baseDecision": "needs_change",
+      "changedKeys": [
+        "knowledge.cards.K_TASK_RECHARGE.question"
+      ],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.cards.K_PERSONAL_BORROWING",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.cards.K_COMPANY_PAID",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.cards.K_PAYROLL",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.cards.K_UNKNOWN",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.cards.K_ALREADY_ACTED",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.cards.K_ORDINARY_EXPENSE",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.routes.ADCC_18222",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.routes.SCAMETER",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.routes.LABOUR_GUIDANCE",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    },
+    {
+      "group": "knowledge.routes.COMPANY_SEARCH",
+      "pairCount": 2,
+      "baseDecision": "accept_existing",
+      "changedKeys": [],
+      "candidateDecision": "Design_human_meaning_accepted"
+    }
+  ],
+  "supplementKeysAccepted": [
+    "app.promise",
+    "app.coverage",
+    "input.language",
+    "input.languageChanged",
+    "input.sourcePassage",
+    "input.sourceHighlight",
+    "input.sourceUntranslated",
+    "input.addSource",
+    "input.sourceLabel",
+    "input.saveChanges",
+    "input.keepCurrent",
+    "input.deleteTitle",
+    "input.deleteBody",
+    "input.clearTitle",
+    "input.clearBody",
+    "input.counter",
+    "state.questionsExhausted",
+    "state.back",
+    "brief.copied",
+    "brief.copyFailed",
+    "brief.unavailable",
+    "brief.protectedNotice",
+    "brief.revision",
+    "privacy.draftLost",
+    "errors.fieldRequired",
+    "errors.fieldLength",
+    "errors.totalLength",
+    "errors.sourceCount",
+    "errors.invalidText",
+    "errors.labelLength",
+    "errors.summary"
+  ],
+  "acceptedReplacementKeys": [
+    "brief.boundary",
+    "errors.invalid_input",
+    "guidance.clarify_before_action",
+    "guidance.no_personal_financial_request_identified",
+    "input.outcome",
+    "knowledge.cards.K_TASK_RECHARGE.question"
+  ],
+  "candidatePairCount": 103,
+  "sourceFactsApproved": false,
+  "CommunicationReview": "pending",
+  "CSAcknowledgement": "pending",
+  "DASEAcknowledgement": "pending",
+  "productionApprovalApplied": false,
+  "goldFrozen": false,
+  "releaseFrozen": false,
+  "boundary": "This is the member’s actual self-reported acceptance of exact language candidates, not a producer HTML export, independent gold, knowledge source approval, package acceptance or release freeze."
+}

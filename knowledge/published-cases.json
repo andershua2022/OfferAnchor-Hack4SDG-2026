@@ -1,0 +1,891 @@
+{
+  "version": "public-sources-2026-10-19",
+  "status": "Source-checked editorial summaries; not original transcripts; human content review pending. Core approved knowledge cards are separate.",
+  "cases": [
+    {
+      "id": "P_STUDENT_TASK",
+      "kind": "reported_case",
+      "title": "An internship that became paid tasks",
+      "category": "Payments",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "ADCC",
+        "publishedOn": "2026-03-30",
+        "checkedOn": "2026-10-16",
+        "url": "https://www.adcc.gov.hk/en-hk/alerts-detail/alerts-2038471984935432194.html"
+      },
+      "summary": "A 19-year-old freshman seeking an internship was redirected to remote commission work. Fluent English, a 40-minute induction and three early commission payments helped build trust. She eventually lost almost HK$190,000.",
+      "stages": [
+        "Internship application redirected to remote tasks",
+        "Professional onboarding and early commissions",
+        "Personal transfers to buy products"
+      ],
+      "notice": "Earlier receipts do not establish that a later payment demand is legitimate. Locate when the worker becomes the funder.",
+      "question": "Who supplies the money required for the next task?",
+      "limitation": "A police case summary, not the victim's original messages or a measured OfferAnchor result.",
+      "relatedTopics": [
+        "K_TASK_RECHARGE",
+        "K_UNKNOWN"
+      ],
+      "fixtureId": "task-en",
+      "keywords": [
+        "internship",
+        "task",
+        "實習",
+        "实习",
+        "刷單",
+        "刷单"
+      ]
+    },
+    {
+      "id": "P_FINANCING_PRESSURE",
+      "kind": "reported_case",
+      "title": "Clerical work, then company financing",
+      "category": "Borrowing",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "ADCC",
+        "publishedOn": "2026-04-16",
+        "checkedOn": "2026-10-16",
+        "url": "https://www.adcc.gov.hk/zh-hk/alerts-detail/alerts-2044683469105754113.html"
+      },
+      "summary": "A 25-year-old clerk was asked to finance the supposed employer through personal loans. A later claim about bank prosecution escalated the pressure. Reported losses exceeded HK$2.25 million.",
+      "stages": [
+        "Ordinary clerical duties",
+        "Personal loans for company financing",
+        "A later threat drives further transfers"
+      ],
+      "notice": "Separate the original work duties from later debt and pressure.",
+      "question": "Whose debt is being created?",
+      "limitation": "Published account; no original contract or full conversation is available here.",
+      "relatedTopics": [
+        "K_PERSONAL_BORROWING",
+        "K_ALREADY_ACTED"
+      ],
+      "fixtureId": "loan-en",
+      "keywords": [
+        "loan",
+        "borrowing",
+        "借貸",
+        "借贷",
+        "融資",
+        "融资"
+      ]
+    },
+    {
+      "id": "P_ADMIN_LOAN",
+      "kind": "reported_case",
+      "title": "A HK$100-hour role, personal debt",
+      "category": "Borrowing",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "ADCC",
+        "publishedOn": "2026-04-16",
+        "checkedOn": "2026-10-16",
+        "url": "https://www.adcc.gov.hk/zh-hk/alerts-detail/alerts-2044683469105754113.html"
+      },
+      "summary": "A 30-year-old took remote administrative work involving tables and price comparisons. Later personal borrowing and transfers, backed by repayment promises, exceeded HK$4 million.",
+      "stages": [
+        "Administrative work at HK$100 an hour",
+        "Personal borrowing and transfers",
+        "A promise to repay everything"
+      ],
+      "notice": "A repayment promise does not change whose loan it is.",
+      "question": "Who owes the lender?",
+      "limitation": "Reported case, not a transcript. The hourly rate alone is not a risk rule.",
+      "relatedTopics": [
+        "K_PERSONAL_BORROWING"
+      ],
+      "fixtureId": "loan-en",
+      "keywords": [
+        "repayment promise",
+        "admin",
+        "代還",
+        "代还",
+        "還款",
+        "还款"
+      ]
+    },
+    {
+      "id": "P_CONSTRUCTION_DATA",
+      "kind": "reported_case",
+      "title": "A job lead that collected identity documents",
+      "category": "Context",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "PCPD",
+        "publishedOn": "2026-01-29",
+        "checkedOn": "2026-10-16",
+        "url": "https://www.pcpd.org.hk/tc_chi/news_events/media_statements/press_20260129.html"
+      },
+      "summary": "The PCPD received 42 complaints in two weeks about fake construction vacancies. Workers shared identity and qualification documents; some shared bank numbers. Supposed recruiters then failed to appear at arranged meeting points.",
+      "stages": [
+        "Casual-work advertisements in messaging groups",
+        "Identity and qualification photos requested",
+        "The supposed recruiter disappears"
+      ],
+      "notice": "Purpose, recruitment stage and the recipient matter; a money-only check cannot cover every data-harvesting risk.",
+      "question": "Who is collecting these documents, and why now?",
+      "limitation": "Construction-worker complaints, not student prevalence or proof that the current checker assesses identity-document requests.",
+      "relatedTopics": [
+        "K_PAYROLL",
+        "K_UNKNOWN"
+      ],
+      "keywords": [
+        "construction",
+        "identity card",
+        "身份证",
+        "身份證",
+        "地盤",
+        "地盘"
+      ]
+    },
+    {
+      "id": "P_HKEX_PAYROLL",
+      "kind": "company_practice",
+      "title": "Payroll details after an accepted offer",
+      "category": "Accounts",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "HKEX",
+        "publishedOn": null,
+        "checkedOn": "2026-10-16",
+        "url": "https://www.hkex.com.hk/Global/Exchange/HKEX-Privacy-Notices/Privacy-Notice-For-Human-Resources-Management?sc_lang=en"
+      },
+      "summary": "HKEX's human-resources privacy notice lists payee names and bank account numbers in its post-offer onboarding data. This is a documented payroll-information practice, rather than a request to control online banking.",
+      "stages": [
+        "An offer has been accepted",
+        "Payroll data: payee and account number",
+        "Identity, stage and channel still need checking"
+      ],
+      "notice": "Distinguish receiving salary from granting account access. The existence of a company policy does not authenticate someone who invokes it.",
+      "question": "Is this the verified onboarding channel, and exactly which bank information is required?",
+      "limitation": "Company policy, not an individual offer, endorsement, or permission to share login credentials. Publication date is not stated here.",
+      "relatedTopics": [
+        "K_PAYROLL",
+        "K_COMPANY_PAID"
+      ],
+      "keywords": [
+        "payroll",
+        "salary",
+        "bank account number",
+        "出糧",
+        "出粮",
+        "薪金",
+        "戶口號碼",
+        "户口号码"
+      ]
+    },
+    {
+      "id": "P_TEEKAY_POLICY",
+      "kind": "company_practice",
+      "title": "A company publishes its no-fee hiring process",
+      "category": "Context",
+      "region": "International company policy",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "Teekay",
+        "publishedOn": "2026-08-01",
+        "checkedOn": "2026-10-16",
+        "url": "https://www.teekay.com/blog/2026/08/01/how-we-hire-at-teekay-avoiding-employment-scams/"
+      },
+      "summary": "Teekay publicly describes its recruitment channels and says candidates are not charged to apply for or secure jobs. Its notice also cautions against requests for banking information before a formal offer.",
+      "stages": [
+        "Find the company's own hiring policy",
+        "Compare the requested action with that policy",
+        "Verify the sender independently"
+      ],
+      "notice": "A company's published position provides a useful comparison. A familiar name or email-like address does not prove the sender is authorised.",
+      "question": "Does the request agree with the company's independently accessed recruitment policy?",
+      "limitation": "One firm's international policy, not a universal Hong Kong fee rule or certification of a particular offer.",
+      "relatedTopics": [
+        "K_COMPANY_PAID",
+        "K_TASK_RECHARGE"
+      ],
+      "keywords": [
+        "teekay",
+        "hiring policy",
+        "no fee",
+        "招聘流程",
+        "不收費",
+        "不收费"
+      ]
+    },
+    {
+      "id": "P_TRAINING_FEE",
+      "kind": "official_guidance",
+      "title": "The interview becomes a paid course",
+      "category": "Payments",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "Labour Department",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.labour.gov.hk/eng/public/eip/JobHunting.pdf"
+      },
+      "summary": "The Labour Department warns about applicants being told to buy training or courses before they can obtain a post. A course sold during recruitment is a separate financial commitment, even when the promised job sounds ordinary.",
+      "stages": [
+        "Apply for a role",
+        "A paid course becomes a condition",
+        "The promised placement remains unconfirmed"
+      ],
+      "notice": "Locate the payment condition rather than judging the course name.",
+      "question": "Is the post confirmed without buying this course?",
+      "limitation": "Official guidance, not one victim transcript. This card does not decide whether a particular training contract is unlawful.",
+      "relatedTopics": [
+        "K_TASK_RECHARGE",
+        "K_UNKNOWN"
+      ],
+      "keywords": [
+        "training",
+        "course",
+        "學費",
+        "学费",
+        "培訓",
+        "培训"
+      ]
+    },
+    {
+      "id": "P_TALENT_SCOUT",
+      "kind": "official_guidance",
+      "title": "A talent offer becomes a purchase",
+      "category": "Payments",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "Labour Department",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www1.jobs.gov.hk/0/en/information/jobtrap/"
+      },
+      "summary": "The Labour Department describes supposed modelling or performance opportunities that lead to charges for classes, beauty services, auditions or deposits, without an assured job.",
+      "stages": [
+        "An attractive role",
+        "A service purchase",
+        "Work is still only promised"
+      ],
+      "notice": "Separate buying a service from being hired.",
+      "question": "Which payment secures which actual work?",
+      "limitation": "General warning, not a finding about every modelling agency.",
+      "relatedTopics": [
+        "K_TASK_RECHARGE",
+        "K_UNKNOWN"
+      ],
+      "keywords": [
+        "audition",
+        "model",
+        "deposit",
+        "模特兒",
+        "模特",
+        "試鏡",
+        "试镜",
+        "美容"
+      ]
+    },
+    {
+      "id": "P_MONEY_MULE",
+      "kind": "official_guidance",
+      "title": "The job is to lend your bank account",
+      "category": "Accounts",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "Hong Kong Police",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.police.gov.hk/ppp_en/04_crime_matters/aml.html"
+      },
+      "summary": "Police describe quick-cash recruitment that obtains applicants' bank accounts for moving proceeds of crime. The applicant may be offered payment while someone else uses the account to receive or transfer funds.",
+      "stages": [
+        "A quick-cash role",
+        "Account access is handed over",
+        "Unknown funds pass through"
+      ],
+      "notice": "Receiving a salary and letting another person operate your account are different actions.",
+      "question": "Who controls the account, and whose funds will pass through it?",
+      "limitation": "Published police guidance. OfferAnchor does not determine criminal liability or inspect bank transactions.",
+      "relatedTopics": [
+        "K_PAYROLL",
+        "K_ALREADY_ACTED"
+      ],
+      "keywords": [
+        "money mule",
+        "bank account control",
+        "laundering",
+        "傀儡戶口",
+        "傀儡户口",
+        "洗黑錢",
+        "洗黑钱",
+        "租借戶口"
+      ]
+    },
+    {
+      "id": "P_BANK_LOGIN",
+      "kind": "official_guidance",
+      "title": "Payroll becomes a request for login codes",
+      "category": "Accounts",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "OCBC Hong Kong",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.ocbc.com.hk/cmh/files/2024Q2JobScamE.pdf"
+      },
+      "summary": "OCBC's job-scam guidance warns about account information and security credentials being sought under recruitment pretexts. A bank password or OTP grants a different kind of access from an account number for receiving wages.",
+      "stages": [
+        "Recruitment or onboarding",
+        "Bank access is requested",
+        "A stated purpose is used as reassurance"
+      ],
+      "notice": "A payroll label does not turn an authentication code into ordinary payroll information.",
+      "question": "Is the request for a payment destination or for access to online banking?",
+      "limitation": "Bank education material, not proof of the sender's identity or endorsement of this product.",
+      "relatedTopics": [
+        "K_PAYROLL",
+        "K_ALREADY_ACTED"
+      ],
+      "keywords": [
+        "bank account control",
+        "password",
+        "otp",
+        "payroll",
+        "驗證碼",
+        "验证码",
+        "銀行密碼",
+        "银行密码"
+      ]
+    },
+    {
+      "id": "P_BLIND_CV",
+      "kind": "official_guidance",
+      "title": "A CV request with no named recruiter",
+      "category": "Context",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "PCPD",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.pcpd.org.hk/english/data_privacy_law/code_of_practices/code_faq_1.html"
+      },
+      "summary": "The PCPD explains that a recruitment advertisement directly asking for CVs should identify the employer or its recruiting agency. An unnamed employer can instead use an identified agency; an enquiry-only advertisement is a different situation.",
+      "stages": [
+        "Read the advertisement",
+        "Identify the organisation collecting the CV",
+        "Check why each detail is requested"
+      ],
+      "notice": "Confidential hiring is not the same as collecting data without identifying the collector.",
+      "question": "Which employer or agency is receiving my CV?",
+      "limitation": "Privacy guidance only. A blind advertisement is not automatically a proved scam, and this is outside the core financial classifier.",
+      "relatedTopics": [
+        "K_UNKNOWN"
+      ],
+      "keywords": [
+        "cv",
+        "resume",
+        "blind advertisement",
+        "匿名招聘",
+        "履歷",
+        "履历",
+        "個人資料",
+        "个人资料"
+      ]
+    },
+    {
+      "id": "P_ID_COPY_EARLY",
+      "kind": "reported_case",
+      "title": "Identity and bank-card copies before acceptance",
+      "category": "Context",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "PCPD",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.pcpd.org.hk/english/enforcement/case_notes/casenotes_2.php?content_nature=&content_type=&id=2024C01&msg_id2=565"
+      },
+      "summary": "PCPD case 2024C01 concerns an employer collecting HKID and bank-card copies before an applicant accepted employment. Its recruitment guidance distinguishes that stage from employment after an offer has been accepted.",
+      "stages": [
+        "An application is still being considered",
+        "Document copies are collected",
+        "Acceptance has not yet occurred"
+      ],
+      "notice": "The recruitment stage changes what information is needed.",
+      "question": "Why is this copy required before I accept employment?",
+      "limitation": "A privacy compliance case, not an employment-fraud conviction or a case the current financial checker can comprehensively assess.",
+      "relatedTopics": [
+        "K_UNKNOWN",
+        "K_PAYROLL"
+      ],
+      "keywords": [
+        "identity card",
+        "hkid",
+        "身份证",
+        "身份證",
+        "銀行卡",
+        "银行卡",
+        "私隱",
+        "隐私"
+      ]
+    },
+    {
+      "id": "P_ROLE_SWITCH",
+      "kind": "reported_case",
+      "title": "A clerical application turns into agent recruitment",
+      "category": "Context",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "PCPD",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.pcpd.org.hk/english/enforcement/case_notes/casenotes_2.php?content_nature=34&content_type=&id=2018C10&msg_id2=497"
+      },
+      "summary": "In PCPD case 2018C10, a person who applied for a clerical post encountered recruitment for a different role. The PCPD warned the organisation about misleading recruitment and the need to identify the employer and vacancy clearly.",
+      "stages": [
+        "Apply for a named vacancy",
+        "A different role is presented",
+        "The purpose of collecting data changes"
+      ],
+      "notice": "Compare the vacancy applied for with the purpose now stated.",
+      "question": "Is this the same employer, role and use of my application?",
+      "limitation": "Privacy case summary, not a finding that every role change is fraudulent. No original applicant messages are reproduced.",
+      "relatedTopics": [
+        "K_UNKNOWN"
+      ],
+      "keywords": [
+        "role change",
+        "clerical",
+        "sales agent",
+        "轉職",
+        "转职",
+        "文員",
+        "文员",
+        "職位改變",
+        "职位改变"
+      ]
+    },
+    {
+      "id": "P_CV_MISDIRECT",
+      "kind": "reported_case",
+      "title": "Real applications sent to the wrong companies",
+      "category": "Context",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "PCPD",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.pcpd.org.hk/english/enforcement/case_notes/casenotes_2.php?content_nature=&content_type=&id=2019DB03&msg_id2=549"
+      },
+      "summary": "PCPD case 2019DB03 describes a platform error that sent CV information for 4,201 applicants to 1,692 companies. A manual resend after a server misconfiguration caused applications and recipients to be mismatched.",
+      "stages": [
+        "A platform fault",
+        "Applications are resent manually",
+        "CVs reach unintended employers"
+      ],
+      "notice": "Privacy loss can arise from mistakes as well as an impersonator.",
+      "question": "Who received the application, and how can a misdirected copy be addressed?",
+      "limitation": "A reported data-security incident, not a scam prevalence estimate. OfferAnchor does not inspect recruitment platforms or recall documents.",
+      "relatedTopics": [
+        "K_UNKNOWN"
+      ],
+      "keywords": [
+        "cv",
+        "data breach",
+        "recipient",
+        "資料外洩",
+        "资料泄露",
+        "錯發",
+        "错发",
+        "履歷",
+        "履历"
+      ]
+    },
+    {
+      "id": "P_FAKE_CHEQUE",
+      "kind": "official_guidance",
+      "title": "An employer pays first, then asks for money back",
+      "category": "Payments",
+      "region": "United States · international comparison",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "US Federal Deposit Insurance Corporation",
+        "publishedOn": "2019-08-26",
+        "checkedOn": "2026-10-19",
+        "url": "https://archive.fdic.gov/view/fdic/11771/fdic_11771_DS1.pdf"
+      },
+      "summary": "FDIC consumer guidance describes fake work-from-home or mystery-shopper roles that send a cheque, then ask the applicant to forward money or pay for account activation. The cheque may later be rejected after real money has been sent.",
+      "stages": [
+        "A cheque seems to cover the job",
+        "Part must be forwarded",
+        "The cheque is later rejected"
+      ],
+      "notice": "Apparent incoming funds do not establish final payment or authorisation to send money on.",
+      "question": "Has the bank independently confirmed the funds, and why must I forward any?",
+      "limitation": "US guidance used as an international comparison, not Hong Kong banking law or a guarantee about cheque clearance.",
+      "relatedTopics": [
+        "K_TASK_RECHARGE",
+        "K_UNKNOWN",
+        "K_ALREADY_ACTED"
+      ],
+      "keywords": [
+        "fake cheque",
+        "fake check",
+        "equipment",
+        "overpayment",
+        "假支票",
+        "多付",
+        "設備費",
+        "设备费"
+      ]
+    },
+    {
+      "id": "P_TASK_TOP_UP",
+      "kind": "official_guidance",
+      "title": "A growing task balance still needs a deposit",
+      "category": "Payments",
+      "region": "United States · international comparison",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "FBI · Internet Crime Complaint Center",
+        "publishedOn": "2024-06-04",
+        "checkedOn": "2026-10-19",
+        "url": "https://www.ic3.gov/PSA/2024/PSA240604"
+      },
+      "summary": "The FBI describes supposed remote rating or optimisation jobs with confusing compensation rules. Workers must pay cryptocurrency to unlock work, while an interface shows earnings they cannot actually withdraw.",
+      "stages": [
+        "An apparently simple remote task",
+        "A personal cryptocurrency payment unlocks work",
+        "Displayed earnings cannot be cashed out"
+      ],
+      "notice": "A dashboard balance is a claim, not proof that earnings can be withdrawn.",
+      "question": "Can I receive the stated earnings without sending further money?",
+      "limitation": "US official pattern guidance, not an individual complaint or evidence of Hong Kong incidence.",
+      "relatedTopics": [
+        "K_TASK_RECHARGE",
+        "K_ALREADY_ACTED"
+      ],
+      "keywords": [
+        "top up",
+        "withdrawal",
+        "crypto",
+        "task balance",
+        "充值",
+        "取款",
+        "提现",
+        "佣金",
+        "虛擬貨幣",
+        "虚拟货币"
+      ]
+    },
+    {
+      "id": "P_HAYS_FEES",
+      "kind": "company_practice",
+      "title": "A recruiter publishes who pays its fees",
+      "category": "Payments",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "Hays Hong Kong",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.hays.com.hk/terms-of-engagement"
+      },
+      "summary": "Hays Hong Kong's published terms say it does not charge jobseekers for jobseeker services. That gives applicants a company-specific comparison when someone claiming to be from Hays asks for a recruitment payment.",
+      "stages": [
+        "Find independently published terms",
+        "Compare the requested charge",
+        "Check the sender separately"
+      ],
+      "notice": "A company policy can contradict a claimed fee without proving who sent the message.",
+      "question": "Does this charge match the agency's own terms?",
+      "limitation": "One company's policy, not a universal no-fee rule or endorsement. Other Hong Kong agency arrangements require their own checks.",
+      "relatedTopics": [
+        "K_TASK_RECHARGE",
+        "K_COMPANY_PAID"
+      ],
+      "keywords": [
+        "hays",
+        "agency fee",
+        "recruitment fee",
+        "中介費",
+        "中介费",
+        "招聘費",
+        "招聘费"
+      ]
+    },
+    {
+      "id": "P_CATHAY_DATA",
+      "kind": "company_practice",
+      "title": "A company explains its recruitment data uses",
+      "category": "Context",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "Cathay Pacific",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://careers.cathaypacific.com/en/pics-page"
+      },
+      "summary": "Cathay's recruitment privacy statement identifies the organisation, purposes and possible sources or recipients of applicant data. It distinguishes recruitment processing from employee administration after an accepted offer.",
+      "stages": [
+        "A named recruitment process",
+        "Stated purposes and recipients",
+        "Post-acceptance administration"
+      ],
+      "notice": "A real privacy notice provides a comparison; a copied notice does not authenticate a recruiter.",
+      "question": "Does this collection channel match the company's published process?",
+      "limitation": "A company-wide privacy policy, not an individual verified offer or permission to disclose credentials.",
+      "relatedTopics": [
+        "K_UNKNOWN",
+        "K_PAYROLL"
+      ],
+      "keywords": [
+        "cathay",
+        "privacy notice",
+        "consent",
+        "國泰",
+        "国泰",
+        "私隱聲明",
+        "隐私声明",
+        "個人資料",
+        "个人资料"
+      ]
+    },
+    {
+      "id": "P_AGENCY_COMMISSION",
+      "kind": "official_guidance",
+      "title": "A placement fee is not always a scam",
+      "category": "Payments",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "Labour Department · EAA",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.eaa.labour.gov.hk/en/looking.html"
+      },
+      "summary": "The Labour Department says Hong Kong employment agencies may charge only the prescribed commission, capped at 10% of the jobseeker's first month's wages received after successful placement. Applicants can check the agency's licence and obtain a receipt.",
+      "stages": [
+        "Check the licensed agency",
+        "Confirm successful placement and wages",
+        "Check the fee basis and receipt"
+      ],
+      "notice": "Distinguish a regulated commission from a deposit required to unlock work.",
+      "question": "Who is charging, at what stage, and how was the amount calculated?",
+      "limitation": "General official guidance checked on the stated date, not advice that a particular charge is lawful or should be paid.",
+      "relatedTopics": [
+        "K_ORDINARY_EXPENSE",
+        "K_UNKNOWN"
+      ],
+      "keywords": [
+        "agency",
+        "commission",
+        "placement",
+        "10%",
+        "佣金",
+        "中介費",
+        "中介费",
+        "職業介紹所",
+        "职业介绍所"
+      ]
+    },
+    {
+      "id": "P_COMPANY_REGISTER",
+      "kind": "official_guidance",
+      "title": "A registered company is not a verified sender",
+      "category": "Context",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "Companies Registry",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.cr.gov.hk/en/electronic/e-servicesportal/e-search.htm"
+      },
+      "summary": "The Companies Registry provides public searches of company data and registered documents. Such records can help compare a claimed company name with an actual entity, but do not identify the person sending a recruitment message.",
+      "stages": [
+        "Look up the company independently",
+        "Compare the entity details",
+        "Verify the instruction through a separate company channel"
+      ],
+      "notice": "Entity existence, recruiter authority and the requested action are separate questions.",
+      "question": "Who at the company can independently confirm this instruction?",
+      "limitation": "Official search-service description plus a product checking distinction. Search access or document fees may apply; OfferAnchor does not run registry authentication.",
+      "relatedTopics": [
+        "K_UNKNOWN",
+        "K_COMPANY_PAID"
+      ],
+      "keywords": [
+        "registration",
+        "company register",
+        "business number",
+        "公司查冊",
+        "公司查册",
+        "商業登記",
+        "商业登记"
+      ]
+    },
+    {
+      "id": "P_SECONDARY_ADCC",
+      "kind": "reported_case",
+      "title": "Someone who knows the loss claims to be ADCC",
+      "category": "Next steps",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "ADCC",
+        "publishedOn": "2026-04-10",
+        "checkedOn": "2026-10-19",
+        "url": "https://www.adcc.gov.hk/en-hk/alerts-detail/alerts-2042518500290256897.html"
+      },
+      "summary": "ADCC reported scammers contacting victims on WhatsApp while posing as its officers. They knew victims' names and details of earlier scams. The alert says that knowing these details does not establish an officer's identity.",
+      "stages": [
+        "A person has already been scammed",
+        "A supposed investigator knows details",
+        "A second approach seeks trust"
+      ],
+      "notice": "Recovery pressure can follow the original loss. Check authority independently.",
+      "question": "Can I verify the contact through an official channel I found myself?",
+      "limitation": "Published secondary-scam alert, not a guarantee of recovery or proof that any particular contact is false.",
+      "relatedTopics": [
+        "K_ALREADY_ACTED",
+        "K_PAYROLL"
+      ],
+      "keywords": [
+        "recovery",
+        "impersonation",
+        "adcc",
+        "追款",
+        "追討",
+        "追讨",
+        "二次詐騙",
+        "二次诈骗"
+      ]
+    },
+    {
+      "id": "P_BANK_CONTACT",
+      "kind": "official_guidance",
+      "title": "After disclosure, use a bank channel you found",
+      "category": "Next steps",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "HSBC Hong Kong",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/help/cybersecurity-and-fraud/hsbc-fraudbooklet.pdf"
+      },
+      "summary": "HSBC's fraud booklet advises contacting the bank when sensitive information has been compromised, using contact details on the official website or app, or the back of a bank card. Details supplied by the suspected sender are not an independent route.",
+      "stages": [
+        "Record what was shared or sent",
+        "Locate the bank independently",
+        "Contact it about the exposure"
+      ],
+      "notice": "Preserving a brief supports a conversation with the bank; it does not reverse a payment.",
+      "question": "Which account access or payment should I explain to my bank?",
+      "limitation": "Bank guidance, not a recovery promise. This product does not contact banks, freeze accounts or file reports.",
+      "relatedTopics": [
+        "K_ALREADY_ACTED",
+        "K_PAYROLL"
+      ],
+      "keywords": [
+        "already paid",
+        "bank",
+        "disclosure",
+        "已付款",
+        "已轉賬",
+        "已转账",
+        "已洩露",
+        "已泄露",
+        "聯絡銀行",
+        "联系银行"
+      ]
+    },
+    {
+      "id": "P_REPORT_EVIDENCE",
+      "kind": "official_guidance",
+      "title": "Prepare material before making a police report",
+      "category": "Next steps",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "Hong Kong Police",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www.police.gov.hk/ppp_en/13_faqs/faq_erc.html"
+      },
+      "summary": "The Police e-Report FAQ describes the technology-crime and deception reporting form, supported attachments and sign-in requirements. It also distinguishes a temporarily saved form from one actually submitted.",
+      "stages": [
+        "Preserve original material",
+        "Read the reporting requirements",
+        "Submit personally through the official service"
+      ],
+      "notice": "An OfferAnchor download is a personal record, not an official police report.",
+      "question": "Do I have the original messages, payment details and chronology ready?",
+      "limitation": "Official service guidance. OfferAnchor does not submit reports or guarantee that its ZIP is an accepted attachment; follow the current official form.",
+      "relatedTopics": [
+        "K_ALREADY_ACTED",
+        "K_UNKNOWN"
+      ],
+      "keywords": [
+        "report",
+        "evidence",
+        "download",
+        "police",
+        "報案",
+        "报案",
+        "證據",
+        "证据",
+        "保存紀錄",
+        "保存记录"
+      ]
+    },
+    {
+      "id": "P_PYRAMID_JOIN",
+      "kind": "official_guidance",
+      "title": "A salary offer becomes joining a sales scheme",
+      "category": "Borrowing",
+      "region": "Hong Kong",
+      "transcriptAvailable": false,
+      "source": {
+        "publisher": "Labour Department",
+        "publishedOn": null,
+        "checkedOn": "2026-10-19",
+        "url": "https://www1.jobs.gov.hk/0/en/information/jobtrap/"
+      },
+      "summary": "The Labour Department warns of well-paid vacancies turning into product purchases, personal borrowing and rewards for recruiting further members rather than selling products.",
+      "stages": [
+        "A salaried vacancy",
+        "Pay to join or buy goods",
+        "Recruit more members for returns"
+      ],
+      "notice": "Trace the funding and recruitment conditions.",
+      "question": "Am I employed, or paying to join a scheme?",
+      "limitation": "General guidance, not a legal classification of every sales role.",
+      "relatedTopics": [
+        "K_PERSONAL_BORROWING",
+        "K_TASK_RECHARGE"
+      ],
+      "keywords": [
+        "pyramid",
+        "joining fee",
+        "sales",
+        "層壓式",
+        "层压式",
+        "入會費",
+        "入会费",
+        "拉人頭",
+        "拉人头"
+      ]
+    }
+  ]
+}

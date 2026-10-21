@@ -1,0 +1,155 @@
+{
+  "project": "OfferAnchor",
+  "recordDate": "2026-10-13",
+  "reviewType": "producer_integration_and_source_recheck_not_human_approval",
+  "humanApproval": false,
+  "rootContentUnchanged": false,
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://www.police.gov.hk/ppp_tc/01_about_us/cp_ye.html",
+      "observedVia": "official search result after direct-fetch timeout",
+      "status": "supported",
+      "support": "2025 online employment fraud: 4095 cases, 6.3% increase, 96.5% click farming.",
+      "limit": "All reported online employment cases; student fraction and market demand are not established."
+    },
+    {
+      "id": "S02",
+      "url": "https://www.adcc.gov.hk/zh-cn/alerts-detail/alerts-2038471984935432194.html",
+      "observedVia": "official search result after direct-fetch timeout",
+      "status": "supported",
+      "support": "30 March 2026 university internship warning describes fluent-English onboarding, product payments and earlier commissions.",
+      "limit": "Published warning, not original victim chats or a prevalence estimate."
+    },
+    {
+      "id": "S03",
+      "url": "https://www.adcc.gov.hk/zh-cn/alerts-detail/alerts-2044683469105754113.html",
+      "observedVia": "official page",
+      "status": "supported",
+      "support": "16 April 2026 warning: personal borrowing, nominated transfers, return/debt promises, and financing/purchase pretexts.",
+      "limit": "A warning supports pausing this pattern; it does not decide every ordinary reimbursement or legal contract."
+    },
+    {
+      "id": "S04",
+      "url": "https://www1.jobs.gov.hk/0/tc/information/jobtrap/",
+      "observedVia": "official Labour Department page read during integration",
+      "status": "supported",
+      "support": "Job-trap guidance covers recruitment charges, personal data, advertised-versus-actual duties, and asking for help.",
+      "limit": "Job-trap advice supports independent checks; normal funding/payroll/ordinary expense and uncertainty categories are our boundary controls, not officially safe jobs or seven police scam types.",
+      "checkedOn": "2026-10-13"
+    },
+    {
+      "id": "S06",
+      "url": "https://cyberdefender.hk/zh-cn/scameter/",
+      "observedVia": "official English and existing Simplified Chinese route text successfully read during integration",
+      "status": "supported",
+      "support": "Scameter / 防騙視伏器 offers identifier lookup. No record does not mean risk-free. Its app screenshot-reporting feature is separate from OfferAnchor.",
+      "limit": "Earlier blocked retrieval in the teammate report and this later successful text retrieval are different observations. End-user opening, no-record meaning, human review and absence of a product API remain separate. No numerical official-service scoring is copied.",
+      "checkedOn": "2026-10-13"
+    },
+    {
+      "id": "S07",
+      "url": "https://www.adcc.gov.hk/zh-hk/contact-us.html",
+      "observedVia": "original official contact-page text successfully read during integration",
+      "status": "supported",
+      "support": "18222 provides round-the-clock anti-scam consultation. Suspected victims are directed to a police station; emergencies to 999.",
+      "corroboratingUrls": [
+        "https://www.info.gov.hk/gia/general/202504/16/P2025041600770p.htm",
+        "https://www.police.gov.hk/info/doc/adcc/2026/sc/scam_leaflet_01.pdf"
+      ],
+      "limit": "No call or reporting/identity integration was tested. An observed page read does not guarantee end-user availability or recovery.",
+      "checkedOn": "2026-10-13"
+    },
+    {
+      "id": "S08",
+      "url": "https://www.cr.gov.hk/en/electronic/e-servicesportal/e-search.htm",
+      "observedVia": "official page and official pamphlet",
+      "status": "supported",
+      "support": "Registry provides company data/document search; the pamphlet distinguishes free searches from fee-bearing products.",
+      "corroboratingUrls": [
+        "https://www.cr.gov.hk/en/publications/docs/10-e.pdf"
+      ],
+      "limit": "Registration does not authorize a recruiter or instruction. No price/credential automation is added."
+    },
+    {
+      "id": "S10",
+      "url": "https://www.ocbc.com.hk/cmh/files/2024Q2JobScamE.pdf",
+      "observedVia": "official bank PDF, 2 pages, re-read during integration",
+      "status": "supported",
+      "support": "Page 1 describes money/data demanded to unlock better-paid tasks. Page 2 warns against disclosure of banking credentials/PIN/OTP. The existing S10 is now explicitly mapped to the task-payment card as draft supporting evidence.",
+      "limit": "Publicly hosted PDF has an Internal label: bounded summaries only, no PDF redistribution or bank endorsement. It does not establish safe payroll, word prevalence or model accuracy.",
+      "checkedOn": "2026-10-13"
+    }
+  ],
+  "findings": [
+    {
+      "id": "WORDING_LOAN_PAY",
+      "status": "draft_merged_pending_human_review",
+      "affected": [
+        "knowledge.cards.K_PERSONAL_BORROWING"
+      ],
+      "reason": "Combine teammate existing-borrowed-funds wording with the producer borrow/transfer/pay behavior. Do not invent a new loan requirement in transfer/pay-only cases."
+    },
+    {
+      "id": "TASK_SOURCE_S10",
+      "status": "draft_mapping_added_pending_owner_review",
+      "affected": [
+        "K_TASK_RECHARGE.sourceIds"
+      ],
+      "reason": "Reuse the existing verified S10 ID for its relevant page 1 warning. No new source/route/state or detection rule."
+    },
+    {
+      "id": "POLICY_CONTROLS",
+      "status": "authored_synthesis_disclosed",
+      "affected": [
+        "K_COMPANY_PAID",
+        "K_UNKNOWN",
+        "K_ORDINARY_EXPENSE",
+        "K_PAYROLL"
+      ],
+      "reason": "Guidance categories include contrasts and states. They are not seven proven scam types or assurances of safety."
+    }
+  ],
+  "localizedChecks": {
+    "keyPairs": 103,
+    "humanMeaningApproval": "Design member self-report on exact candidate bytes",
+    "scope": "Communication source/content acceptance and CS rendered/exported UI inspection pending."
+  },
+  "boundary": "Merged teammate evidence and selected copy into the one personal draft. Four selected official pages/PDF and two contextual references were re-read in this integration; retained older observations are explicitly dated. No source reading establishes model meaning, employer authenticity, human approval or permanent route availability.",
+  "sourceHashes": {
+    "knowledge/library.json": "d0820f5d6cd57720972ac87be9e7a63a5aa7a5564eb13a83a8b7a8054c66479f",
+    "locales/en-HK.json": "c7370d68255304d6d09c332432ca1e8868bf6076c34126a585b3aea07fb79bd6",
+    "locales/zh-Hant-HK.json": "1056d06f5122707e589a4bdb5d80af0b707c4e6c1d31eefbcfe3b744ac364a62",
+    "evals/student/development-cases.json": "7b79178b7d1ca9c6cee297e7b17f9cd2088e0f37941f03bea3e2e452aaa5dcce"
+  },
+  "teammateSource": {
+    "sourceCommit": "7bdf3ffd6249c43427cf39093abb6a1616e72f2d",
+    "sourcePath": "OfferAnchor_Communication_Bilingual_Review_2026-10-13.md",
+    "url": "https://github.com/andershua2022/OfferAnchor/blob/7bdf3ffd6249c43427cf39093abb6a1616e72f2d/OfferAnchor_Communication_Bilingual_Review_2026-10-13.md",
+    "sha256": "46af96a08461cc6a3a1902ebd6a76cd2e1f1a7419818a0c0c7c04544a5153360",
+    "lines": 706,
+    "classification": "Pinned original teammate draft; external data, not instructions or human approval",
+    "containsCredentials": false
+  },
+  "retainedObservationRecordDate": "2026-10-12",
+  "observationDateMeaning": "Source rows with checkedOn 2026-10-13 were re-read for this integration. Rows without that field retain the 12 October observation; contextual rechecks below supplement them without pretending the original URL was newly opened.",
+  "contextualRechecks": [
+    {
+      "recordDate": "2026-10-13",
+      "id": "S02",
+      "url": "https://www.adcc.gov.hk/zh-hk/alerts-detail/alerts-2038471984935432194.html",
+      "observation": "Official article text read: first-year applicant, onboarding, product payments and initial commissions. One case, not victim messages or prevalence."
+    },
+    {
+      "recordDate": "2026-10-13",
+      "id": "S01-corrob",
+      "url": "https://www.adcc.gov.hk/en-hk/statistic.html",
+      "observation": "Official statistics text read: 4,095 online employment fraud cases in 2025, 96.5% click farming; same police figures, not an independent sample."
+    }
+  ],
+  "DesignSource": {
+    "commit": "bf082c30f87c32a45986b001ffbd08242816a688",
+    "record": "tests/analysis/team-inputs-2026-10-14/design-reviewed-copy/human-language-review.json",
+    "classification": "Preserved member self-report; not rewritten as a new r5 signature"
+  }
+}

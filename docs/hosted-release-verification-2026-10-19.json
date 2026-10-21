@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-19",
+  "sourceCommit": "348bbb7304917fa37828ec85a3b5cf3930372d08",
+  "generation": "extract-v2.28",
+  "audit": "context-audit-1.8.0",
+  "contract": "2.0.0",
+  "rolloutDecision": "withhold_promotion",
+  "publicDeploymentChanged": false,
+  "originalCollaborationRepositoryPrivate": true,
+  "integratedChecks": {
+    "integrationTests": {
+      "passed": 360,
+      "failed": 0
+    },
+    "compatibilityTests": {
+      "passed": 93,
+      "failed": 0
+    },
+    "webpackBuild": "passed",
+    "workspaceBrowserSuite": "passed, simulation HTTP and labelled synthetic live only",
+    "frontendReferenceFilesByteIdentical": 162,
+    "publicSchemaFilesByteIdentical": 5
+  },
+  "stagedChecks": {
+    "build": "READY",
+    "workstationHttp": 200,
+    "loginHttp": 200,
+    "accountConfiguration": {
+      "configured": true,
+      "emailDelivery": "public",
+      "authenticated": false
+    },
+    "session": {
+      "mode": "live",
+      "ready": true,
+      "trialLimit": 5,
+      "period": "lifetime",
+      "unit": "ai_action_attempt"
+    },
+    "realLoginRetested": false
+  },
+  "actualModel": {
+    "provider": "official team Alibaba Model Studio",
+    "region": "cn-beijing",
+    "modelId": "qwen3.8-max",
+    "responseMode": "json_schema",
+    "modelTimeoutMs": 50000,
+    "serverTimeoutMs": 53000,
+    "privateGatewayFallback": false,
+    "configurationMatchesLocal": true
+  },
+  "attempts": [
+    {
+      "scope": "staged hosted HTTP",
+      "caseId": "F01",
+      "http": 502,
+      "status": "incomplete",
+      "errorCode": "invalid_output",
+      "elapsedIncludingCliMs": 35735,
+      "rawModelRequests": null,
+      "maximumRawModelRequests": 2,
+      "tokens": null,
+      "failureDetail": "Hosted endpoint intentionally does not expose provider output or refusal details."
+    },
+    {
+      "scope": "separate local diagnostic repetition, same source and verified cloud model settings",
+      "caseId": "F01",
+      "status": "incomplete",
+      "errorCode": "invalid_output",
+      "rawModelRequests": 1,
+      "totalTokens": 3959,
+      "replayFailureAt": "promise_funding_consistency",
+      "failureDetail": "The model labelled an explicit future loan-repayment pledge as company funding targeting loan proceeds. The existing guard rejected it before audit. This explains the local reproduction, not the unobserved hosted internal trace."
+    },
+    {
+      "scope": "staged hosted HTTP",
+      "caseId": "F02",
+      "http": 429,
+      "status": "rejected",
+      "errorCode": "quota_exceeded",
+      "rawModelRequests": 0,
+      "tokens": 0,
+      "interpretation": "Shared product quota blocked analysis; not a model correctness failure or success."
+    }
+  ],
+  "accountTrialAllowanceConsumedByChecks": 0,
+  "quotaResetOrIncreased": false,
+  "automaticRetries": 0,
+  "intentionalDiagnosticRepetitions": 1,
+  "currencyCost": null,
+  "costNote": "Hosted token usage was not returned; currency cost is not fabricated. Only the separate diagnostic reported 3,959 tokens.",
+  "limitations": [
+    "Exposed synthetic sources, not held-out evaluation.",
+    "No independent accuracy estimate.",
+    "No new production model call: promotion failed its prerequisite.",
+    "No new real Google/email login or physical-device test.",
+    "This is a candidate-source release, not production acceptance."
+  ],
+  "syntheticInputs": "../tests/analysis/release-cases-2026-10-19.json",
+  "retainedProductionReadOnlySmoke": {
+    "scope": "Retained prior production, read-only browser smoke, not a new production AI or user-login acceptance",
+    "landingHttp": 200,
+    "ctaToWorkspace": true,
+    "liveReady": true,
+    "trialPolicy": {
+      "limit": 5,
+      "period": "lifetime",
+      "unit": "ai_action_attempt"
+    },
+    "accountConfigured": true,
+    "emailDelivery": "public",
+    "googleAndEmailEntrancesVisible": true,
+    "narrowViewportOverflow": false,
+    "paidRequests": 0,
+    "pageErrors": []
+  },
+  "privacyCheck": {
+    "knownCredentialCategoriesCompared": 7,
+    "staticFilesAndPreviewHtmlScanned": 67,
+    "historicalBlobsScanned": 469,
+    "knownCredentialMatches": 0,
+    "noCredentialValuesPrinted": true,
+    "trackedScan": "507 files, no known credential matches or new unreviewed personal-email candidates; sensitive paths excluded",
+    "realCredentialValuesPublished": false
+  }
+}

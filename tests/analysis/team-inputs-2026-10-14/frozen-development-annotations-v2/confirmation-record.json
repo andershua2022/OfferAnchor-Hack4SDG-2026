@@ -1,0 +1,23 @@
+{
+  "recordType": "Actual_Design_chat_confirmation_and_DASE_GitHub_receipt",
+  "recordedUtc": "2026-10-14T15:33:51Z",
+  "reportingRole": "Design",
+  "scope": "DEV03 funding/guidance revision only; other v1 judgments inherited",
+  "designChatEvidence": "我同意：保留「有付款请求」，资金来源标 unknown 不下推个人，动作走 clarify，v1 不改出 frozen-v2，争议关闭前这条不进准确率。",
+  "uploadAuthorization": "你上传一下标注冻结v2",
+  "DASEReceipt": {
+    "id": 6165980821,
+    "url": "https://github.com/andershua2022/OfferAnchor/issues/3#issuecomment-6165980821",
+    "user": "Vic-Chen-DASE",
+    "body": "## DASE — DEV03 adjudication receipt (2026-10-14, Asia/Shanghai)\n\n**Issue:** DEV03_UNSPECIFIED_FUNDS (recorded in AI/DS integration notes).  \n**Design (Henry) confirmation:** oral/chat alignment 2026-10-14 — keep old freeze; publish a new reference version; defer morning risk-score / unlock-high-risk / 24h–72h escalate ideas.\n\n### Agreed gold direction (for new frozen reference, not a rewrite of v1)\n\n| Field | Agreed value |\n|-------|----------------|\n| Payment request present | **Yes** (keep the payment-request claim) |\n| `actions[].resource` | **`unknown`** — do **not** infer `personal_money` |\n| Guidance | **`clarify_before_action`** — ask whose money / clarify before acting |\n| Plain reading | “There is a payment request, but it is unknown whose money it is, so clarify first.” |\n\n### Versioning\n\n- **Frozen development annotations v1:** **immutable** (DEV03 remains as labeled there: `personal_money` + `pause_requested_action`).\n- **Next reference:** Design publishes **frozen-v2** (or equivalent) with the agreed DEV03 labels above.\n- Until Design closes this dispute in the frozen set, **DEV03 does not enter overall accuracy / pass-rate aggregates**.\n\n### Schema / policy check (DASE verification — no new invention)\n\n- `resource=unknown` is a **legal** enum on CanonicalExtraction 2.0.0 (`contracts/extraction.schema.json`); also used on frozen v1 **DEV05**.\n- Downstream (validator / integration-contract row2 / DASE `resource_exact`) already consumes `unknown`; unclear funding → blocking clarify is existing contract behavior.\n- **Unclear funding ≠ safe** (aligns with PRD / Communication K_UNKNOWN language).\n\n### Explicitly out of scope this round (Henry: discussion only)\n\n1. Numeric “risk score” treating `unknown` conservatively (product currently has **no** fraud/confidence score).\n2. Policy change: “payment request + unlock phrasing = high risk; fund source only sets disposition intensity” (would change integration-contract pause gate; **not** applied now — follow existing rules).\n3. Clarify timeout escalate at 24h / 72h (not in guidance docs today).\n\n### DASE follow-ups (after Design publishes frozen-v2)\n\n1. Re-point development review / demo-lock **author expectations** for DEV03 guidance from `pause_requested_action` → `clarify_before_action` (demo role stays “recharge”; gold guidance updates with the new freeze).\n2. Keep scoring: exclude DEV03 from overall % until dispute closed in the frozen reference.\n3. No invented accuracy; no held-out text/gold in this issue.\n\n**Not claiming:** Design frozen-v2 file path yet (Design owns the publish). This comment is the DASE receipt of Design’s agreed direction only."
+  },
+  "inheritedV1Confirmation": {
+    "path": "design/review-2026-10-14/frozen-development-annotations-v1/confirmation-record.json",
+    "sha256": "88f43022a854c50263d86d78eb56ec3ee4df94227d294b9b389a04a63715b766",
+    "nature": "member-reported prior teammate agreement; no new independent annotation passes witnessed"
+  },
+  "contractCompletion": "mechanism=unclear is the existing compatible representation for resource=unknown; AI/DS integration-issues.json also explicitly records it.",
+  "noNewApprovalsInvented": true,
+  "CommunicationNewVersionReview": "not newly recorded",
+  "consumerImportAcknowledgements": "pending for exact v2 bytes"
+}

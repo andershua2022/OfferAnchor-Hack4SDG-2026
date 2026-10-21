@@ -1,0 +1,41 @@
+{
+  "name": "offeranchor",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "24.15.0",
+    "npm": "11.12.1"
+  },
+  "packageManager": "npm@11.12.1",
+  "scripts": {
+    "dev": "next dev --hostname localhost",
+    "build": "next build",
+    "start": "next start --hostname localhost",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/integration/*.test.ts",
+    "test:runner": "node --test tests/analysis-runner.test.mjs",
+    "test:ai": "node --test tests/analysis/*.test.mjs tests/analysis-runner.test.mjs",
+    "test:all": "npm test && npm run test:ai",
+    "build:readers": "node scripts/build-local-readers.mjs",
+    "prebuild": "npm run build:readers",
+    "test:review-browser": "node tests/review-browser.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.118.0",
+    "lucide-react": "0.454.0",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "24.10.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "esbuild": "0.28.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

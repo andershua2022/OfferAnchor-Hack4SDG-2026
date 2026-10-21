@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-19",
+  "observedAtLocal": "2026-10-19T11:39:46+08:00",
+  "productionUrl": "https://offeranchor-hk.vercel.app",
+  "deployedCodeCommit": "bf2934f5fe6433b094d10ac2d8ce2f4c5694ba81",
+  "deploymentId": "dpl_A9WRv9oi9PFi3TZXyN23mLxaYJzE",
+  "generation": "extract-v2.29",
+  "audit": "context-audit-1.8.0",
+  "stagedCases": [
+    {
+      "phase": "stage",
+      "caseId": "F01",
+      "target": "https://offeranchor-ktyx60xf6-andershuang2022-8069.vercel.app",
+      "http": 200,
+      "status": "complete",
+      "errorCode": null,
+      "guidance": "pause_requested_action",
+      "promptVersion": "extract-v2.29",
+      "modelId": "qwen3.8-max",
+      "elapsedIncludingCliMs": 48594,
+      "retryAfterSeconds": null,
+      "trialPolicy": {
+        "limit": 5,
+        "period": "lifetime",
+        "unit": "ai_action_attempt"
+      },
+      "actualUserAllowanceConsumed": 0,
+      "maximumRawModelRequests": 2,
+      "noAutomaticRetry": true,
+      "tokenUsageNotExposedByHostedEndpoint": true
+    },
+    {
+      "phase": "stage",
+      "caseId": "F02",
+      "target": "https://offeranchor-ktyx60xf6-andershuang2022-8069.vercel.app",
+      "http": 200,
+      "status": "complete",
+      "errorCode": null,
+      "guidance": "no_personal_financial_request_identified",
+      "promptVersion": "extract-v2.29",
+      "modelId": "qwen3.8-max",
+      "elapsedIncludingCliMs": 49072,
+      "retryAfterSeconds": null,
+      "trialPolicy": {
+        "limit": 5,
+        "period": "lifetime",
+        "unit": "ai_action_attempt"
+      },
+      "actualUserAllowanceConsumed": 0,
+      "maximumRawModelRequests": 2,
+      "noAutomaticRetry": true,
+      "tokenUsageNotExposedByHostedEndpoint": true
+    }
+  ],
+  "wholeSourceReviewPassed": true,
+  "promotedSameDeployment": true,
+  "productionTargetVerified": true,
+  "productionBrowserSmoke": {
+    "scope": "Promoted v29, real production browser smoke; staged model results are separate from these read-only UI and auth-entry checks",
+    "landingHttp": 200,
+    "ctaToWorkspace": true,
+    "liveReady": true,
+    "trialPolicy": {
+      "limit": 5,
+      "period": "lifetime",
+      "unit": "ai_action_attempt"
+    },
+    "accountConfigured": true,
+    "emailDelivery": "public",
+    "googleAndEmailEntrancesVisible": true,
+    "narrowViewportOverflow": false,
+    "paidRequests": 0,
+    "pageErrors": []
+  },
+  "productionAuthGuards": {
+    "realProduction": true,
+    "googleOAuthStartPassed": true,
+    "redirectTargetsCanonicalProduct": true,
+    "invalidEmailRejected": true,
+    "anonymousAnalysisRejectedBeforeModel": true,
+    "paidModelRequests": 0,
+    "userLoginAuthorizationNotPerformed": true,
+    "emailNotSent": true
+  },
+  "budgets": {
+    "sharedRawRequests": 60,
+    "sharedWindowSeconds": 86400,
+    "sharedDefaultInClone": 30,
+    "accountLifetimeActions": 5,
+    "accountCountersReset": false,
+    "sharedCounterReset": false,
+    "existingTrialUsageAggregatesPreserved": true,
+    "globalObservedIncrementFromStagedCases": 4,
+    "perAccountConcurrency": 1,
+    "globalConcurrencyMaximum": 2,
+    "additionalProductionSmokeMaximumRawRequests": 2
+  },
+  "database": {
+    "migration": "supabase/migrations/20261019_shared_budget_60.sql",
+    "applied": true,
+    "anonymousRpcExecute": false,
+    "serverRpcExecute": true,
+    "fiveAccountGuardPreserved": true
+  },
+  "tests": {
+    "integrationPassed": 367,
+    "integrationFailed": 0,
+    "compatibilityPassed": 93,
+    "compatibilityFailed": 0,
+    "localWebpackBuild": "passed",
+    "uiAndPublicSchemaFilesByteIdentical": 167,
+    "staticReview": "no actionable issue on the exact quota-only diff"
+  },
+  "provider": {
+    "teamOwned": true,
+    "provider": "Alibaba Model Studio",
+    "region": "cn-beijing",
+    "modelId": "qwen3.8-max",
+    "privateGatewayFallback": false
+  },
+  "tokens": {
+    "privateDevelopmentRecorded": 29166,
+    "directTeamRecheckRecorded": 14516,
+    "stagedUsage": "not exposed by public endpoint; no currency amount fabricated"
+  },
+  "limits": [
+    "Four exposed development source scenarios, not independent accuracy.",
+    "Stage tests use the protected unique deployment URL with canonical product Origin; actual OAuth user consent was not repeated.",
+    "Google startup and email configuration/validation checked; no email was sent by this release check.",
+    "Browser checks are desktop and emulated narrow viewport, not physical-device validation.",
+    "No claim that every arbitrary request will complete; retain strict refusal on invalid output."
+  ],
+  "originalTeamRepositoryPrivate": true,
+  "productionModelCheck": {
+    "phase": "production",
+    "target": "https://offeranchor-hk.vercel.app",
+    "http": 200,
+    "status": "complete",
+    "errorCode": null,
+    "guidance": "pause_requested_action",
+    "promptVersion": "extract-v2.29",
+    "modelId": "qwen3.8-max",
+    "elapsedIncludingCliMs": 35132,
+    "retryAfterSeconds": null,
+    "trialPolicy": {
+      "limit": 5,
+      "period": "lifetime",
+      "unit": "ai_action_attempt"
+    },
+    "actualUserAllowanceConsumed": 0,
+    "maximumRawModelRequests": 2,
+    "noAutomaticRetry": true,
+    "tokenUsageNotExposedByHostedEndpoint": true,
+    "harnessCaseAlias": "F01",
+    "caseId": "DEV14",
+    "sourceRequestId": "dev_dev14_001",
+    "wholeSourceReviewPassed": true,
+    "meaning": "Applicant requested to share banking OTP with recruiter for login/control; no invented financial action or verified identity"
+  }
+}

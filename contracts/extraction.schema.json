@@ -1,0 +1,397 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OfferAnchor CanonicalExtraction 2.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "actions",
+    "claims",
+    "comparisons",
+    "unknowns",
+    "questions",
+    "relationships"
+  ],
+  "properties": {
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "actor",
+          "verb",
+          "polarity",
+          "resource",
+          "recipient",
+          "purpose",
+          "citations",
+          "mechanism"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^A[1-9][0-9]*$"
+          },
+          "actor": {
+            "type": "string",
+            "enum": [
+              "applicant",
+              "employer",
+              "recruiter",
+              "third_party",
+              "unknown"
+            ]
+          },
+          "verb": {
+            "type": "string",
+            "enum": [
+              "borrow",
+              "transfer",
+              "pay",
+              "share_account_details",
+              "share_otp",
+              "perform_work",
+              "other"
+            ]
+          },
+          "polarity": {
+            "type": "string",
+            "enum": [
+              "requested",
+              "prohibited",
+              "described",
+              "uncertain"
+            ]
+          },
+          "resource": {
+            "type": "string",
+            "enum": [
+              "personal_borrowing",
+              "personal_money",
+              "company_money",
+              "account_information",
+              "account_control",
+              "none",
+              "unknown"
+            ]
+          },
+          "recipient": {
+            "type": "string",
+            "enum": [
+              "applicant",
+              "employer",
+              "recruiter",
+              "third_party",
+              "unknown"
+            ]
+          },
+          "purpose": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "citations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "evidenceId",
+                "start",
+                "end",
+                "quote"
+              ],
+              "properties": {
+                "evidenceId": {
+                  "type": "string",
+                  "pattern": "^E[1-8]$"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200
+                }
+              }
+            },
+            "minItems": 1,
+            "maxItems": 2
+          },
+          "mechanism": {
+            "type": "string",
+            "enum": [
+              "task_recharge",
+              "personal_borrowing",
+              "credential_control",
+              "ordinary_work_expense",
+              "company_funded_work",
+              "payroll_information",
+              "none",
+              "unclear"
+            ]
+          }
+        }
+      },
+      "minItems": 0,
+      "maxItems": 4
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "text",
+          "status",
+          "citations",
+          "relatedActionIds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^C[1-9][0-9]*$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "advertised_duty",
+              "identity_claim",
+              "repayment_promise",
+              "completed_action",
+              "other",
+              "instruction_denial"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "stated_in_input",
+              "user_reported",
+              "uncertain"
+            ]
+          },
+          "citations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "evidenceId",
+                "start",
+                "end",
+                "quote"
+              ],
+              "properties": {
+                "evidenceId": {
+                  "type": "string",
+                  "pattern": "^E[1-8]$"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200
+                }
+              }
+            },
+            "minItems": 1,
+            "maxItems": 2
+          },
+          "relatedActionIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^A[1-9][0-9]*$"
+            },
+            "uniqueItems": true,
+            "maxItems": 4
+          }
+        }
+      },
+      "minItems": 0,
+      "maxItems": 4
+    },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "earlierClaimId",
+          "laterActionId",
+          "explanation"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^D[1-9][0-9]*$"
+          },
+          "earlierClaimId": {
+            "type": "string",
+            "pattern": "^C[1-9][0-9]*$"
+          },
+          "laterActionId": {
+            "type": "string",
+            "pattern": "^A[1-9][0-9]*$"
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          }
+        }
+      },
+      "minItems": 0,
+      "maxItems": 3
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "issue",
+          "priority",
+          "kind",
+          "relatedActionIds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^U[1-9][0-9]*$"
+          },
+          "issue": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "blocking",
+              "context"
+            ]
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "actor",
+              "resource",
+              "payment_condition",
+              "contradiction",
+              "employer_authorization",
+              "repayment_verification",
+              "other"
+            ]
+          },
+          "relatedActionIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^A[1-9][0-9]*$"
+            },
+            "uniqueItems": true,
+            "maxItems": 4
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 5
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "unknownId",
+          "text"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^Q[1-9][0-9]*$"
+          },
+          "unknownId": {
+            "type": "string",
+            "pattern": "^U[1-9][0-9]*$"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          }
+        }
+      },
+      "minItems": 0,
+      "maxItems": 2
+    },
+    "relationships": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "earlierItemId",
+          "laterItemId",
+          "explanation"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^R[1-9][0-9]*$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "contradicts",
+              "clarifies",
+              "repeats"
+            ]
+          },
+          "earlierItemId": {
+            "type": "string",
+            "pattern": "^[AC][1-9][0-9]*$"
+          },
+          "laterItemId": {
+            "type": "string",
+            "pattern": "^[AC][1-9][0-9]*$"
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "classification": "Authored canonical action projection / current pure validator and policy compatibility check; not model output, independent accuracy, full case semantics, approved content routes or CS acceptance",
+  "moduleSource": {
+    "ref": "3d324e6269e7ed28f6501435b0b6c784fd901864",
+    "files": [
+      {
+        "path": "lib/contracts/policy.ts",
+        "sourceGitBlob": "b5f71833d31335643cf8fccab7234cfc5b3fa1de"
+      },
+      {
+        "path": "lib/contracts/semantic.ts",
+        "sourceGitBlob": "69b6ecfd0ac58de614eb9002437b918aba76d171"
+      },
+      {
+        "path": "lib/contracts/schema.ts",
+        "sourceGitBlob": "11698de4fd8ffc683a305639666fa89215dcb22a"
+      },
+      {
+        "path": "lib/contracts/generated.ts",
+        "sourceGitBlob": "1d7c558087307dbee3218f3e26b2307a8941635d"
+      },
+      {
+        "path": "lib/contracts/errors.ts",
+        "sourceGitBlob": "ff5099375311d5c650827cbc609f3f18969926fc"
+      },
+      {
+        "path": "contracts/analyze-request.schema.json",
+        "sourceGitBlob": "9361c0b991919a17abcbb22c92d0c0dc7bf47d4b"
+      },
+      {
+        "path": "contracts/analyze-response.schema.json",
+        "sourceGitBlob": "32a046f88645fdfab6c2f0103768a6cc6db01d91"
+      },
+      {
+        "path": "contracts/extraction.schema.json",
+        "sourceGitBlob": "41728b761c1d9c9c3acfea4a05daeb25b01d380d"
+      },
+      {
+        "path": "contracts/provider-extraction.schema.json",
+        "sourceGitBlob": "1205d60478b11d587413fdb0fc018eb1ab83ffe7"
+      },
+      {
+        "path": "contracts/transport-error.schema.json",
+        "sourceGitBlob": "97a7eb36b128e1cc3d5095db78a2b65b6b9182d6"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "caseId": "DEV01",
+      "canonicalValidation": true,
+      "policyGuidance": "pause_requested_action",
+      "expectedGuidance": "pause_requested_action",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV02",
+      "canonicalValidation": true,
+      "policyGuidance": "no_personal_financial_request_identified",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV03",
+      "canonicalValidation": true,
+      "policyGuidance": "clarify_before_action",
+      "expectedGuidance": "clarify_before_action",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV04",
+      "canonicalValidation": true,
+      "policyGuidance": "no_personal_financial_request_identified",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV05",
+      "canonicalValidation": true,
+      "policyGuidance": "clarify_before_action",
+      "expectedGuidance": "clarify_before_action",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV06",
+      "canonicalValidation": true,
+      "policyGuidance": "no_personal_financial_request_identified",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV07",
+      "canonicalValidation": true,
+      "policyGuidance": "pause_requested_action",
+      "expectedGuidance": "pause_requested_action",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV08",
+      "canonicalValidation": true,
+      "policyGuidance": "no_personal_financial_request_identified",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV09",
+      "canonicalValidation": true,
+      "policyGuidance": "pause_requested_action",
+      "expectedGuidance": "pause_requested_action",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV10",
+      "canonicalValidation": true,
+      "policyGuidance": "pause_requested_action",
+      "expectedGuidance": "pause_requested_action",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV11",
+      "canonicalValidation": true,
+      "policyGuidance": "no_personal_financial_request_identified",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV12",
+      "canonicalValidation": true,
+      "policyGuidance": "no_personal_financial_request_identified",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV13",
+      "canonicalValidation": true,
+      "policyGuidance": "no_personal_financial_request_identified",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV14",
+      "canonicalValidation": true,
+      "policyGuidance": "pause_requested_action",
+      "expectedGuidance": "pause_requested_action",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV15",
+      "canonicalValidation": true,
+      "policyGuidance": "pause_requested_action",
+      "expectedGuidance": "pause_requested_action",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV16",
+      "canonicalValidation": true,
+      "policyGuidance": "pause_requested_action",
+      "expectedGuidance": "pause_requested_action",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV17",
+      "canonicalValidation": true,
+      "policyGuidance": "no_personal_financial_request_identified",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "policyMatchesReference": true,
+      "passed": true
+    },
+    {
+      "caseId": "DEV18",
+      "canonicalValidation": true,
+      "policyGuidance": "no_personal_financial_request_identified",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "policyMatchesReference": true,
+      "passed": true
+    }
+  ],
+  "passed": 18,
+  "total": 18,
+  "dev03NegativeControls": {
+    "missingBlockingResourceUnknownRejected": true,
+    "unknownWithTaskRechargeRejected": true
+  },
+  "modelCalls": 0,
+  "accuracyClaim": null,
+  "consumerAcceptance": false
+}

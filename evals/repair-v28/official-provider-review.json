@@ -1,0 +1,75 @@
+{
+  "evaluation": "bounded_official_team_provider_development_check",
+  "profile": "extract-v2.28",
+  "preGuardAdapter": "source-context-roles-events-1.1.0",
+  "postGuardAdapter": "source-context-roles-events-1.2.0",
+  "guard": "promise-funding-1.0.0",
+  "model": "qwen3.8-max",
+  "providerHost": "dashscope.aliyuncs.com",
+  "responseMode": "json_schema",
+  "beforeGuard": {
+    "attempts": 3,
+    "rawRequests": 6,
+    "complete": 3,
+    "completeSourceCorrect": 2,
+    "completeMaterialContextError": 1,
+    "tokens": 19385
+  },
+  "afterGuard": {
+    "attempts": 1,
+    "rawRequests": 2,
+    "complete": 0,
+    "incompleteFalseAuditRejection": 1,
+    "tokens": 6823
+  },
+  "combinedBillingOnly": {
+    "rawRequests": 8,
+    "tokens": 26208,
+    "inputTokens": 18760,
+    "outputTokens": 7448,
+    "unknownUsageRequests": 0,
+    "costCny": null,
+    "note": "Do not pool phases into one accuracy score; provider invoice/rate not reverified in this round."
+  },
+  "setupFailure": {
+    "attemptsBeforeAnyProviderDispatch": 3,
+    "rawRequests": 0,
+    "modelQualityEvidence": false,
+    "cause": "Test runner initially omitted required cancellation signal; fixed only in separate local harness before bounded live dispatch."
+  },
+  "reviewType": "agent source review, not independent human or held-out evaluation",
+  "originalCasesOrGoldChanged": false,
+  "rows": [
+    {
+      "phase": "before_promise_guard",
+      "caseId": "RR01",
+      "status": "complete",
+      "review": "source_correct",
+      "notes": "Explicit company HR payroll recipient and separate prohibited OTP with unknown receiver retained."
+    },
+    {
+      "phase": "before_promise_guard",
+      "caseId": "RR03",
+      "status": "complete",
+      "review": "source_correct",
+      "notes": "One company-funded same-payment event citing both sources; personal-transfer/borrowing prohibitions remain; no stale blocker/question."
+    },
+    {
+      "phase": "before_promise_guard",
+      "caseId": "RR06",
+      "status": "complete",
+      "review": "accepted_material_context_error",
+      "notes": "Repayment assurance split into typed promise for borrowing plus incorrect current-company-funding claim for proceeds, causing a false funding contradiction. Guidance alone still matches; not a correct full answer."
+    },
+    {
+      "phase": "after_promise_guard",
+      "caseId": "RR06",
+      "status": "incomplete",
+      "review": "false_audit_rejection",
+      "notes": "New generation retains typed repayment promise for both loan operations, original duty and non-denying withdrawal, without false funding claim. Source audit incorrectly demands instruction_denial for explicit cancellation-without-denial; public result remains incomplete. No causal generation improvement is attributed to a reject-only guard."
+    }
+  ],
+  "remaining": "False audit denial requirements and broader semantic reliability remain unresolved. Keep incomplete results non-exportable; no broad accuracy acceptance.",
+  "productionModified": false,
+  "automaticRetries": 0
+}

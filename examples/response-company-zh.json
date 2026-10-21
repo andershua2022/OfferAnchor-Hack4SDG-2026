@@ -1,0 +1,90 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "fixture_company_zh",
+  "revision": 1,
+  "status": "complete",
+  "mode": "simulation",
+  "extraction": {
+    "actions": [
+      {
+        "id": "A1",
+        "actor": "employer",
+        "verb": "pay",
+        "polarity": "described",
+        "resource": "company_money",
+        "recipient": "third_party",
+        "purpose": "付款者是僱主，資金屬公司。",
+        "mechanism": "company_funded_work",
+        "citations": [
+          {
+            "evidenceId": "E2",
+            "start": 8,
+            "end": 25,
+            "quote": "僱主會直接以公司資金向供應商付款。"
+          }
+        ]
+      },
+      {
+        "id": "A2",
+        "actor": "applicant",
+        "verb": "borrow",
+        "polarity": "prohibited",
+        "resource": "personal_borrowing",
+        "recipient": "unknown",
+        "purpose": "明確禁止申請私人貸款。",
+        "mechanism": "personal_borrowing",
+        "citations": [
+          {
+            "evidenceId": "E2",
+            "start": 25,
+            "end": 52,
+            "quote": "不要使用個人資金、申請私人貸款或分享銀行一次性驗證碼。"
+          }
+        ]
+      },
+      {
+        "id": "A3",
+        "actor": "applicant",
+        "verb": "share_otp",
+        "polarity": "prohibited",
+        "resource": "account_control",
+        "recipient": "unknown",
+        "purpose": "明確禁止分享銀行一次性驗證碼。",
+        "mechanism": "credential_control",
+        "citations": [
+          {
+            "evidenceId": "E2",
+            "start": 25,
+            "end": 52,
+            "quote": "不要使用個人資金、申請私人貸款或分享銀行一次性驗證碼。"
+          }
+        ]
+      }
+    ],
+    "claims": [],
+    "comparisons": [],
+    "relationships": [],
+    "unknowns": [
+      {
+        "id": "U1",
+        "kind": "employer_authorization",
+        "relatedActionIds": [],
+        "issue": "對方是否獲僱主授權仍未核實。",
+        "priority": "context"
+      }
+    ],
+    "questions": []
+  },
+  "guidance": "no_personal_financial_request_identified",
+  "referenceIds": [
+    "K_COMPANY_PAID"
+  ],
+  "routeIds": [
+    "LABOUR_GUIDANCE"
+  ],
+  "provenance": {
+    "modelId": null,
+    "promptVersion": "extract-v2.0",
+    "libraryVersion": "draft-0.2.0"
+  }
+}

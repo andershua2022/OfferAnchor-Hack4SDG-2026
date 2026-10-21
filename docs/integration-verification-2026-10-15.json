@@ -1,0 +1,184 @@
+{
+  "project": "OfferAnchor",
+  "date": "2026-10-15",
+  "checkedUtc": "2026-10-15T13:58:54.368804+00:00",
+  "stage": "verified_assembled_local_simulation_candidate",
+  "sourceHeads": {
+    "main": "d6f2f884a40449946a2b6fd98b8d526b3eec8737",
+    "ai": "63875a988af954adc7386d790e0274d2e3999360",
+    "dase": "dffcf556deb2de59a8a9280a7042eb96dc282a89",
+    "design": "e42b87c8953aa9c339790bd83fe9f0124ff42325",
+    "cs": "d1738ef18300354aa16625f72e54d89edabcda9c"
+  },
+  "supersededCSHead": "33967e4822dbc0fcf4d2b56fb65fa13af6a02b6e",
+  "publication": {
+    "authorization": "Representative explicitly requested consolidation into main.",
+    "expectedMain": "d6f2f884a40449946a2b6fd98b8d526b3eec8737",
+    "protocol": "Publish the checked tree only while the expected main and four delivery heads still match; preserve the original five parents.",
+    "publicationReceipt": "The resulting GitHub main commit/history is the publication receipt; this file records prepublication checks, not a self-referential published commit ID."
+  },
+  "versions": {
+    "documentation": "2.2",
+    "contract": "2.0.0",
+    "liveExtraction": "extract-v2.11",
+    "authoredSimulation": "extract-v2.0",
+    "reference": "OfferAnchor-development-annotations-frozen-v2",
+    "node": "24.15.0",
+    "npm": "11.12.1",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "typescript": "7.0.2"
+  },
+  "implementedPath": [
+    "app/preview.tsx",
+    "app/analysis-client.ts",
+    "app/api/analyze/route.ts",
+    "lib/analysis/index.ts",
+    "lib/contracts/index.ts"
+  ],
+  "mode": "simulation",
+  "provider": null,
+  "checks": [
+    {
+      "name": "app-tests",
+      "exitCode": 0,
+      "checkedUtc": "2026-10-15T13:50:22.465328+00:00",
+      "stdoutSha256": "0fa7a8f00a410653d16d78663e17fd26a660dc63a636fe48a2b27e56777475ff",
+      "tests": 13,
+      "pass": 13,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "name": "analysis-tests",
+      "exitCode": 0,
+      "checkedUtc": "2026-10-15T13:50:24.825391+00:00",
+      "stdoutSha256": "edda1557cf093995cb8e9a5efcbbed354257f0002da9dc87a6404e78ce45cb65",
+      "tests": 80,
+      "pass": 80,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "name": "typecheck",
+      "exitCode": 0,
+      "checkedUtc": "2026-10-15T13:59:30.722703+00:00",
+      "stdoutSha256": "4d74cd83b77db7caba9bebf778fec9f9235ca2421aa80453c88e90f82d8d57da"
+    },
+    {
+      "name": "generated-types",
+      "exitCode": 0,
+      "checkedUtc": "2026-10-15T13:50:25.726519+00:00",
+      "stdoutSha256": "ea781a7b1e006e5ad5f324f1ebaa0b53a3e96ed1f598d0507f9170f19aa3a81c"
+    },
+    {
+      "name": "build",
+      "exitCode": 0,
+      "checkedUtc": "2026-10-15T13:59:36.129918+00:00",
+      "stdoutSha256": "051571a3ad8dcaaedcf429eb148421bfcc192012337203c5f9008fdaa2dc7834"
+    },
+    {
+      "name": "browser",
+      "exitCode": 0,
+      "checkedUtc": "2026-10-15T13:50:36.425659+00:00",
+      "stdoutSha256": "54ac699c4a22beea4fd86df4af4d7261ebb8ca3b253039324c47ec68fa1ed6e0"
+    }
+  ],
+  "testTotals": {
+    "appAndApi": 13,
+    "analysisAndRunner": 80,
+    "totalPassed": 93,
+    "failed": 0,
+    "skipped": 0,
+    "scope": "Offline engineering/authored fixture compatibility; no independent model accuracy denominator."
+  },
+  "browser": {
+    "groupsPassed": 4,
+    "browser": "Chrome 154.0.8037.99",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "physicalDevice": false,
+    "observed": [
+      "shared local simulation POST used",
+      "loan/prohibition/unknown and Traditional Chinese rendered",
+      "copy/manual fallback/print protected footer and stale-copy rejection",
+      "source editing invalidates exports",
+      "unsupported/invalid input terminates safely",
+      "no horizontal overflow, browser storage, external evidence requests or page errors in the checked journey"
+    ],
+    "screenshotsVisuallyInspected": true,
+    "screenshotsLocation": "Ignored .local-data/build-checks/preview-mobile.png and result-mobile.png; not a public delivery."
+  },
+  "documentationCheck": {
+    "baseline": "2.2",
+    "contractVersion": "2.0.0",
+    "schemasChecked": 5,
+    "simulationRequestResponsePairs": 8,
+    "canonicalFixtureCitations": 30,
+    "rawProviderFixture": 1,
+    "boundFailureFixture": 1,
+    "unboundFailureFixture": 1,
+    "developmentInputRecords": 18,
+    "provisionalDevelopmentBaseFamilies": 14,
+    "controlInputRecords": 10,
+    "provisionalControlBaseFamilies": 6,
+    "draftCards": 7,
+    "draftRoutes": 4,
+    "localeKeyPairs": 103,
+    "invalidArtifactMutationsRejected": 32,
+    "workPackagesChecked": 15,
+    "startupAssignmentsChecked": 5,
+    "preapprovedOwnerPackages": 15,
+    "dependencyCycles": 0,
+    "blankCsvTemplates": 4,
+    "applicationManifestPresent": true,
+    "singleOwnerPublicFiles": 306,
+    "ownershipGapsOrOverlaps": 0,
+    "markdownFilesChecked": 44,
+    "localLinksChecked": 323,
+    "anchorsChecked": 42,
+    "brokenLocalLinks": 0,
+    "englishProseAndFilenames": "passed",
+    "limits": "Documentation/schema/authored fixture compatibility only. No app/controller/live-model/held-out/student/device/processor effectiveness result."
+  },
+  "preservation": {
+    "runtimeAndDependencyFilesMatched": 41,
+    "runtimeHashesAuthority": "tests/analysis/module-handoff.json",
+    "designTreeAndRootLocales": "Exact source blobs unchanged, including frozen-v1/v2.",
+    "csRuntimeChangesFromLateMerge": 0,
+    "lockfileAndNextConfig": "Exact CS source blobs unchanged.",
+    "communicationOriginals": "Original main source blobs unchanged.",
+    "originalMemberHistory": "Retained as integration parents, including both CS commits.",
+    "privatePaths": "Credentials/configs, personal experiment logs, raw participants, local caches, held-out text and local agent rules excluded."
+  },
+  "technicalReview": {
+    "reviewer": "Read-only Codex integration-review agent",
+    "blockingFindings": 0,
+    "scope": "Shared entry/mode, source/body bounds, response identity, stale exports and exact Design locale preservation. This is technical agent review, not human content or release acceptance."
+  },
+  "newModelCalls": 0,
+  "externalContacts": 0,
+  "deployed": false,
+  "liveAccepted": false,
+  "contentAccepted": false,
+  "independentAccuracy": null,
+  "physicalDeviceChecks": false,
+  "userAcceptance": false,
+  "remainingGates": [
+    "CS/AI-DS: controlled live provider/browser integration and full correction/reply lifecycle",
+    "Communication: source/new-prose approval and deck/submission preparation",
+    "Design: connected interface review and physical devices",
+    "DASE: same-revision independent model scoring and consenting student observations",
+    "Representative: decide and record evidenced release configuration"
+  ],
+  "limits": "A consolidated source tree and local simulation pipeline do not complete all work packages or establish competition readiness, independent accuracy, physical-device or user acceptance.",
+  "postTestIntegrationChanges": {
+    "CSLateMerge": "Verified no runtime/dependency/test delta; retained current setup incorporating both CS corrections.",
+    "sharedManifest": "CS source head/checkpoint only; typecheck and production build rerun after metadata change.",
+    "other": "Current English guides/evidence pointers and check record; no module/policy/schema/fixture/locale change."
+  }
+}

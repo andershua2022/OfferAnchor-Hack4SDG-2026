@@ -1,0 +1,94 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "fixture_funding_note_en",
+  "revision": 2,
+  "status": "complete",
+  "mode": "simulation",
+  "extraction": {
+    "actions": [
+      {
+        "id": "A1",
+        "actor": "applicant",
+        "verb": "perform_work",
+        "polarity": "requested",
+        "resource": "none",
+        "recipient": "unknown",
+        "purpose": "Applicant schedules rather than funds the payment.",
+        "mechanism": "none",
+        "citations": [
+          {
+            "evidenceId": "E1",
+            "start": 0,
+            "end": 33,
+            "quote": "Arrange the payment for tomorrow."
+          },
+          {
+            "evidenceId": "E2",
+            "start": 79,
+            "end": 107,
+            "quote": "I only schedule the payment."
+          }
+        ]
+      },
+      {
+        "id": "A2",
+        "actor": "employer",
+        "verb": "pay",
+        "polarity": "described",
+        "resource": "company_money",
+        "recipient": "third_party",
+        "purpose": "Funding source is described by the user note.",
+        "mechanism": "company_funded_work",
+        "citations": [
+          {
+            "evidenceId": "E2",
+            "start": 18,
+            "end": 77,
+            "quote": "the employer pays the supplier directly using company funds"
+          }
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "other",
+        "text": "Company funding is user-reported context, not independently confirmed.",
+        "status": "user_reported",
+        "citations": [
+          {
+            "evidenceId": "E2",
+            "start": 18,
+            "end": 77,
+            "quote": "the employer pays the supplier directly using company funds"
+          }
+        ],
+        "relatedActionIds": []
+      }
+    ],
+    "comparisons": [],
+    "relationships": [],
+    "unknowns": [
+      {
+        "id": "U1",
+        "kind": "employer_authorization",
+        "relatedActionIds": [],
+        "issue": "Sender authorization is not independently established.",
+        "priority": "context"
+      }
+    ],
+    "questions": []
+  },
+  "guidance": "no_personal_financial_request_identified",
+  "referenceIds": [
+    "K_COMPANY_PAID"
+  ],
+  "routeIds": [
+    "LABOUR_GUIDANCE"
+  ],
+  "provenance": {
+    "modelId": null,
+    "promptVersion": "extract-v2.0",
+    "libraryVersion": "draft-0.2.0"
+  }
+}

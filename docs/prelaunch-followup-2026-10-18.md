@@ -1,0 +1,62 @@
+# 18 October follow-up: plan alignment and generation boundary
+
+**Current release record — 18 October:** [Controlled trial, observed tests and remaining limits](trial-release-2026-10-18.md) is the current runtime/deployment authority. Active source uses extract-v2.24 / context-audit-1.4.0 with unchanged source, recipient and repayment guards; contract 2.0.0 and original fixtures/gold remain unchanged. The v24 controlled free trial is now published at offeranchor-hk.vercel.app with lifetime five-action gating; the owner accepts the original QQ sender temporarily. Portable downloads restore material for a new reading; cloud history is not implemented. The final same-six official v24 comparison has five complete results and one refusal, not an accuracy estimate. Earlier dated checkpoints below remain historical.
+
+This record supplements [the release review](release-readiness-2026-10-18.md); it does not supersede the original frozen labels, test denominators or public contract. Baseline2.2, public API2.0.0, principal owners and D23/D24 pitch selection are unchanged. New model observations must be dated separately from historical results.
+
+**Historical staged overlay, 18 October:** active source-bound profile `extract-v2.19 / source-context-roles-1.0.0`; generation budget 1,024 tokens, audit 512, at most two model calls; 50s model / 53s server / 58s browser / 20s delayed-response timing. Inputs above 192 source units fail closed rather than truncate. Official evaluation of 18 frozen cases against profile 19 is running; outcome pending. `MODEL_CALLS_ENABLED=false` remains under quality hold. Local Google/eight-digit email sign-in is owner-confirmed; Supabase public callback is configured. Shared Supabase passed 34 isolated checks over 61 HTTP requests for temporary auth/quota metadata only. Vercel project/domain exist but code is not deployed. Opt-in history remains local; cloud history/sync and source-material storage are not implemented. The dated v2.11-v2.13 observations below are historical and do not describe the current runtime or evaluation result.
+
+## Original-plan alignment before optimization
+
+The shared plan remains financial/account interpretation at a recruitment/onboarding decision point, students first for validation. It is not universal employment-law/privacy analysis or employer authentication. The following standards remain binding:
+
+- Eight exact authored simulations retain their original evidence, locale, clarification count, fixed output and `extract-v2.0`/model=null identity. New or edited text cannot silently borrow their fixed verdict.
+- Design frozen-v2 has 18 records, 28 action rows, 14 base families, 10 control records in 6 control families. DEV11/12/17/18 are variants, not extra independent families. Exposed development examples are not untouched held-out evidence.
+- DEV03 stays applicant/pay/requested with unknown/unclear funds plus an action-linked blocking resource unknown and clarify guidance. An unlock condition or applicant performer does not establish personal funding. DEV05 retains its unknown performer.
+- Prohibition changes polarity, not the operation: a forbidden OTP disclosure keeps share_otp/account_control/credential_control. Ordinary payroll information is account_information/payroll_information. A bare personal-money prohibition can remain pay/personal_money/none. Company-funding context can legitimately be other/company_money/company_funded_work (DEV18), rather than an invented transfer.
+- Explicit borrowing and a separate movement of its proceeds remain distinct supported operations, both personal_borrowing. Actor is the performer, not the message sender; an unnamed nominated account/portal has unknown recipient. A repayment promise remains an unverified stated claim.
+- Later denial retains the original demand and its exact evidence. Bare withdrawal is not a new financial operation or automatic clearance. Contradicts requires incompatible statements about the same event and strictly ordered evidence; two statements agreeing that no personal funds were requested do not contradict one another.
+- Raw schema, literal one-based occurrence resolution, exact UTF-16 citations, canonical semantics, question budgets and deterministic guidance all remain enforced. No invalid/stale/incomplete result can activate export.
+- Whole-case task pass still requires all applicable semantic fields, promises, guidance, citations, unknowns and contradictions. Safe failure counts as incomplete, not a pass. 90%/95% remain planning targets, not an achieved score.
+
+The current model adapter is the same production analysis/policy entry used by the web API. A compact internal wire may reduce the number of fields the model must freely combine; it cannot change these meanings, rewrite old observations or prove correct operation selection. Invalid compact output must fail before expansion; expanded output must still pass every existing downstream boundary.
+
+## What the current prior results establish
+
+The original five main/backup demo folders are byte-exact request/response copies of the shared simulation registry. The separate original-plan-registry folder now preserves all eight pairs. CASE-PROVENANCE.md records this; these are useful rehearsal cases, not real-company mail or independent model accuracy evidence.
+
+The first complex live probe used extract-v2.11 and failed a prohibited credential tuple. The subsequent bounded extract-v2.12 batch used five original-plan development cases plus that supplemental hard case. Five returned complete schema-valid results; the complex case still failed. Preliminary tuple checks were4/6, not a whole-case accuracy score. A company-control extra prohibition had direct source support and needs documented semantic adjudication rather than altered gold; loan recipient and missing-payer question-link concerns also remain in the source-backed review. All27 produced quote strings were literal matches, which does not prove their interpretations correct.
+
+The six calls used21,962tokens (18,537input,3,425output); reported cached input was10,880. At the checked Beijing rates, the estimated fee is CNY 0.231504 with reported caching, or CNY 0.345744 at uncached list rates. No invoice or balance was inspected. Calls were isolated uses of the same production handler, not a public-site load/quota test. Paid application tools remain disabled pending the recorded quality/release decision.
+
+## Scope of the final authorized check
+
+The representative approved internal compact generation and at most3additional real calls. Freeze the selected inputs and expectations before those calls; preserve each raw response, expanded/accepted result or error, token usage and failure. Use the known hard case plus original main task and company-funded control. Do not switch models, retry automatically, touch held-out cases, or exceed the cap. Record generated prompt/config identity separately from the old v2.11 recorded replay; replaying old captures is zero new calls, not new model validation.
+
+Language, deployment and packaging outcomes are recorded in the dated checkpoint after observed checks. Historical Vercel preparation described shared authentication/quota state as a pending engineering requirement; that state layer has since passed isolated checks, while application deployment and hosted acceptance remain pending.
+
+## Historical bounded real-model check: profile v2.13
+
+The final authorized 3 calls are finished, with 0 automatic retries and no model switch. Each used the frozen original request, the production workspace handler, qwen3.8-max, extract-v2.13 and the strict compact-operations-1.0.0 source-bound generation adapter. The exact runtime source hashes were frozen before calls; the as-called v2.13 index is retained before rollback. No real user documents or held-out cases were used.
+
+| Case | Accepted structure / actual guidance | Source-backed development review |
+| --- | --- | --- |
+| Original task-zh | Complete; pause_requested_action | **Failed**: an extra employer/share_otp/prohibited action was invented. Its literal E2 quote discusses product orders and earlier commission, not credentials or a prohibition. The correct main payment reading does not offset the unsupported extra action. |
+| Original company-en | Complete; no_personal_financial_request_identified | Source-supported interpretation: all 4 actions have evidence, including the extra own-money prohibition. The original automatic tuple comparison stays false because fixed authored output groups it differently; gold and original results were not changed. |
+| Supplemental complex case | Complete; pause_requested_action | Four main action tuples, borrowing/proceeds, repayment as an unverified claim, prior demand/later denial and comparisons are retained. The prior invalid credential tuple is resolved. However, payroll/OTP recipients were inferred as employer where the receiver role is unstated, failing the predeclared recipient check. Do not call this whole-case perfect. |
+
+All18 produced citations match exact current UTF-16 ranges, including the quote attached to the hallucinated action. This demonstrates why citation validity is not semantic correctness. Original preliminary automatic results remain 1/3; separately documented source interpretation does not replace that result with an invented accuracy score. This is an exposed development recheck, not human, held-out or participant acceptance.
+
+Total 11,759 tokens:9,806 input and1,953 output, with 6,144 reported cached input. Observed per-case handler times:9.505s,8.403s and15.307s. At the previously checked Beijing rates, estimated fee is CNY 0.123468 using reported cache usage (CNY 0.187980 at uncached list rates). No invoice was inspected. The latest 3 calls plus prior 6 and initial 1 make 10 calls in this dated review; this is not the project's lifetime count. Earlier failures remain separately preserved.
+
+**Historical decision:** candidate v2.13 was not accepted, and the default entry was then restored to extract-v2.12 with `MODEL_CALLS_ENABLED=false`. This describes that earlier checkpoint, not current profile selection. It is not evidence that v2.12 was sufficiently accurate or publicly approved. Preserve the compact adapter, v2.13 captures and failures as historical evidence; current profile 19 acceptance is pending its separate frozen evaluation.
+
+Remaining model work is evidence support and receiver/performer uncertainty, not merely JSON combinations. Do not add more model calls, change a label, remove the Chinese case, silently drop the unsupported action, or advertise a90%/95% achievement. Broader untouched assessment and the original strong-AI/student workflow comparison remain separate gates.
+
+## Language and deployment handoff
+
+The landing no longer offers Simplified Chinese. Landing, essential workspace controls and login share offeranchor.ui.locale with en-HK/zh-Hant-HK, safe storage fallback and cross-tab updates. Original evidence remains untranslated; English-only fixed readings are labelled. Language changes invalidate the prior result. Essential UI localization is implemented; original documents, public sources and some secondary editorial copy can remain English. This is written HK Traditional Chinese, not a Cantonese speech feature. Browser/narrow-layout acceptance is recorded in the release review after the final build.
+
+The mobile language popover now stays within the viewport. Default prepared examples remain labelled fixed simulations with no paid model calls. The separate demo pack includes all 8 original registry pairs as provenance, and the five-file-format rehearsal cases retain exact original request/response bytes. Its guide now follows the D23 timing; denial, loans, file intake and search do not displace evaluation in the five-minute pitch.
+
+[Historical deployment note, superseded for project/state setup:] at that checkpoint no deployment or domain purchase had occurred and shared challenge/quota storage was still pending. The Vercel project and free `offeranchor-hk.vercel.app` domain now exist; shared Supabase coordination has passed 34 checks over 61 HTTP requests, and the public callback is configured. Application code remains undeployed, so actual-host callback/sender checks and production authentication acceptance remain pending. Local owner-confirmed Google/email acceptance does not establish production-host acceptance.

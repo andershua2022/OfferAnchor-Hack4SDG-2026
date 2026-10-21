@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-19",
+  "phase": "loan_funding_v29_first_attempts",
+  "sourceScope": "current isolated candidate only",
+  "model": "qwen3.8-max",
+  "volcCases": [
+    "F01",
+    "F02",
+    "F03",
+    "F04"
+  ],
+  "volcRawRequestCap": 8,
+  "aliCases": [
+    "F01",
+    "F02"
+  ],
+  "aliRawRequestCap": 4,
+  "observedTokenStop": 90000,
+  "automaticRetries": 0,
+  "concurrency": 1,
+  "syntheticExposedDevelopmentOnly": true,
+  "independentAccuracy": false,
+  "items": [
+    {
+      "id": "F01",
+      "baseCase": "RR06",
+      "kind": "non_denial",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "loan_funding_20261019_F01",
+        "revision": 2,
+        "locale": "zh-Hant-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "offer",
+            "label": "Fictional final-round source E1",
+            "sequence": 1,
+            "text": "\u4f60\u5605\u517c\u8077\u8077\u8cac\u4fc2\u6574\u7406\u6bcf\u9031\u5b58\u8ca8\u5831\u544a\u3002"
+          },
+          {
+            "id": "E2",
+            "kind": "instruction",
+            "label": "Fictional final-round source E2",
+            "sequence": 2,
+            "text": "\u8acb\u4f60\u4ee5\u500b\u4eba\u540d\u7fa9\u501f\u6e2f\u5e6312,000\u5143\uff0c\u518d\u5c07\u540c\u4e00\u7b46\u8cb8\u6b3e\u5168\u6578\u8f49\u5230\u5370\u5237\u4f9b\u61c9\u5546\u6236\u53e3\uff0c\u5148\u53ef\u4ee5\u9818\u53d6\u4e0b\u4e00\u6279\u5de5\u4f5c\u3002"
+          },
+          {
+            "id": "E3",
+            "kind": "reply",
+            "label": "Fictional final-round source E3",
+            "sequence": 3,
+            "text": "\u516c\u53f8\u627f\u8afe\u4ee3\u4f60\u6e05\u9084\u5462\u7b46\u79c1\u4eba\u8cb8\u6b3e\u5605\u672c\u91d1\u53ca\u5229\u606f\uff0c\u8f49\u7540\u4f9b\u61c9\u5546\u55f0\u7b46\u8cb8\u6b3e\u6b3e\u9805\u90fd\u6703\u7531\u516c\u53f8\u8ca0\u64d4\u3002"
+          },
+          {
+            "id": "E4",
+            "kind": "reply",
+            "label": "Fictional final-round source E4",
+            "sequence": 4,
+            "text": "\u73fe\u53d6\u6d88\u4e0a\u8ff0\u501f\u8cb8\u540c\u8f49\u8cec\u8981\u6c42\uff1b\u5462\u500b\u53d6\u6d88\u5514\u4ee3\u8868\u6211\u54cb\u5426\u8a8d\u66fe\u7d93\u767c\u51fa\u55f0\u5169\u9805\u8981\u6c42\u3002"
+          }
+        ]
+      },
+      "expectations": {
+        "status": "complete",
+        "guidance": "pause_requested_action",
+        "history": "non_denial",
+        "companyFundingIsNotRepayment": true,
+        "literalCitations": true,
+        "noUnsupportedExtraActions": true
+      }
+    },
+    {
+      "id": "F02",
+      "baseCase": "RR03",
+      "kind": "company",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "loan_funding_20261019_F02",
+        "revision": 2,
+        "locale": "zh-Hant-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "instruction",
+            "label": "Fictional final-round source E1",
+            "sequence": 1,
+            "text": "\u8acb\u4f60\u8f49\u8cec\u6e2f\u5e63680\u5143\u7540\u5370\u5237\u4f9b\u61c9\u5546\uff0c\u4f5c\u70ba\u4e0b\u4e00\u6279\u5de5\u4f5c\u6750\u6599\u8cbb\u3002\u6b3e\u9805\u5fc5\u9808\u5148\u4ed8\uff0c\u5de5\u4f5c\u5148\u53ef\u4ee5\u958b\u59cb\u3002"
+          },
+          {
+            "id": "E2",
+            "kind": "reply",
+            "label": "Fictional final-round source E2",
+            "sequence": 2,
+            "text": "\u8b1b\u6e05\u695a\u4e0a\u4e00\u7b46680\u5143\u6750\u6599\u8cbb\uff1a\u8acb\u4f60\u7528\u516c\u53f8\u652f\u51fa\u6236\u53e3\u5167\u5605\u516c\u53f8\u6b3e\u9805\u8f49\u8cec\u7540\u540c\u4e00\u9593\u5370\u5237\u4f9b\u61c9\u5546\u3002\u5207\u52ff\u628a\u4f60\u81ea\u5df1\u5605\u9322\u8f49\u8cec\u7540\u5370\u5237\u4f9b\u61c9\u5546\u569f\u89e3\u9396\u540c\u4e00\u6279\u5de5\u4f5c\u3002\u5207\u52ff\u4ee5\u4f60\u500b\u4eba\u540d\u7fa9\u501f\u79c1\u4eba\u8cb8\u6b3e\u3002"
+          }
+        ]
+      },
+      "expectations": {
+        "status": "complete",
+        "guidance": "no_personal_financial_request_identified",
+        "history": "company",
+        "companyFundingIsNotRepayment": true,
+        "literalCitations": true,
+        "noUnsupportedExtraActions": true
+      }
+    },
+    {
+      "id": "F03",
+      "baseCase": "RR06",
+      "kind": "non_denial_paraphrase",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "loan_funding_20261019_F03",
+        "revision": 2,
+        "locale": "zh-Hant-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "offer",
+            "label": "Fictional final-round source E1",
+            "sequence": 1,
+            "text": "\u4f60\u5605\u517c\u8077\u8077\u8cac\u4fc2\u6574\u7406\u6bcf\u9031\u5b58\u8ca8\u5831\u544a\u3002"
+          },
+          {
+            "id": "E2",
+            "kind": "instruction",
+            "label": "Fictional final-round source E2",
+            "sequence": 2,
+            "text": "\u8acb\u4f60\u4ee5\u500b\u4eba\u540d\u7fa9\u501f\u6e2f\u5e6312,000\u5143\uff0c\u518d\u5c07\u540c\u4e00\u7b46\u8cb8\u6b3e\u5168\u6578\u8f49\u5230\u5370\u5237\u4f9b\u61c9\u5546\u6236\u53e3\uff0c\u5148\u53ef\u4ee5\u9818\u53d6\u4e0b\u4e00\u6279\u5de5\u4f5c\u3002"
+          },
+          {
+            "id": "E3",
+            "kind": "reply",
+            "label": "Fictional final-round source E3",
+            "sequence": 3,
+            "text": "\u516c\u53f8\u627f\u8afe\u4ee3\u4f60\u6e05\u9084\u5462\u7b46\u79c1\u4eba\u8cb8\u6b3e\u5605\u672c\u91d1\u53ca\u5229\u606f\uff0c\u8f49\u7540\u4f9b\u61c9\u5546\u55f0\u7b46\u8cb8\u6b3e\u6b3e\u9805\u90fd\u6703\u7531\u516c\u53f8\u8ca0\u64d4\u3002"
+          },
+          {
+            "id": "E4",
+            "kind": "reply",
+            "label": "Fictional final-round source E4",
+            "sequence": 4,
+            "text": "\u6211\u54cb\u800c\u5bb6\u64a4\u56de\u524d\u9762\u5605\u500b\u4eba\u501f\u8cb8\u53ca\u8f49\u6b3e\u5b89\u6392\uff1b\u4e4b\u524d\u78ba\u5be6\u63d0\u904e\u5462\u5169\u500b\u8981\u6c42\uff0c\u4eca\u6b21\u53ea\u4fc2\u505c\u6b62\u7e7c\u7e8c\uff0c\u5514\u4fc2\u8a71\u55f0\u5572\u8981\u6c42\u5f9e\u4f86\u5187\u51fa\u73fe\u3002"
+          }
+        ]
+      },
+      "expectations": {
+        "status": "complete",
+        "guidance": "pause_requested_action",
+        "history": "non_denial_paraphrase",
+        "companyFundingIsNotRepayment": true,
+        "literalCitations": true,
+        "noUnsupportedExtraActions": true
+      }
+    },
+    {
+      "id": "F04",
+      "baseCase": "RR06",
+      "kind": "genuine_denial",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "loan_funding_20261019_F04",
+        "revision": 2,
+        "locale": "zh-Hant-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "offer",
+            "label": "Fictional final-round source E1",
+            "sequence": 1,
+            "text": "\u4f60\u5605\u517c\u8077\u8077\u8cac\u4fc2\u6574\u7406\u6bcf\u9031\u5b58\u8ca8\u5831\u544a\u3002"
+          },
+          {
+            "id": "E2",
+            "kind": "instruction",
+            "label": "Fictional final-round source E2",
+            "sequence": 2,
+            "text": "\u8acb\u4f60\u4ee5\u500b\u4eba\u540d\u7fa9\u501f\u6e2f\u5e6312,000\u5143\uff0c\u518d\u5c07\u540c\u4e00\u7b46\u8cb8\u6b3e\u5168\u6578\u8f49\u5230\u5370\u5237\u4f9b\u61c9\u5546\u6236\u53e3\uff0c\u5148\u53ef\u4ee5\u9818\u53d6\u4e0b\u4e00\u6279\u5de5\u4f5c\u3002"
+          },
+          {
+            "id": "E3",
+            "kind": "reply",
+            "label": "Fictional final-round source E3",
+            "sequence": 3,
+            "text": "\u516c\u53f8\u627f\u8afe\u4ee3\u4f60\u6e05\u9084\u5462\u7b46\u79c1\u4eba\u8cb8\u6b3e\u5605\u672c\u91d1\u53ca\u5229\u606f\uff0c\u8f49\u7540\u4f9b\u61c9\u5546\u55f0\u7b46\u8cb8\u6b3e\u6b3e\u9805\u90fd\u6703\u7531\u516c\u53f8\u8ca0\u64d4\u3002"
+          },
+          {
+            "id": "E4",
+            "kind": "reply",
+            "label": "Fictional final-round source E4",
+            "sequence": 4,
+            "text": "\u73fe\u53d6\u6d88\u4e0a\u8ff0\u501f\u8cb8\u540c\u8f49\u8cec\u8981\u6c42\uff1b\u6211\u54cb\u5f9e\u672a\u53eb\u4f60\u4ee5\u500b\u4eba\u540d\u7fa9\u501f\u8cb8\uff0c\u4ea6\u5f9e\u672a\u8981\u6c42\u4f60\u5c07\u8cb8\u6b3e\u8f49\u7540\u4f9b\u61c9\u5546\u3002"
+          }
+        ]
+      },
+      "expectations": {
+        "status": "complete",
+        "guidance": "pause_requested_action",
+        "history": "genuine_denial",
+        "companyFundingIsNotRepayment": true,
+        "literalCitations": true,
+        "noUnsupportedExtraActions": true
+      }
+    }
+  ],
+  "decisionRule": "Inspect complete semantic outputs and all failures. Do not silently retry/select successes. Optimize only a reproduced defect. Alibaba comparison is allowed only after source review/freeze; no publication/deployment."
+}

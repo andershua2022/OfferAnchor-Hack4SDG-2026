@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-18",
+  "sourceProfile": "extract-v2.28",
+  "audit": "context-audit-1.7.0",
+  "adapter": "source-context-roles-events-1.2.0",
+  "promiseFundingGuard": "promise-funding-1.0.0",
+  "contract": "2.0.0",
+  "tests": {
+    "integrationPassed": 357,
+    "compatibilityPassed": 93,
+    "exportedCheckoutCompatibilityPassed": 93,
+    "webpackProductionBuild": "passed",
+    "sourceTypecheck": "passed; final build includes TypeScript",
+    "workspaceBrowser": "passed",
+    "accountBrowser": "passed with synthetic auth",
+    "attachmentBrowser": "passed with synthetic OCR",
+    "offlineSavedOutputReplayAttempts": 15,
+    "replayNetworkCalls": 0
+  },
+  "officialProviderReview": "../evals/repair-v28/official-provider-review.json",
+  "privateEarlierReview": "../evals/repair-v28/reviewed-results.json",
+  "guardReview": "../evals/repair-v28/submission-guard-replay.json",
+  "secretScan": {
+    "exactCredentialMatches": 0,
+    "authorizedCredentialCategories": 7,
+    "trackedPrivateOrGeneratedFiles": []
+  },
+  "originalGoldChanged": false,
+  "publicContractFieldsChanged": false,
+  "cleanPinnedToolchainInstallTested": false,
+  "hostNode": "25.6.0",
+  "teamPinnedNode": "24.15.0",
+  "teamPinnedNpm": "11.12.1",
+  "independentHumanOrHeldOutAccuracyEstablished": false,
+  "knownLimit": "False audit denial requirements and broader model-semantic reliability remain; incomplete/stale results cannot export.",
+  "deployment": {
+    "existingPublicProfile": "extract-v2.24",
+    "existingPublicUrl": "https://offeranchor-hk.vercel.app",
+    "automaticGitDeploymentEnabled": false,
+    "deployInvoked": false,
+    "runningCanonicalFilesWritten": false
+  },
+  "acceptance": "Controlled competition-MVP source, not unrestricted semantic-accuracy acceptance"
+}

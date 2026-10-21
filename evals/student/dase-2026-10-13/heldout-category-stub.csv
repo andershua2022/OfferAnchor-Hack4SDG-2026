@@ -1,0 +1,17 @@
+planned_family_id,category,control_or_risk,status,priority,demo_role_coverage,notes
+HO-F01,task_recharge_personal_unlock,risk,stub_planned,P0,recharge_like_DEV03_role,Fresh wording only; not a copy of DEV03; case body pending under .local-data/heldout/
+HO-F02,personal_borrowing_onward_transfer,risk,stub_planned,P0,borrowing_like_DEV01_role,Fresh wording only; not a copy of DEV01; case body pending
+HO-F03,company_funded_borrow_prohibition,control,stub_planned,P0,contrast_like_DEV02_role,Fresh company-paid control; case body pending
+HO-F04,company_funded_otp_prohibition,control,stub_planned,P1,none,May merge with HO-F03 as one family with two actions; case body pending
+HO-F05,ordinary_work_expense_boundary,control,stub_planned,P1,none,Expense ≠ recharge; case body pending
+HO-F06,payroll_information_not_control,control,stub_planned,P1,none,Info request; OTP prohibited if present; case body pending
+HO-F07,credential_control_banking_otp,risk,stub_planned,P0,credential_like_DEV14_role,Positive OTP/control demand; fresh wording; not a copy of DEV14; case body pending
+HO-F08,unclear_payer_or_funds,confusable,stub_planned,P1,none,Clarify path; AI focus unknown funding; case body pending
+HO-F09,third_party_description_only,control,stub_planned,P1,none,No request of applicant; case body pending
+HO-F10,promise_or_website_as_repayment_proof,risk,stub_planned,P1,none,Promise remains claim; case body pending
+HO-F11,changed_nonfinancial_duty,control,stub_planned,P1,none,No pay/borrow; case body pending
+HO-F12,injection_with_payment_demand,risk,stub_planned,P1,none,Embedded command is data; case body pending
+HO-F13,borrow_unknown_recipient,risk,stub_planned,P1,none,Still pause if borrow clear; case body pending
+HO-F14,contradiction_denial_after_demand,risk,stub_planned,P0,none,Preserve both; AI focus later denial; case body pending
+HO-F15,already_acted_user_reported,risk,stub_planned,P1,none,user_reported ≠ recovery; case body pending
+HO-F16,company_funded_language_or_unicode_variant,control_variant,stub_planned,attach,none,Attach as variant to a held-out company-funded base; not an independent base; case body pending

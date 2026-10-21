@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-19",
+  "scope": "Exposed own fictional development cases; no held-out/human accuracy claim",
+  "baseCommit": "5987823da8ea38d1b3219291c5e59ff1ccfd2fe0",
+  "generation": "extract-v2.29",
+  "audit": "context-audit-1.8.0",
+  "adapter": "source-context-roles-events-1.3.0",
+  "guardRelaxed": false,
+  "extraRepairOrRetryStep": false,
+  "uniqueSyntheticScenarios": 4,
+  "automaticRetries": 0,
+  "results": [
+    {
+      "caseId": "F01",
+      "status": "complete",
+      "guidance": "pause_requested_action",
+      "rawRequests": 2,
+      "totalTokens": 7300,
+      "elapsedMs": 39897,
+      "citations": 5,
+      "provider": "volc",
+      "sourceCorrectComplete": true
+    },
+    {
+      "caseId": "F02",
+      "status": "complete",
+      "guidance": "no_personal_financial_request_identified",
+      "rawRequests": 2,
+      "totalTokens": 7155,
+      "elapsedMs": 40199,
+      "citations": 5,
+      "provider": "volc",
+      "sourceCorrectComplete": true
+    },
+    {
+      "caseId": "F03",
+      "status": "complete",
+      "guidance": "pause_requested_action",
+      "rawRequests": 2,
+      "totalTokens": 7393,
+      "elapsedMs": 40204,
+      "citations": 5,
+      "provider": "volc",
+      "sourceCorrectComplete": true
+    },
+    {
+      "caseId": "F04",
+      "status": "complete",
+      "guidance": "pause_requested_action",
+      "rawRequests": 2,
+      "totalTokens": 7318,
+      "elapsedMs": 43387,
+      "citations": 5,
+      "provider": "volc",
+      "sourceCorrectComplete": true
+    },
+    {
+      "caseId": "F01",
+      "status": "complete",
+      "guidance": "pause_requested_action",
+      "rawRequests": 2,
+      "totalTokens": 7361,
+      "elapsedMs": 42325,
+      "citations": 5,
+      "provider": "ali",
+      "sourceCorrectComplete": true
+    },
+    {
+      "caseId": "F02",
+      "status": "complete",
+      "guidance": "no_personal_financial_request_identified",
+      "rawRequests": 2,
+      "totalTokens": 7155,
+      "elapsedMs": 41443,
+      "citations": 5,
+      "provider": "ali",
+      "sourceCorrectComplete": true
+    }
+  ],
+  "volc": {
+    "attempts": 4,
+    "rawRequests": 8,
+    "inputTokens": 21572,
+    "outputTokens": 7594,
+    "totalTokens": 29166,
+    "responseMode": "json_object"
+  },
+  "ali": {
+    "attempts": 2,
+    "rawRequests": 4,
+    "inputTokens": 10664,
+    "outputTokens": 3852,
+    "totalTokens": 14516,
+    "responseMode": "json_schema"
+  },
+  "integratedChecks": {
+    "integration": {
+      "pass": 367,
+      "fail": 0
+    },
+    "compatibility": {
+      "pass": 93,
+      "fail": 0
+    },
+    "localWebpackBuild": "passed",
+    "browser": "simulation HTTP and disclosed synthetic live passed",
+    "staticReview": "independent read-only reviewer found no actionable issues",
+    "frontendAndSchemaFilesByteIdentical": 167,
+    "realUserTrialConsumed": 0
+  },
+  "rollout": {
+    "publicSource": "published",
+    "production": "promoted after both actual staged cases passed",
+    "deployedCodeCommit": "bf2934f5fe6433b094d10ac2d8ce2f4c5694ba81",
+    "deploymentId": "dpl_A9WRv9oi9PFi3TZXyN23mLxaYJzE",
+    "publicUrl": "https://offeranchor-hk.vercel.app",
+    "sharedBudget": 60,
+    "accountLifetimeActions": 5,
+    "currentReceipt": "judging-release-2026-10-19.json"
+  },
+  "costCny": null,
+  "costNote": "Actual regional billing not verified. 43,682 tokens across 12 raw requests; do not infer cost or provider identity from model aliases.",
+  "privacyCheck": {
+    "knownCredentialCategoriesCompared": 7,
+    "staticFilesScanned": 65,
+    "publicHistoryBlobsScanned": 496,
+    "knownCredentialMatches": 0,
+    "credentialValuesPrintedOrUploaded": false,
+    "trackedSourceFilesScanned": 514,
+    "unreviewedPersonalEmailCandidates": 0
+  },
+  "historicalQuotaHold": {
+    "publicSource": {
+      "published": true,
+      "codeCommit": "6d243f8dfde969ec44ee3c5018faf5d804d04545"
+    },
+    "stagedDeployment": {
+      "id": "dpl_EpUjUhF6wahUxq5Neh6aoqDAcSZF",
+      "state": "READY",
+      "workstationHttp": 200,
+      "loginHttp": 200,
+      "accountConfigured": true,
+      "emailDelivery": "public",
+      "originForProgrammaticStageTest": "canonical product Origin; protected unique deployment URL is not a real user auth test"
+    },
+    "hostedModelGate": {
+      "caseId": "F01",
+      "http": 429,
+      "status": "rejected",
+      "errorCode": "quota_exceeded",
+      "rawModelRequests": 0,
+      "retryAfterSeconds": 24222,
+      "exactCounterCause": "not disclosed by endpoint; cohort/global/shared limits cannot be distinguished from this response",
+      "normalControlAttempted": false,
+      "normalControlNotAttemptedReason": "Known shared limit, do not issue another blocked call or reset quota"
+    },
+    "production": {
+      "promoted": false,
+      "priorV24TargetRetained": true,
+      "priorDeploymentId": "dpl_686TaXrbCjx7sN33nC2GVftZoZCo"
+    },
+    "trialPolicy": {
+      "limit": 5,
+      "period": "lifetime",
+      "unit": "ai_action_attempt",
+      "changed": false
+    },
+    "sharedLimitChangedOrReset": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-21",
+  "scope": "public_functional_source_only",
+  "baselineRevision": "8d6183007f514b824e67ce34d3a55faa887b4da9",
+  "coreFilesByteIdentical": 78,
+  "integrationPassed": 442,
+  "aiOfflinePassed": 90,
+  "productionBuild": "passed: Next.js webpack and TypeScript",
+  "browser": {
+    "passed": true,
+    "simulationServerChecks": 2,
+    "preparedCalls": 0,
+    "invalidJsonCalls": 0,
+    "downloadVerified": true,
+    "localTextImportVerified": true,
+    "knowledgeSourcesVerified": true,
+    "passwordInputMasked": true,
+    "productionArtRequests": 0,
+    "paidModelCalls": 0
+  },
+  "originalProductFilesPreserved": 531,
+  "projectSecretsMatchedInCandidate": 0,
+  "credentialsIncluded": false,
+  "originalVisualSourceIncluded": false,
+  "ordinaryAccountLimit": 5,
+  "pendingFinalsCodePublished": false,
+  "newPaidModelCalls": 0,
+  "remoteHistoryReplacementAuthorized": true,
+  "deploymentPerformed": false,
+  "limits": [
+    "Existing installed dependencies reused; a clean pinned npm install was not performed.",
+    "Full product design/frame browser suites are not part of this kit.",
+    "No new independent accuracy measurement or hosted account login acceptance.",
+    "History changes cannot recall old downloads, host caches or website-delivered assets."
+  ]
+}

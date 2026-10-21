@@ -1,0 +1,289 @@
+{
+  "project": "OfferAnchor",
+  "recordDate": "2026-10-15",
+  "revision": "2026-10-15-r7-frozen-v2",
+  "scope": "AI/DS exact teammate intake, developer-reference migration and engineering validation; not independent accuracy",
+  "checkedUtc": "2026-10-15T02:51:06.398702+00:00",
+  "remoteAtIntake": {
+    "main": "d6f2f884a40449946a2b6fd98b8d526b3eec8737",
+    "prs": [
+      {
+        "number": 8,
+        "state": "open",
+        "draft": true,
+        "updated_at": "2026-10-14T16:19:43Z",
+        "head": "e42b87c8953aa9c339790bd83fe9f0124ff42325",
+        "branch": "design/wp06-human-reviewed-20261014"
+      },
+      {
+        "number": 7,
+        "state": "open",
+        "draft": false,
+        "updated_at": "2026-10-13T08:57:59Z",
+        "head": "25b6f094b4b89cd018c153bd1cdb2e4517994c58",
+        "branch": "dase/wp10-align-2026-10-13"
+      },
+      {
+        "number": 6,
+        "state": "open",
+        "draft": true,
+        "updated_at": "2026-10-14T10:46:24Z",
+        "head": "3d324e6269e7ed28f6501435b0b6c784fd901864",
+        "branch": "handoff/ai-ds-dase-20261013"
+      }
+    ],
+    "branches": [
+      {
+        "name": "dase/start-dase-drafts-2026-10-13",
+        "sha": "7bdf3ffd6249c43427cf39093abb6a1616e72f2d"
+      },
+      {
+        "name": "dase/wp10-align-2026-10-13",
+        "sha": "25b6f094b4b89cd018c153bd1cdb2e4517994c58"
+      },
+      {
+        "name": "design/wp06-human-reviewed-20261014",
+        "sha": "e42b87c8953aa9c339790bd83fe9f0124ff42325"
+      },
+      {
+        "name": "handoff/ai-ds-dase-20261013",
+        "sha": "3d324e6269e7ed28f6501435b0b6c784fd901864"
+      },
+      {
+        "name": "main",
+        "sha": "d6f2f884a40449946a2b6fd98b8d526b3eec8737"
+      }
+    ]
+  },
+  "teamLocalMain": "d6f2f884a40449946a2b6fd98b8d526b3eec8737",
+  "teamLocalMainClean": true,
+  "teamLocalMainFastForwardedFrom": "291b8b8eee81e8a8aff1ff6e0278266f75e9bccd",
+  "sourceCommit": "e42b87c8953aa9c339790bd83fe9f0124ff42325",
+  "DesignFilesVerified": 92,
+  "newDesignFiles": 25,
+  "original67DesignFilesUnchanged": true,
+  "activeReferenceVersion": "OfferAnchor-development-annotations-frozen-v2",
+  "manifestSha256": "080cbe6388d53ad7a73b142eafd99a0e19b907bfda4fb3744bddbc8df4d2d7a0",
+  "DEV03Status": "Design_reference_v2_resolved_and_AI_DS_imported",
+  "cases": 18,
+  "actionRows": 28,
+  "primaryFamilies": 14,
+  "controlRecords": 10,
+  "controlFamilies": 6,
+  "authoredActionProjectionsStructurallyValidated": 18,
+  "runtimeFilesUnchanged": true,
+  "runtimeFiles": 41,
+  "runtimePrompt": "extract-v2.11",
+  "publicContract": "2.0.0",
+  "observedChecks": [
+    {
+      "name": "offline-tests",
+      "exitCode": 0,
+      "status": "passed",
+      "tests": 384,
+      "pass": 384,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "name": "generated-types",
+      "exitCode": 0,
+      "status": "passed"
+    },
+    {
+      "name": "strict-types",
+      "exitCode": 0,
+      "status": "passed"
+    }
+  ],
+  "simulationsComplete": 8,
+  "contentGateOpen": false,
+  "newModelCalls": 0,
+  "historicalModelAttempts": 66,
+  "independentAccuracy": null,
+  "CSAppAccepted": false,
+  "DASEExactV2ImportAcknowledged": false,
+  "CommunicationContentAccepted": false,
+  "physicalDeviceOrUserSessionsObserved": false,
+  "heldOutTextRead": false,
+  "rawIndependentAnnotationsSemanticallyInspected": false,
+  "mainMerged": false,
+  "sourceFiles": [
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/README.md",
+      "blobSHA": "d7b5a9bb4e54c86bc5f66f30e2454bee5ecdd284",
+      "sha256": "7c3144d15c8c6807554541cab79dd720f40d9e2ae770bce595534bcbcbbc947c",
+      "bytes": 7027
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/adjudicated-annotations.csv",
+      "blobSHA": "c27b7cb1e1d5c7cba0233128dcb73dc48fccbc83",
+      "sha256": "d6b5cde6b4f4f248da3c0cc8f71bd1d913e7d649d1e3f9ca92d3b42ee7b1f0fa",
+      "bytes": 30880
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/canonical-action-check-inputs.json",
+      "blobSHA": "c0ddfd0647c9457312ed5254b992de3c0942dc9a",
+      "sha256": "bf343f4bb57862ec40a171477b0fe11b719e87337c684019f31ee6f7a022dbcd",
+      "bytes": 37280
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/canonical-action-check-results.json",
+      "blobSHA": "932cd0a916772366b635e9d9cfb8f2fe9d222200",
+      "sha256": "1ddd9b8f028d1e7e402c9a3631c8bc6f4f7ea014ff18d2f4bb948404fd4a2709",
+      "bytes": 6462
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/canonical-selected-inputs.json",
+      "blobSHA": "9bff50ed6f410610b498ab5f8426b834c9415f00",
+      "sha256": "522f07ab12c3c71efaf1ac460641110ebc85588358eeb83024289ac72539603c",
+      "bytes": 12410
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/change-log.json",
+      "blobSHA": "d6bd99c493dfa5ff8cde922e10ab695deaac31f7",
+      "sha256": "84eda8d3485168845faad7cf45ee1aaf51bbc3e120c55c6357b308c931cce17c",
+      "bytes": 3338
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/checks.json",
+      "blobSHA": "a66905d69458f5db87bbaa9a7a894aec327ee091",
+      "sha256": "670eaa41f05e7b5baa8b94822b2156dfbca3604ad3f75600cbdabde67cf5f464",
+      "bytes": 1614
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/confirmation-record.json",
+      "blobSHA": "ecd93d17f5e08e757a85f17a4043c2a05fc5c61c",
+      "sha256": "7348ab7061e6c3e2b1897e325cd4c4abce8a1f9aca02e3923afa21ce0c4f194b",
+      "bytes": 4044
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/freeze-manifest.json",
+      "blobSHA": "cc67b9d6021867849afd2095bd1219946179c4f7",
+      "sha256": "080cbe6388d53ad7a73b142eafd99a0e19b907bfda4fb3744bddbc8df4d2d7a0",
+      "bytes": 1564
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/freeze-record.json",
+      "blobSHA": "6fa5e4ebd31dc4ef106ab99318c04eeea6782ea7",
+      "sha256": "95ebe796a4b4ee831f19867460900ce1c4599e3ce70879a69a95cd5e1086f951",
+      "bytes": 3926
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/frozen-development-split.csv",
+      "blobSHA": "aae4414d6dcbef1647c6f282aa5afcdaf28029f2",
+      "sha256": "991360e24cd71a1a51227cd55d9578bcb23a6f861f6692ba3ed0fa59cc2b0910",
+      "bytes": 2904
+    },
+    {
+      "path": "design/review-2026-10-14/frozen-development-annotations-v2/source-backed-decisions.json",
+      "blobSHA": "649b0b924b15e209bf24ab096ab48c86c0aa2f4a",
+      "sha256": "c87e5edcce83a337053a13aed9ba291adb7894805fb812fb8b7b134d3850c1d0",
+      "bytes": 19296
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/Lexend-OFL.txt",
+      "blobSHA": "b1477aae6210797999bd5ad9c13bcae5fc98788b",
+      "sha256": "5da8505887d0fa7fe963445fd58852707fda34adfeb65af25c99d152bab285bd",
+      "bytes": 4436
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/README.md",
+      "blobSHA": "0b6cfee7aa76e1596919a39326c2e56588f7de3d",
+      "sha256": "c54359ee126c833fcd67a66edb6c1ec8640900a8f878d98e994901df04fd3fb0",
+      "bytes": 3666
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/checks.json",
+      "blobSHA": "d3c8fed0e4f91a327ae8cd7bc18c5f4e6b3a1f5d",
+      "sha256": "5118532b983a05e7c2a2dbdd1f633dd7145243d1bffcf8c9c48da35cd593b5cc",
+      "bytes": 809
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/device-check-instructions.md",
+      "blobSHA": "f8cdc34f2ccd1bb756b1e3541cf0adbfca9b4de3",
+      "sha256": "1d0cb6516e6ddd5cc9443f5c056d91276fe811dc8bee890f06fc705eeead8cf8",
+      "bytes": 3178
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/landing-copy-draft.json",
+      "blobSHA": "a112a55f2db5f110c706c48a8914ccd700d88d31",
+      "sha256": "0c48539b8a7a704eb81c3ae7e398ef1bc1fd8b0d2f40b90754c30e7a3259e2b9",
+      "bytes": 4391
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/landing-revisions.md",
+      "blobSHA": "f8e9ef5ff0fadd3ac63e5e760fda8639be159027",
+      "sha256": "07e1e9f1a13a728f60976514cfca1dc1301551d8bd8059786911774d46d862af",
+      "bytes": 3829
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/manifest.json",
+      "blobSHA": "bac4b92853c25d605753a5c55e5995e37cdcaf30",
+      "sha256": "f2475aa7f88e7fb4896fc99b3eea3bda24f64880657d600f6e12f9d47265706a",
+      "bytes": 2090
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/owner-review.md",
+      "blobSHA": "9380ef6308eb6cab62fd50e31ac1b2ad47c8c9a8",
+      "sha256": "fc8478b597286e04006d865d54e121b573d598886874e1f74ffdb423bc2fbbb8",
+      "bytes": 2354
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/product-flow-en.png",
+      "blobSHA": "b8ca3d48f06e8f507a2be0a4a713445553a07bb8",
+      "sha256": "1e1812cceb3eb34505e987cb46988f3ad5441920551070e009b42f7312cb622e",
+      "bytes": 110723
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/product-flow-en.svg",
+      "blobSHA": "e7b16954c9100dfbebc2daedd3f1ad128fbfa984",
+      "sha256": "ba7769697e09f1ae36e3ad8a9e86b66e337523d2a6f0ef4cc7a744200c1b0169",
+      "bytes": 98179
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/protocol-review.json",
+      "blobSHA": "fccb56a0d354be87b5421d3a0798db8385025356",
+      "sha256": "a1401db1c98d6832730d2e1e1b8e0bd516ba51cb67a1358e87d463f1d9481a36",
+      "bytes": 993
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/student-protocol.md",
+      "blobSHA": "99e9eab672d55018405cbad43a1824e9fe59d2ba",
+      "sha256": "d36e8c298ed6df83c2663347b76ffb595b1672e22b9fffea5a9c1584cfe379d0",
+      "bytes": 5791
+    },
+    {
+      "path": "design/review-2026-10-15/design-closeout-v1/ui-review.md",
+      "blobSHA": "81364b4e810837617aba4fab5cf4ae55b607701c",
+      "sha256": "c70c90cbf3aa558e8becbf5bdae120a8060d5949450554096f321bc5a51abb4f",
+      "bytes": 2453
+    }
+  ],
+  "publicReceivingChecks": [
+    {
+      "name": "receiving-tests",
+      "exitCode": 0,
+      "pass": 66,
+      "fail": 0
+    },
+    {
+      "name": "generated-types",
+      "exitCode": 0
+    },
+    {
+      "name": "strict-types",
+      "exitCode": 0
+    },
+    {
+      "name": "team-intake",
+      "exitCode": 0
+    },
+    {
+      "name": "content-status",
+      "exitCode": 0
+    }
+  ],
+  "publicReceivingTestsPassed": 66,
+  "publicSelectedLinksChecked": 79
+}

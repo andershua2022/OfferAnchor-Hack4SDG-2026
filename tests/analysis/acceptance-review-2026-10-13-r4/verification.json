@@ -1,0 +1,7 @@
+{
+  "sameContentAndLayoutAsR3": true,
+  "sameReviewJavaScriptAsR3": true,
+  "newCheckpointBinding": true,
+  "allActualApprovalsPending": true,
+  "freshBrowserChecks": "not repeated: only embedded checkpoint identity changed, source text/layout/JS exact; importer and current-source checks freshly run"
+}

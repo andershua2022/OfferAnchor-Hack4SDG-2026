@@ -1,0 +1,30 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "example_loan_001",
+  "revision": 1,
+  "locale": "en-HK",
+  "clarificationsUsed": 0,
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "advertisement",
+      "label": "Fictional job advertisement",
+      "sequence": 1,
+      "text": "Administrative assistant. You will prepare supplier spreadsheets."
+    },
+    {
+      "id": "E2",
+      "kind": "instruction",
+      "label": "Fictional later instruction",
+      "sequence": 2,
+      "text": "Apply for a personal loan in your own name. Transfer the borrowed funds to the account nominated by our coordinator."
+    },
+    {
+      "id": "E3",
+      "kind": "reply",
+      "label": "Fictional recruiter promise",
+      "sequence": 3,
+      "text": "The company will pay your monthly loan repayments."
+    }
+  ]
+}

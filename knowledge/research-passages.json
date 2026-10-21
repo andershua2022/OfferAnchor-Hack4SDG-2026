@@ -1,0 +1,834 @@
+{
+  "version": "public-answer-passages-1.0.0",
+  "reviewKind": "agent_source_checked",
+  "checkedOn": "2026-10-19",
+  "ownerAuthorizedScope": "Existing optional Knowledge answers in Learn and Check; explicitly authorized 2026-10-19. Not core extraction or a human signature.",
+  "humanApprovalGranted": false,
+  "auditDocument": "docs/learn-content-audit-2026-10-19.md",
+  "records": [
+    {
+      "id": "P_STUDENT_TASK",
+      "sourceDigest": "37a844fedc6e2fe7bb5effec0bf2179425e8f6f33350afec595b494c719253f8",
+      "matchGroups": [
+        [
+          "intern",
+          "freshman",
+          "student",
+          "linkedin",
+          "實習",
+          "实习",
+          "大學生",
+          "大学生"
+        ],
+        [
+          "task",
+          "commission",
+          "recharge",
+          "payment",
+          "任務",
+          "任务",
+          "佣金",
+          "充值",
+          "付款"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "實習招聘轉為先付款任務",
+      "zhExcerpt": "警方報道，一名尋找實習的十九歲大學生被轉介做遙距佣金任務；對方安排英語入職培訓，並先支付三次佣金，最後她損失接近十九萬港元。早期收到佣金不能證明後續付款要求可信。這是警方公開案件摘要，並非目前求職者的原始訊息或本產品的實測結果。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_FINANCING_PRESSURE",
+      "sourceDigest": "06026c311748eafe9d6cf6b9d23ecf572bdfb75b05d90a8faf0196413900dca2",
+      "matchGroups": [
+        [
+          "financing",
+          "finance the company",
+          "prosecution",
+          "bank threat",
+          "融資",
+          "融资",
+          "銀行追究",
+          "银行追究",
+          "威嚇",
+          "威吓"
+        ],
+        [
+          "loan",
+          "borrow",
+          "debt",
+          "貸款",
+          "贷款",
+          "借貸",
+          "借贷",
+          "債務",
+          "债务"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "文員工作後出現公司融資與威嚇",
+      "zhExcerpt": "警方報道，一名二十五歲文員被要求以個人貸款為所謂僱主融資，其後又受到關於銀行追究的威嚇，損失超過二百二十五萬港元。原本工作職責、個人債務及後來威嚇應分開核對。這是已公布案件的摘要，不能用來判定目前發件人的身份或法律責任。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_ADMIN_LOAN",
+      "sourceDigest": "9a3fa55ef9ea88434a2db281961ca950c6bd4ec86c6890e5b22b3cc6ae2ad9ba",
+      "matchGroups": [
+        [
+          "loan",
+          "borrow",
+          "debt",
+          "貸款",
+          "贷款",
+          "借貸",
+          "借贷",
+          "借款"
+        ],
+        [
+          "repay",
+          "promise",
+          "company funding",
+          "in my name",
+          "還款",
+          "还款",
+          "代還",
+          "代还",
+          "承諾",
+          "承诺",
+          "個人名義",
+          "个人名义"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "公司承諾還款與個人貸款",
+      "zhExcerpt": "警方報道，一名三十歲求職者接受時薪一百港元的遙距行政工作，其後在對方承諾全數還款下申請個人貸款並轉賬，累計超過四百萬港元。還款承諾不會改變貸款以誰的名義申請，亦不等於公司已提供資金。這是他人的已報道案件，時薪本身不是詐騙判定規則。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_CONSTRUCTION_DATA",
+      "sourceDigest": "4f0dad69e2e3e77a61978035875565d6f7c915ab6f3c080fc4926db7dee3a0f4",
+      "matchGroups": [
+        [
+          "construction",
+          "building worker",
+          "建築",
+          "建筑",
+          "地盤",
+          "地盘"
+        ],
+        [
+          "identity",
+          "document",
+          "certificate",
+          "data",
+          "證件",
+          "证件",
+          "資料",
+          "资料",
+          "身份",
+          "資格",
+          "资格"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "建築散工招聘收集身份資料",
+      "zhExcerpt": "私隱專員公署在二〇二六年一月的警示中表示，兩星期內接獲四十二宗涉及虛假建築散工招聘的投訴。事主提供身份及工作資格證件相片，部分亦提供銀行戶口號碼，其後招募者沒有在約定地點出現。這些投訴不代表大學生的受騙比例，也不證明目前付款分析涵蓋所有身份資料風險。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_HKEX_PAYROLL",
+      "sourceDigest": "5f73c728768353232ea77d21a70797516a7100d9dec27f7ada7e44df3e560fb7",
+      "matchGroups": [
+        [
+          "payroll",
+          "salary",
+          "bank account",
+          "出糧",
+          "出粮",
+          "薪金",
+          "工資",
+          "工资",
+          "銀行戶口",
+          "银行账户"
+        ],
+        [
+          "number",
+          "payee",
+          "accepted offer",
+          "account number",
+          "號碼",
+          "号码",
+          "收款",
+          "接受聘用",
+          "戶口資料",
+          "账户资料"
+        ]
+      ],
+      "companyAliases": [
+        "hkex",
+        "hong kong exchanges",
+        "港交所",
+        "香港交易所"
+      ],
+      "zhTitle": "接受聘用後的出糧資料",
+      "zhExcerpt": "港交所的人力資源私隱通告把收款人姓名及銀行戶口號碼列為接受聘用後入職程序中的出糧資料。收取薪金所需的戶口資料，與交出網上銀行登入權限是不同要求。這是一家公司的公開做法，不能證明自稱代表該公司的人或其收集渠道屬實。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_TEEKAY_POLICY",
+      "sourceDigest": "0ff1e54c804d8bfe276ec9cb4e9e2ec315098789580264e498705bb00e8cfd10",
+      "matchGroups": [
+        [
+          "teekay"
+        ],
+        [
+          "fee",
+          "charge",
+          "payment",
+          "bank details",
+          "bank information",
+          "formal offer",
+          "收費",
+          "收费",
+          "費用",
+          "费用",
+          "銀行資料",
+          "银行资料",
+          "聘用"
+        ]
+      ],
+      "companyAliases": [
+        "teekay"
+      ],
+      "zhTitle": "Teekay 的不收招聘費政策",
+      "zhExcerpt": "Teekay 的公開招聘政策表示，不會向申請人收取申請或獲聘費用，並警告在正式聘用前索取銀行資料的做法。這項政策只描述該公司的招聘做法，並非香港所有招聘或介紹費的通用法律規則。公司名稱或相似電郵域名，不能單獨證明發件人獲授權。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_TRAINING_FEE",
+      "sourceDigest": "e05670ab92b07d93c517bbeb708bc65e1ed3a99f4ebd4eff4a587076ad2b6108",
+      "matchGroups": [
+        [
+          "course",
+          "training",
+          "tuition",
+          "課程",
+          "课程",
+          "培訓",
+          "培训",
+          "學費",
+          "学费"
+        ],
+        [
+          "fee",
+          "pay",
+          "condition",
+          "eligible",
+          "required",
+          "收費",
+          "收费",
+          "付",
+          "要求",
+          "獲聘",
+          "获聘"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "獲聘前先付課程費",
+      "zhExcerpt": "勞工處的求職指南提醒，面試時要求先支付培訓或課程費用才符合獲聘資格，可能是藉招聘騙取金錢。應分清購買課程與已確認獲聘是否同一回事。這是一般求職警示，不是對某份培訓合約是否違法的裁定。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_TALENT_SCOUT",
+      "sourceDigest": "e1cba08451a09b7409c3e7adbff34d17dcb981e23cf89c8f2faac3d6003b01b6",
+      "matchGroups": [
+        [
+          "modelling",
+          "modeling",
+          "talent scout",
+          "audition",
+          "beauty service",
+          "模特",
+          "演藝",
+          "演艺",
+          "試鏡",
+          "试镜"
+        ],
+        [
+          "fee",
+          "purchase",
+          "deposit",
+          "pay",
+          "課",
+          "课",
+          "按金",
+          "收費",
+          "收费",
+          "購買",
+          "购买"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "演藝機會轉成購買服務",
+      "zhExcerpt": "勞工處描述，有人以模特兒或演藝機會吸引求職者，再要求支付課堂、美容、試鏡或按金等費用，卻未必安排工作。購買服務與受僱工作應分開核對。這是一般警示，不代表每家模特兒公司都有詐騙行為。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_MONEY_MULE",
+      "sourceDigest": "28d9aa3880358f62bc7d77bbbaf901fc4406045b082b33691b8c8c9a0617ba57",
+      "matchGroups": [
+        [
+          "bank account",
+          "money mule",
+          "銀行戶口",
+          "银行账户",
+          "傀儡戶口",
+          "傀儡户口"
+        ],
+        [
+          "lend",
+          "rent",
+          "sell",
+          "operate",
+          "money mule",
+          "crime proceeds",
+          "借出",
+          "出租",
+          "出售",
+          "代收",
+          "洗錢",
+          "洗钱",
+          "不明款項",
+          "不明款项"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "借出戶口與代收轉款",
+      "zhExcerpt": "警方的防洗黑錢資料描述，有集團招募他人提供或開立銀行戶口，處理涉嫌犯罪得益。收取自己的薪金，與讓他人操作戶口或經戶口轉移不明款項，是不同情況。這是警方公開警示，本產品不檢查交易，亦不裁定個人的刑事責任。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_BANK_LOGIN",
+      "sourceDigest": "354663d1b671831f3591eb5abd637b25e155481524ebccc9f8d71d10506b9bea",
+      "matchGroups": [
+        [
+          "otp",
+          "password",
+          "login code",
+          "pin code",
+          "驗證碼",
+          "验证码",
+          "一次性密碼",
+          "一次性密码",
+          "銀行密碼",
+          "银行密码"
+        ],
+        [
+          "bank",
+          "payroll",
+          "salary",
+          "銀行",
+          "银行",
+          "出糧",
+          "出粮",
+          "工資",
+          "工资",
+          "薪金"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "出糧戶口資料與銀行登入權限",
+      "zhExcerpt": "華僑銀行的求職防騙資料提醒，假招聘可能索取金錢或個人及銀行資料，安全提示亦要求勿分享銀行登入代碼、密碼及一次性密碼。出糧所需的收款戶口號碼，不等於網上銀行的登入或操作權限。這是銀行教育資料，不能核實目前發件人的身份。",
+      "priorityTerms": [
+        "otp",
+        "password",
+        "login code",
+        "pin code",
+        "驗證碼",
+        "验证码",
+        "一次性密碼",
+        "一次性密码",
+        "銀行密碼",
+        "银行密码"
+      ]
+    },
+    {
+      "id": "P_BLIND_CV",
+      "sourceDigest": "56a14533b0c0b7a5d78431436892db9f5496f8ae336573dbe160b58bd068e3e2",
+      "matchGroups": [
+        [
+          "cv",
+          "resume",
+          "履歷",
+          "履历",
+          "簡歷",
+          "简历"
+        ],
+        [
+          "blind",
+          "anonymous",
+          "unnamed",
+          "identify",
+          "who collects",
+          "匿名",
+          "具名",
+          "誰收",
+          "谁收",
+          "身份不明"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "沒有具名收集者的履歷廣告",
+      "zhExcerpt": "私隱專員公署指引指出，直接邀請求職者提交履歷的招聘廣告，應識別僱主或代為招聘的機構。僱主可透過具名中介保密招聘；只邀請查詢或索取申請表的廣告，則是另一情況。匿名廣告不等於已證實的詐騙，資料亦不應被用作目前財務分析的通用判定規則。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_ID_COPY_EARLY",
+      "sourceDigest": "8ffa6899a922a6e137cbd230306f87d8cee6f8bdfb234ec02bd99a0678365ce6",
+      "matchGroups": [
+        [
+          "identity card",
+          "hkid",
+          "bank-card",
+          "bank card",
+          "身份證",
+          "身份证",
+          "銀行卡",
+          "银行卡"
+        ],
+        [
+          "cop",
+          "before",
+          "accept",
+          "recruit",
+          "副本",
+          "影印",
+          "接受",
+          "獲聘",
+          "获聘",
+          "之前"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "接受聘用前的身份證副本",
+      "zhExcerpt": "私隱專員公署個案 2024C01 涉及僱主在求職者接受聘用前收集身份證及銀行卡副本。公署指出，招聘階段與已接受聘用後對身份及出糧資料的需要不同。這是私隱合規個案，並非求職詐騙定罪，也不表示目前財務分析已能全面審查所有身份資料要求。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_ROLE_SWITCH",
+      "sourceDigest": "09ad891a53b7f2bcc364b901adc1497151eaa323bea88d6d258ca8ff064095bd",
+      "matchGroups": [
+        [
+          "clerical",
+          "role",
+          "job",
+          "文員",
+          "文员",
+          "職位",
+          "职位"
+        ],
+        [
+          "switch",
+          "different",
+          "sales",
+          "changed",
+          "另一",
+          "轉為",
+          "转为",
+          "變成",
+          "变成",
+          "銷售",
+          "销售"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "文員申請變成另一公司的銷售招聘",
+      "zhExcerpt": "私隱專員公署個案 2018C10 中，申請甲公司文員職位的人，在面試時被游說申請乙公司的銷售職位。公署向乙公司發出警告，要求避免以誤導方式招聘，並清楚識別僱主及職位。這是個別私隱個案，不代表所有職位調整都是詐騙。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_CV_MISDIRECT",
+      "sourceDigest": "2d1825a1faf37bcd9149882c717d056d4d9ed5e1d29685b391301678ac151de0",
+      "matchGroups": [
+        [
+          "cv",
+          "resume",
+          "application",
+          "履歷",
+          "履历",
+          "申請",
+          "申请"
+        ],
+        [
+          "misdirect",
+          "wrong compan",
+          "data breach",
+          "4201",
+          "4,201",
+          "誤送",
+          "误送",
+          "錯誤收件",
+          "错误收件",
+          "資料外洩",
+          "资料泄露"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "履歷誤送給其他公司",
+      "zhExcerpt": "私隱專員公署個案 2019DB03 記載，招聘平台把四千二百零一名申請人的履歷資料誤送給一千六百九十二家公司。伺服器設定問題引致人手重發申請，排序錯誤造成資料與收件者不相符。這是資料保安事故，並非詐騙發生率；本產品不能撤回已送出的文件。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_FAKE_CHEQUE",
+      "sourceDigest": "a12158d6e3ce83b7b170ebd5533247880decaa52ac531360e17416e844662ec8",
+      "matchGroups": [
+        [
+          "cheque",
+          "check scam",
+          "cashier",
+          "支票"
+        ],
+        [
+          "forward",
+          "send",
+          "activation",
+          "fake",
+          "back",
+          "transfer",
+          "轉",
+          "转",
+          "啟用",
+          "启用",
+          "假",
+          "退回"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "先收支票再被要求轉款",
+      "zhExcerpt": "美國聯邦存款保險公司描述，虛假的在家工作或神秘顧客職位可能先寄出支票，再要求轉出款項或支付帳戶啟用費。支票看似入帳，不代表款項已最終結算，而事主可能已把真實金錢轉出。這是美國官方指引的國際比較，不能當作香港的支票或銀行法律結論。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_TASK_TOP_UP",
+      "sourceDigest": "c8c3ee5ce705f727af924b74960a07247f776ce2a93c204ba190ab8c7a169dec",
+      "matchGroups": [
+        [
+          "cryptocurrency",
+          "crypto",
+          "optimization",
+          "optimisation",
+          "rating",
+          "加密貨幣",
+          "加密货币",
+          "優化",
+          "优化",
+          "評分",
+          "评分"
+        ],
+        [
+          "task",
+          "job",
+          "earn",
+          "unlock",
+          "任務",
+          "任务",
+          "工作",
+          "收益",
+          "解鎖",
+          "解锁"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "任務收益畫面與加密貨幣付款",
+      "zhExcerpt": "美國聯邦調查局提醒，假遙距評分或優化工作可能要求先付加密貨幣才能解鎖任務，介面顯示的收益卻無法提取。畫面餘額是一項說法，不是可以提款的證明。這是美國的模式警示，並非香港發生率或某位用戶的個別投訴。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_HAYS_FEES",
+      "sourceDigest": "b743834b0ebd27bc418333b7174c90a71d6da783e9e6c2bc18fc5ec8deb635e9",
+      "matchGroups": [
+        [
+          "hays",
+          "瀚納仕",
+          "瀚纳仕"
+        ],
+        [
+          "fee",
+          "charge",
+          "payment",
+          "cost",
+          "收費",
+          "收费",
+          "費用",
+          "费用",
+          "佣金",
+          "仲介費",
+          "仲介费",
+          "收取",
+          "招聘費",
+          "招聘费"
+        ]
+      ],
+      "companyAliases": [
+        "hays",
+        "瀚納仕",
+        "瀚纳仕"
+      ],
+      "zhTitle": "Hays 的求職者服務收費條款",
+      "zhExcerpt": "Hays 香港的求職者服務條款訂明，不向求職者收取該服務的費用。這是一家公司的政策，並非所有香港職業介紹所均不得收費的通用規則。有人自稱來自 Hays，亦不代表其身份或付款要求已獲核實。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_CATHAY_DATA",
+      "sourceDigest": "1af0e537d78d9fdc637b4fc5fe8481548dc7748d17b4db5bd7589a37ed1712ca",
+      "matchGroups": [
+        [
+          "cathay",
+          "國泰",
+          "国泰"
+        ],
+        [
+          "privacy",
+          "personal data",
+          "purpose",
+          "post-offer",
+          "post offer",
+          "accepted offer",
+          "私隱",
+          "隐私",
+          "個人資料",
+          "个人资料",
+          "用途",
+          "接受聘用"
+        ]
+      ],
+      "companyAliases": [
+        "cathay",
+        "cathay pacific",
+        "國泰",
+        "国泰"
+      ],
+      "zhTitle": "國泰的招聘資料用途說明",
+      "zhExcerpt": "國泰的招聘私隱聲明列明資料收集者、用途，以及可能的資料來源或接收者，並說明接受聘用後按僱員私隱通告繼續處理資料。這是一家公司的整體私隱政策，並非個別聘用邀請已經核實。複製的私隱聲明不能證明招募者的身份或收集渠道真確。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_AGENCY_COMMISSION",
+      "sourceDigest": "c45af9a58d1d7e197fca47a70f8f3e0c1b2c4cd98860c4debfc1745c7d8ebcf9",
+      "matchGroups": [
+        [
+          "employment agency",
+          "recruitment agency",
+          "placement agency",
+          "agency commission",
+          "職業介紹所",
+          "职业介绍所",
+          "中介",
+          "仲介"
+        ],
+        [
+          "fee",
+          "commission",
+          "10%",
+          "first month",
+          "placement",
+          "收費",
+          "收费",
+          "佣金",
+          "首月",
+          "工資",
+          "工资"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "香港職業介紹所的訂明佣金",
+      "zhExcerpt": "勞工處表示，香港職業介紹所只可在成功介紹工作，且求職者已收到首月工資後收取訂明佣金，上限是首月實收工資的百分之十。求職者可核查牌照、收費階段、計算方式及收據。這是一般官方指引，並非對任何個別收費是否合法或應否支付的建議。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_COMPANY_REGISTER",
+      "sourceDigest": "1574cdbc7a407cada22cfdb466304780e7965d52219d08bc6a594a858d7f8045",
+      "matchGroups": [
+        [
+          "compan",
+          "registry",
+          "registered",
+          "registration",
+          "公司",
+          "註冊處",
+          "注册处",
+          "商業登記",
+          "商业登记"
+        ],
+        [
+          "registry",
+          "register",
+          "registration",
+          "sender",
+          "authority",
+          "查冊",
+          "查册",
+          "登記",
+          "登记",
+          "註冊",
+          "注册",
+          "授權",
+          "授权"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "公司登記與發件人授權",
+      "zhExcerpt": "公司註冊處提供公司及已登記文件的公開查冊服務，可用來比對對方聲稱的實體資料。公司存在、發件人是否獲授權，以及某項付款要求是否合理，是不同問題。查冊可能涉及服務或文件費用，本產品沒有替用戶認證招募者。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_SECONDARY_ADCC",
+      "sourceDigest": "0a9e0833a723025c1297e37de6b25fe3d7fd2274ce64e4b070bea1863bb4eb3a",
+      "matchGroups": [
+        [
+          "adcc",
+          "anti-deception",
+          "反詐騙",
+          "反诈骗",
+          "反詐",
+          "反诈"
+        ],
+        [
+          "officer",
+          "whatsapp",
+          "impersonat",
+          "secondary",
+          "recovery",
+          "人員",
+          "人员",
+          "假冒",
+          "二次",
+          "追款"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "知道案情不等於警方身份",
+      "zhExcerpt": "警方的二次詐騙警示描述，有人透過 WhatsApp 假冒反詐騙協調中心人員，知道事主姓名及早前被騙細節，藉此取得信任。掌握這些資料不能證明對方是真正警務人員，應循自行找到的官方渠道核實。這是公開警示，並非追回款項的保證。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_BANK_CONTACT",
+      "sourceDigest": "44fe4f8e99af44bcd86340d10d41b728f6fcdf907e9dad6068289166c2de7564",
+      "matchGroups": [
+        [
+          "bank",
+          "銀行",
+          "银行",
+          "戶口",
+          "户口"
+        ],
+        [
+          "already",
+          "shared",
+          "compromis",
+          "after disclosure",
+          "what next",
+          "已經",
+          "已经",
+          "外洩",
+          "外泄",
+          "已轉",
+          "已转",
+          "洩露",
+          "泄露",
+          "下一步"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "資料外洩後獨立聯絡銀行",
+      "zhExcerpt": "滙豐的防騙小冊子建議，密碼或敏感資料可能外洩時，應使用銀行官方網站、應用程式或銀行卡背面的聯絡資料聯絡銀行。可疑發件人提供的聯絡方法，不是獨立核實渠道。本產品可整理記錄，但不會聯絡銀行、凍結戶口或保證追回款項。",
+      "priorityTerms": [
+        "already",
+        "shared",
+        "compromis",
+        "after disclosure",
+        "what next",
+        "已經",
+        "已经",
+        "外洩",
+        "外泄",
+        "已轉",
+        "已转",
+        "洩露",
+        "泄露",
+        "下一步"
+      ]
+    },
+    {
+      "id": "P_REPORT_EVIDENCE",
+      "sourceDigest": "b50a64aea099379abf2d1d15d268283b2fce84bb35aaaf7f20e6be4162914e4d",
+      "matchGroups": [
+        [
+          "report",
+          "police",
+          "e-report",
+          "報案",
+          "报案",
+          "警方"
+        ],
+        [
+          "evidence",
+          "file",
+          "submit",
+          "how",
+          "attachment",
+          "record",
+          "zip",
+          "證據",
+          "证据",
+          "檔案",
+          "档案",
+          "提交",
+          "如何",
+          "附件",
+          "記錄",
+          "记录"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "報案材料與正式提交",
+      "zhExcerpt": "警方電子報案常見問題列明附件、登入及科技罪案與騙案表格的要求，並區分暫存表格與正式提交。OfferAnchor 的下載記錄是個人整理材料，不是官方報案。本產品不會代為報案，亦不保證其壓縮檔可直接作警方附件，應依照當時官方表格要求。",
+      "priorityTerms": []
+    },
+    {
+      "id": "P_PYRAMID_JOIN",
+      "sourceDigest": "1ec0022e5a6f27324c87ff9f37e7c51d911866072e62e70a8d3227f3a3c53d44",
+      "matchGroups": [
+        [
+          "pyramid",
+          "recruiting members",
+          "recruit more",
+          "recruit others",
+          "join a scheme",
+          "層壓",
+          "层压",
+          "拉人",
+          "招募成員",
+          "招募成员"
+        ],
+        [
+          "job",
+          "pay",
+          "product",
+          "join",
+          "borrow",
+          "工作",
+          "付",
+          "產品",
+          "产品",
+          "加入",
+          "借"
+        ]
+      ],
+      "companyAliases": [],
+      "zhTitle": "招聘變成付錢加入銷售計劃",
+      "zhExcerpt": "勞工處提醒，有些高薪招聘會變成購買產品、個人借款及靠招募更多成員獲利的安排。應核對實際受僱關係、資金來源和加入條件。這是一般求職警示，不是對每種銷售職位的法律分類。",
+      "priorityTerms": []
+    }
+  ]
+}

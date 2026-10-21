@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OfferAnchor TransportError 2.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contractVersion",
+    "status",
+    "errorCode",
+    "retryable"
+  ],
+  "properties": {
+    "contractVersion": {
+      "const": "2.0.0"
+    },
+    "status": {
+      "const": "rejected"
+    },
+    "errorCode": {
+      "type": "string",
+      "enum": [
+        "invalid_input",
+        "unauthorized",
+        "quota_exceeded",
+        "configuration_unavailable"
+      ]
+    },
+    "retryable": {
+      "type": "boolean"
+    }
+  }
+}

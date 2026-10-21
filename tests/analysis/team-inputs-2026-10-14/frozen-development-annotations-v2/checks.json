@@ -1,0 +1,48 @@
+{
+  "version": "OfferAnchor-development-annotations-frozen-v2",
+  "frozenAtUtc": "2026-10-14T15:33:51Z",
+  "counts": {
+    "records": 18,
+    "actionRows": 28,
+    "baseFamilies": 14,
+    "controlRecords": 10,
+    "controlFamilies": 6
+  },
+  "v1LocalAndRemoteGitBlobMatches": 9,
+  "canonicalInputHashesMatched": 18,
+  "annotationColumns": 23,
+  "splitColumns": 12,
+  "changedSemanticCases": [
+    {
+      "caseId": "DEV03",
+      "actionId": "GA1",
+      "fields": [
+        "resource",
+        "mechanism",
+        "expected_guidance",
+        "critical_unknowns",
+        "required_independent_question",
+        "notes"
+      ]
+    }
+  ],
+  "otherCaseRowsUnchangedExceptVersionMetadata": 27,
+  "allSourceTextsGroupingPartitionsAndPrimaryVariantsUnchanged": true,
+  "allCitationRangesValidUtf16": true,
+  "modelCalls": 0,
+  "accuracyClaim": null,
+  "moduleValidation": "18/18 authored canonical action projections accepted; policy guidance agrees with reference",
+  "commands": [
+    "python work/prepare-frozen-development-v2.py",
+    "node work/check-frozen-development-v2.mjs",
+    "python work/finalize-frozen-development-v2.py"
+  ],
+  "status": "passed",
+  "moduleSourceRef": "3d324e6269e7ed28f6501435b0b6c784fd901864",
+  "moduleCheckClassification": "Authored canonical action projection / current pure validator and policy compatibility check; not model output, independent accuracy, full case semantics, approved content routes or CS acceptance",
+  "negativeControls": {
+    "missingBlockingResourceUnknownRejected": true,
+    "unknownWithTaskRechargeRejected": true
+  },
+  "consumerAcceptance": false
+}

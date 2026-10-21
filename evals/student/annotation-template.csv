@@ -1,0 +1,1 @@
+case_id,base_case_id,variant_id,partition,annotator_id,annotation_round,gold_action_id,actor,verb,polarity,resource,mechanism,citation_ranges,expected_promise,expected_guidance,critical_unknowns,required_independent_question,forbidden_advice,contradiction_expected,notes,adjudicator_id,adjudication,frozen_text_sha256

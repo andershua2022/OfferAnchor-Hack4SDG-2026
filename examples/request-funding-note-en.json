@@ -1,0 +1,23 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "fixture_funding_note_en",
+  "revision": 2,
+  "locale": "en-HK",
+  "clarificationsUsed": 1,
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "instruction",
+      "label": "Fictional ambiguous instruction",
+      "sequence": 1,
+      "text": "Arrange the payment for tomorrow. We have not explained who pays or which funds to use."
+    },
+    {
+      "id": "E2",
+      "kind": "user_note",
+      "label": "User clarification of payer",
+      "sequence": 2,
+      "text": "My clarification: the employer pays the supplier directly using company funds; I only schedule the payment."
+    }
+  ]
+}

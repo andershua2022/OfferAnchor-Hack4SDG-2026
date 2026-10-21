@@ -1,0 +1,6 @@
+{
+  "contractVersion": "2.0.0",
+  "status": "rejected",
+  "errorCode": "invalid_input",
+  "retryable": false
+}

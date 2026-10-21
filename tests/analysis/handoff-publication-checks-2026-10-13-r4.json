@@ -1,0 +1,939 @@
+{
+  "project": "OfferAnchor",
+  "checkedUtc": "2026-10-13T13:26:43.342079+00:00",
+  "scope": "Exact PR6 r4 UTF-8 publication snapshot",
+  "sourceRevision": "2026-10-13-r4",
+  "parentPRHead": "d57e9aeae029a5eace37995d7e2bb1b2bcbe3335",
+  "latestMainPreserved": "d6f2f884a40449946a2b6fd98b8d526b3eec8737",
+  "checks": [
+    {
+      "name": "receiving-tests",
+      "exitCode": 0,
+      "modelCalls": 0,
+      "tests": 55,
+      "pass": 55,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "name": "generated-types",
+      "exitCode": 0,
+      "modelCalls": 0
+    },
+    {
+      "name": "strict-types",
+      "exitCode": 0,
+      "modelCalls": 0
+    },
+    {
+      "name": "simulation",
+      "exitCode": 0,
+      "modelCalls": 0,
+      "evidence": "Actual CLI output from the unchanged snapshot check immediately before link verification; original run preserved"
+    },
+    {
+      "name": "authored",
+      "exitCode": 0,
+      "modelCalls": 0,
+      "evidence": "Actual CLI output from the unchanged snapshot check immediately before link verification; original run preserved"
+    },
+    {
+      "name": "recorded",
+      "exitCode": 0,
+      "modelCalls": 0,
+      "evidence": "Actual CLI output from the unchanged snapshot check immediately before link verification; original run preserved"
+    },
+    {
+      "name": "score-pending",
+      "exitCode": 0,
+      "modelCalls": 0
+    },
+    {
+      "name": "content-review-status",
+      "exitCode": 0,
+      "modelCalls": 0
+    }
+  ],
+  "profiles": {
+    "simulation": {
+      "project": "OfferAnchor",
+      "scope": "development_engineering_only",
+      "evidenceType": "authored_simulation",
+      "configurationId": "0ea05ce7de645bb1cf24daea0101c10027d616ca0ae54cd2ab6f43a68f2a20cd",
+      "buildId": "42bf65a34bc07ad101410a200562d12f2c1bb448c8f9eddac37aff54faec6245",
+      "mode": "simulation",
+      "promptVersion": "extract-v2.0",
+      "promptSha256": "2cefe3648fbca73c363b922bed425dd0f23a53b9e1559788fcd347d6f65e4903",
+      "contentApproval": "root_draft",
+      "releaseApproved": false,
+      "independentEvaluation": false,
+      "modelCalls": 0,
+      "operations": {
+        "attempts": 8,
+        "primaryAttempts": 4,
+        "secondaryAttempts": 4,
+        "latencyKind": "offline_adapter_wall_time",
+        "p50Ms": 0.8531999999999869,
+        "p95Ms": 7.869200000000006,
+        "maxMs": 7.869200000000006,
+        "newChargedTokens": 0,
+        "originalGenerationMetadataIsHistorical": true
+      },
+      "engineering": {
+        "completeValid": 8,
+        "incomplete": 0,
+        "citationValid": 8,
+        "citationNA": 0,
+        "failures": []
+      },
+      "semantic": {
+        "components": {
+          "actor_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          },
+          "verb_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          },
+          "polarity_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          },
+          "resource_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          },
+          "mechanism_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          },
+          "promise_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          },
+          "guidance_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          },
+          "contradiction_preserved": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          },
+          "critical_unknowns_preserved": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          },
+          "required_question_relevant": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          },
+          "evidence_meaning_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 4,
+            "total": 4,
+            "applicable": 4,
+            "percentage": null
+          }
+        },
+        "wholeCase": {
+          "passed": 0,
+          "failed": 0,
+          "pending": 4,
+          "total": 4,
+          "percentage": null
+        },
+        "controls": {
+          "passed": 0,
+          "failed": 0,
+          "pending": 2,
+          "total": 2,
+          "percentage": null
+        },
+        "missingInformation": {
+          "passed": 0,
+          "failed": 0,
+          "pending": 1,
+          "total": 1,
+          "percentage": null
+        },
+        "producerReviews": 0,
+        "humanDevelopmentReviews": 0
+      },
+      "safety": {
+        "reviewed": 0,
+        "pending": 8,
+        "unsafeObserved": 0,
+        "rawReviewed": 0,
+        "rawPending": 8,
+        "rawUnsafeObserved": 0
+      }
+    },
+    "authored": {
+      "project": "OfferAnchor",
+      "scope": "development_engineering_only",
+      "evidenceType": "authored_compatibility",
+      "configurationId": "621f32c87d13596771de9a19068a8f84b6f2d194ffa6ac6221616bf26d9a0b4e",
+      "buildId": "42bf65a34bc07ad101410a200562d12f2c1bb448c8f9eddac37aff54faec6245",
+      "mode": "live",
+      "promptVersion": "extract-v2.11",
+      "promptSha256": "a5da413d26aa1fdc81658be060637f6adc6669b7d58f41e7cef12fd0d1a9c6e6",
+      "contentApproval": "fictional_test_only",
+      "releaseApproved": false,
+      "independentEvaluation": false,
+      "modelCalls": 0,
+      "operations": {
+        "attempts": 9,
+        "primaryAttempts": 9,
+        "secondaryAttempts": 0,
+        "latencyKind": "offline_adapter_wall_time",
+        "p50Ms": 0.6040000000000134,
+        "p95Ms": 8.091399999999993,
+        "maxMs": 8.091399999999993,
+        "newChargedTokens": 0,
+        "originalGenerationMetadataIsHistorical": true
+      },
+      "engineering": {
+        "completeValid": 9,
+        "incomplete": 0,
+        "citationValid": 9,
+        "citationNA": 0,
+        "failures": []
+      },
+      "semantic": {
+        "components": {
+          "actor_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          },
+          "verb_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          },
+          "polarity_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          },
+          "resource_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          },
+          "mechanism_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          },
+          "promise_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          },
+          "guidance_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          },
+          "contradiction_preserved": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          },
+          "critical_unknowns_preserved": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          },
+          "required_question_relevant": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          },
+          "evidence_meaning_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 9,
+            "total": 9,
+            "applicable": 9,
+            "percentage": null
+          }
+        },
+        "wholeCase": {
+          "passed": 0,
+          "failed": 0,
+          "pending": 9,
+          "total": 9,
+          "percentage": null
+        },
+        "controls": {
+          "passed": 0,
+          "failed": 0,
+          "pending": 3,
+          "total": 3,
+          "percentage": null
+        },
+        "missingInformation": {
+          "passed": 0,
+          "failed": 0,
+          "pending": 1,
+          "total": 1,
+          "percentage": null
+        },
+        "producerReviews": 0,
+        "humanDevelopmentReviews": 0
+      },
+      "safety": {
+        "reviewed": 0,
+        "pending": 9,
+        "unsafeObserved": 0,
+        "rawReviewed": 0,
+        "rawPending": 9,
+        "rawUnsafeObserved": 0
+      }
+    },
+    "recorded": {
+      "project": "OfferAnchor",
+      "scope": "development_engineering_only",
+      "evidenceType": "recorded_development_replay",
+      "configurationId": "8d42817e9529aead4cea80fc40fe8930b4a1607df403aaf859ea19c70f2115d4",
+      "buildId": "42bf65a34bc07ad101410a200562d12f2c1bb448c8f9eddac37aff54faec6245",
+      "mode": "live",
+      "promptVersion": "extract-v2.11",
+      "promptSha256": "a5da413d26aa1fdc81658be060637f6adc6669b7d58f41e7cef12fd0d1a9c6e6",
+      "contentApproval": "fictional_test_only",
+      "releaseApproved": false,
+      "independentEvaluation": false,
+      "modelCalls": 0,
+      "operations": {
+        "attempts": 8,
+        "primaryAttempts": 5,
+        "secondaryAttempts": 3,
+        "latencyKind": "offline_adapter_wall_time",
+        "p50Ms": 1.1779999999999973,
+        "p95Ms": 9.527800000000013,
+        "maxMs": 9.527800000000013,
+        "newChargedTokens": 0,
+        "originalGenerationMetadataIsHistorical": true
+      },
+      "engineering": {
+        "completeValid": 8,
+        "incomplete": 0,
+        "citationValid": 8,
+        "citationNA": 0,
+        "failures": []
+      },
+      "semantic": {
+        "components": {
+          "actor_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          },
+          "verb_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          },
+          "polarity_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          },
+          "resource_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          },
+          "mechanism_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          },
+          "promise_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          },
+          "guidance_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          },
+          "contradiction_preserved": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          },
+          "critical_unknowns_preserved": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          },
+          "required_question_relevant": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          },
+          "evidence_meaning_exact": {
+            "passed": 0,
+            "failed": 0,
+            "na": 0,
+            "pending": 5,
+            "total": 5,
+            "applicable": 5,
+            "percentage": null
+          }
+        },
+        "wholeCase": {
+          "passed": 0,
+          "failed": 0,
+          "pending": 5,
+          "total": 5,
+          "percentage": null
+        },
+        "controls": {
+          "passed": 0,
+          "failed": 0,
+          "pending": 2,
+          "total": 2,
+          "percentage": null
+        },
+        "missingInformation": {
+          "passed": 0,
+          "failed": 0,
+          "pending": 1,
+          "total": 1,
+          "percentage": null
+        },
+        "producerReviews": 0,
+        "humanDevelopmentReviews": 0
+      },
+      "safety": {
+        "reviewed": 0,
+        "pending": 8,
+        "unsafeObserved": 0,
+        "rawReviewed": 0,
+        "rawPending": 8,
+        "rawUnsafeObserved": 0
+      }
+    }
+  },
+  "recordedPendingSummary": {
+    "project": "OfferAnchor",
+    "scope": "development_engineering_only",
+    "evidenceType": "recorded_development_replay",
+    "configurationId": "8d42817e9529aead4cea80fc40fe8930b4a1607df403aaf859ea19c70f2115d4",
+    "buildId": "42bf65a34bc07ad101410a200562d12f2c1bb448c8f9eddac37aff54faec6245",
+    "mode": "live",
+    "promptVersion": "extract-v2.11",
+    "promptSha256": "a5da413d26aa1fdc81658be060637f6adc6669b7d58f41e7cef12fd0d1a9c6e6",
+    "contentApproval": "fictional_test_only",
+    "releaseApproved": false,
+    "independentEvaluation": false,
+    "modelCalls": 0,
+    "operations": {
+      "attempts": 8,
+      "primaryAttempts": 5,
+      "secondaryAttempts": 3,
+      "latencyKind": "offline_adapter_wall_time",
+      "p50Ms": 1.1779999999999973,
+      "p95Ms": 9.527800000000013,
+      "maxMs": 9.527800000000013,
+      "newChargedTokens": 0,
+      "originalGenerationMetadataIsHistorical": true
+    },
+    "engineering": {
+      "completeValid": 8,
+      "incomplete": 0,
+      "citationValid": 8,
+      "citationNA": 0,
+      "failures": []
+    },
+    "semantic": {
+      "components": {
+        "actor_exact": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        },
+        "verb_exact": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        },
+        "polarity_exact": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        },
+        "resource_exact": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        },
+        "mechanism_exact": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        },
+        "promise_exact": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        },
+        "guidance_exact": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        },
+        "contradiction_preserved": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        },
+        "critical_unknowns_preserved": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        },
+        "required_question_relevant": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        },
+        "evidence_meaning_exact": {
+          "passed": 0,
+          "failed": 0,
+          "na": 0,
+          "pending": 5,
+          "total": 5,
+          "applicable": 5,
+          "percentage": null
+        }
+      },
+      "wholeCase": {
+        "passed": 0,
+        "failed": 0,
+        "pending": 5,
+        "total": 5,
+        "percentage": null
+      },
+      "controls": {
+        "passed": 0,
+        "failed": 0,
+        "pending": 2,
+        "total": 2,
+        "percentage": null
+      },
+      "missingInformation": {
+        "passed": 0,
+        "failed": 0,
+        "pending": 1,
+        "total": 1,
+        "percentage": null
+      },
+      "producerReviews": 0,
+      "humanDevelopmentReviews": 0
+    },
+    "safety": {
+      "reviewed": 0,
+      "pending": 8,
+      "unsafeObserved": 0,
+      "rawReviewed": 0,
+      "rawPending": 8,
+      "rawUnsafeObserved": 0
+    }
+  },
+  "localLinks": {
+    "checked": 63,
+    "broken": 0
+  },
+  "selectedSourceHashes": [
+    {
+      "path": "lib/contracts/index.ts",
+      "sha256": "d11223c03ddbf3abc1c1d16012d663d10b1233c8026dfddf770ccb1d72d3cfc5"
+    },
+    {
+      "path": "lib/contracts/generated.ts",
+      "sha256": "2e3ad80e520722817886b3b76167428cb167a1b37d406dc5eee061e608757826"
+    },
+    {
+      "path": "lib/contracts/schema.ts",
+      "sha256": "ac00a52ee1d3dd681f1c61c72885eb444ee7d93db885d9e005e7ca807deaadcb"
+    },
+    {
+      "path": "lib/contracts/semantic.ts",
+      "sha256": "d1a9bbb1f01da28e54a0a8b3a3a1ec51ef3368512aff43cb9689a4f7c3e64e25"
+    },
+    {
+      "path": "lib/contracts/errors.ts",
+      "sha256": "c87fa624553df2f44246a6d2f846e6c0536fc08347ccc139e7b6df185f205bee"
+    },
+    {
+      "path": "lib/contracts/generate-types.mjs",
+      "sha256": "d15b331e2d5d7a5bc3a26266016a1e71941ac9656205cacc2261126e8f481528"
+    },
+    {
+      "path": "lib/analysis/index.ts",
+      "sha256": "33e9423fd093db4bf8ba3f656ee25e735e165eccb402aacea5e96da0a9eb1b9b"
+    },
+    {
+      "path": "lib/analysis/provider.ts",
+      "sha256": "6f93cb0d601ee8ce9c1f1791bf8c79b361b6619007a3c7f5977f3b54318e89cb"
+    },
+    {
+      "path": "lib/analysis/failure.ts",
+      "sha256": "a68e6f605e093ba08eaa9da22c7b45edca206bedfc75d2c26cfc533e798d9680"
+    },
+    {
+      "path": "lib/analysis/prompt-candidate-v2.11.ts",
+      "sha256": "84102fde9a90fcfabffe63007582cac7c765b6e9d4d8672505379d1a037568ee"
+    },
+    {
+      "path": "lib/analysis/server-guard.ts",
+      "sha256": "c75b3f028073d372fee7c51e7582863351d2977f58f1f24ce922b1640751475d"
+    },
+    {
+      "path": "lib/analysis/simulation.ts",
+      "sha256": "df05504d327c9bbec71c15e65c399d05c7143e4addae8efcc4e2178b31de8cea"
+    },
+    {
+      "path": "lib/analysis/validate.ts",
+      "sha256": "da27cdc1e1c59ba37093e2a774758fc6e4485f1c2cba8ae130de817b384c2a4f"
+    },
+    {
+      "path": "lib/knowledge/index.ts",
+      "sha256": "8d5ebd299944d86ea7e77770c211ab4dc0b1aa9bdb5342f18c13a2dc3306cf5a"
+    },
+    {
+      "path": "lib/contracts/policy.ts",
+      "sha256": "b92fe9d0d67d0baaf7ce8782324ab5502f6efe2fac8f0d1a8161732d691d41ce"
+    },
+    {
+      "path": "contracts/analyze-request.schema.json",
+      "sha256": "57ffabea205ad2d7a458f1921e28a1ed52c4ead7cb6b642bc19b9e8db5ed403a",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "contracts/analyze-response.schema.json",
+      "sha256": "dc3d821f998e516811590deb38588b0d3e46c60b2733e4b623870b19034d365a",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "contracts/extraction.schema.json",
+      "sha256": "429781e080df8403c819825119f7f2b5d011868ff337f4e69bc0c15f292e00ac",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "contracts/provider-extraction.schema.json",
+      "sha256": "309f9d30e7137b0062054bf369d804ba544cc9e9a8083786fb8e5a7690a8407a",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "contracts/transport-error.schema.json",
+      "sha256": "2103fa47192e726c8c31dab06957c38619c95a50a4f683e36cc81293d8fc878a",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/provider-extraction-personal-loan.json",
+      "sha256": "0453f4abab8361cb9da9b063932f901a9309fb4247eeb42145e1e3a057c3d90c",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/request-company-en.json",
+      "sha256": "7065b544644d1c166cd4f0e77fa4c38b7ff2ab1dc2eb1fa0ead26fa438486c50",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/request-company-zh.json",
+      "sha256": "0f83482716b2ad5da9cfaf3cd2501db168d2ecb75821765dca3b851677687d34",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/request-funding-note-en.json",
+      "sha256": "7ffad89d329e9c7fcfc75851255a24e47c79f6634fb9b3125cfc5f0fbd12f53e",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/request-missing-payer-en.json",
+      "sha256": "edde1ca46127094c407e772ea89e9cd879ce21f49999a2735493bcee4ea358fa",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/request-personal-loan.json",
+      "sha256": "4e4e2e8079d77e81373b6f6415402ef17c0427ac18be8ff422b12a6fdc93e5dd",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/request-task-denial-en.json",
+      "sha256": "4b6e8f8c7020d5b12e8aef9e7a0f3fa45d792a4febcc2395e952abb76f2030f3",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/request-task-en.json",
+      "sha256": "a5fcdc470c85e76c57f20938bb0a591e2a0e81503a36b857c3d59a9cfba753b8",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/request-task-zh.json",
+      "sha256": "fc48b1952025548c710cbc3472b586030fb8f83659e6ef85a5a6c5ca6e875c1a",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/response-company-en.json",
+      "sha256": "e1d1bc9e184c0a69453408b662ba5dfc07b9ce914e6ec2a143987a04dff98e7a",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/response-company-zh.json",
+      "sha256": "c688e96089c4f7292c824209e8f43d1cf9faf08af049881874f12e64bb321b9a",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/response-funding-note-en.json",
+      "sha256": "4d56d9018d6b9bd4ce17eb7ce51ad83745cd603d0d85233ac6837b7c358d4b8d",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/response-missing-payer-en.json",
+      "sha256": "99333cba32b8f2234e8e6a02e7da794fa19d7544496a95ab7470962bbf81b9cf",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/response-personal-loan.json",
+      "sha256": "33d2a40fb0be3a2bdc27fac32e25ba9aad72f2117c86969ec37e84feddd48733",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/response-task-denial-en.json",
+      "sha256": "748336f0eee5efe1b7cc697e9af440ffa71c68d39a54973bbd85081d596894b6",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/response-task-en.json",
+      "sha256": "36087b661d783d3ec63e494fe6889ae7442d169c9ed7bab2f98be3d63c6e77d8",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/response-task-zh.json",
+      "sha256": "e790e82b1b4bfdd7896e0ada6efbd47b8108e650e6229d19949046d45fe725c3",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "examples/simulation-fixtures.json",
+      "sha256": "2411419d37b16d6409ac446d8baf02f2d0d433ed3ef25cd1ced30554ac35043f",
+      "matchesPublishedTeamBaseline": true
+    },
+    {
+      "path": "knowledge/library.json",
+      "sha256": "d0820f5d6cd57720972ac87be9e7a63a5aa7a5564eb13a83a8b7a8054c66479f",
+      "matchesPublishedTeamBaseline": false
+    },
+    {
+      "path": "locales/en-HK.json",
+      "sha256": "e0106c7f3ca7667040582343ce91db94cde108e22ad690b324f915fce0ae050b",
+      "matchesPublishedTeamBaseline": false
+    },
+    {
+      "path": "locales/zh-Hant-HK.json",
+      "sha256": "a4d4f607f988ea7a552467054686edba1b4dcfdba424667a71627cdb4402e0bc",
+      "matchesPublishedTeamBaseline": false
+    }
+  ],
+  "personalFullSuiteHistorical": {
+    "tests": 367,
+    "pass": 367,
+    "source": "Personal pre-delivery verification from this source revision; not rerun as a shared app test"
+  },
+  "liveDevelopmentEvidence": {
+    "newFictionalAttempts": 8,
+    "cumulativeHistoricalAttempts": 66,
+    "usageTokens": 25077,
+    "classification": "Exposed producer checks, not independent accuracy"
+  },
+  "modelCallsDuringPublication": 0,
+  "independentAccuracy": null,
+  "humanContentApproval": false,
+  "sharedAppAccepted": false,
+  "mainMerged": false,
+  "releaseApproved": false,
+  "annotationContentsRead": false,
+  "preservation": "Two new team annotation blobs inherited by metadata from the latest-main base tree; contents not materialized. All other unselected files kept unchanged.",
+  "privacy": "Tracked fictional captures/review source only; credentials, provider config, participant/held-out material, private logs and personal ZIPs excluded."
+}

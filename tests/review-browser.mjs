@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import {chromium} from '@playwright/test';
+import {readFileSync,mkdirSync} from 'node:fs';
+const base=process.env.REVIEW_BASE_URL||'http://localhost:4311';
+assert.ok(['localhost','127.0.0.1'].includes(new URL(base).hostname),'Only an isolated local review service is allowed.');
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+let calls=0;const errors=[],requestErrors=[];
+page.on('pageerror',error=>errors.push(error.message));
+page.on('response',r=>{if(r.status()>=500)requestErrors.push(new URL(r.url()).pathname);});
+page.on('request',r=>{const u=new URL(r.url());assert.equal(u.origin,new URL(base).origin);if(u.pathname==='/api/analyze')calls++;assert.ok(!u.pathname.startsWith('/brand/')&&!u.pathname.startsWith('/landing/')&&!/woff|ttf|workspace-refresh/.test(u.pathname));});
+try{
+ await page.goto(base+'/check');await page.getByRole('heading',{name:'OfferAnchor functional review kit',exact:true}).waitFor();
+ const editor=page.getByLabel('AnalyzeRequest JSON');
+ await page.getByRole('button',{name:'Run prepared example (no API)',exact:true}).click();
+ await page.locator('#analysis-result').filter({hasText:'"status": "complete"'}).waitFor();assert.equal(calls,0);
+ await page.getByRole('button',{name:'Run server check',exact:true}).click();
+ await page.locator('#analysis-result').filter({hasText:'"status": "complete"'}).waitFor();assert.equal(calls,1);
+ const downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Download review JSON'}).click();const download=await downloadPromise;
+ const receipt=JSON.parse(readFileSync(await download.path(),'utf8'));assert.equal(receipt.result.status,'complete');assert.equal(receipt.result.mode,'simulation');
+ await editor.fill('{invalid');await page.getByRole('button',{name:'Run server check',exact:true}).click();await page.getByRole('alert').filter({hasText:'Use valid JSON'}).waitFor();assert.equal(calls,1);
+ await page.getByLabel('Prepared case').selectOption('company-en');await page.getByRole('button',{name:'Run server check',exact:true}).click();await page.locator('#analysis-result').filter({hasText:'"status": "complete"'}).waitFor();assert.equal(calls,2);
+ const file={name:'fictional.txt',mimeType:'text/plain',buffer:Buffer.from('Fictional imported request: company pays directly.')};
+ await page.getByText('Local file-to-text adapters',{exact:true}).click();await page.getByLabel('Local document').setInputFiles(file);await page.getByText('Fictional imported request: company pays directly.',{exact:true}).waitFor();
+ await page.getByLabel('General question').fill('Why is a personal loan still my debt?');await page.getByRole('button',{name:'Ask knowledge',exact:true}).click();await page.getByText('"sources_only"',{exact:false}).waitFor();
+ await page.getByText('Connection and demo access',{exact:true}).click();assert.equal(await page.getByLabel('Demo access code').getAttribute('type'),'password');
+ mkdirSync('.local-data',{recursive:true});await page.screenshot({path:'.local-data/review-desktop.png',fullPage:false});
+ await page.goto(base+'/login');await page.getByRole('heading',{name:'Review-kit sign-in',exact:true}).waitFor();assert.equal(await page.locator('img').count(),0);
+ assert.deepEqual(errors,[]);assert.deepEqual(requestErrors,[]);
+ console.log(JSON.stringify({passed:true,simulationServerChecks:2,preparedCalls:0,invalidJsonCalls:0,downloadVerified:true,localTextImportVerified:true,knowledgeSourcesVerified:true,passwordInputMasked:true,productionArtRequests:0,paidModelCalls:0}));
+}finally{await browser.close();}

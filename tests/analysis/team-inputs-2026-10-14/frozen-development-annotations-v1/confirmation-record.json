@@ -1,0 +1,18 @@
+{
+  "recordType": "Design_member_report_of_team_confirmation",
+  "recordedUtc": "2026-10-13T16:59:41Z",
+  "reportingRole": "Design",
+  "source": "Actual human messages in this Codex conversation",
+  "reportedStatements": [
+    "但他们之前和我说确认了啊，为什么还不能冻结",
+    "同意了，可以冻结了吗"
+  ],
+  "interpretation": "The Design member reports that teammate confirmation already occurred and confirms agreement after the distinction between original independent annotation completion and adoption of repaired PR8 labels was explained.",
+  "independentPassConfirmation": "member_reported",
+  "correctedLabelsAdoption": "member_reported",
+  "confirmedArtifact": "PR8 at 03dfef27dc14f0314b069df273b9706452cb3544; repair aaed2afeeda53ff477d93fe1d82647d456df95fb; fixed reference v1",
+  "individualTeammateMessageLinks": null,
+  "individualConfirmationDates": null,
+  "individualIdentitiesIndependentlyVerified": false,
+  "boundary": "Do not claim the agent contacted teammates, witnessed their annotation passes, or obtained individual GitHub approval events. Prior banners remain historical draft provenance; this member report is the new adoption evidence."
+}

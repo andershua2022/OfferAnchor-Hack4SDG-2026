@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-18",
+  "publicRepository": "https://github.com/andershua2022/OfferAnchor-Hack4SDG-2026",
+  "sourceRevision": "f49fb9617d5e7316636c3561175505c9bc1547c4",
+  "frontend": {
+    "baseline": "ddf6fdab9f5637d835e26e03cc19c30413f2bc7e",
+    "filesByteIdentical": 162,
+    "publicSchemasByteIdentical": 5,
+    "runtimeCodeChangedDuringPublication": false
+  },
+  "freshChecks": {
+    "integrationPassed": 357,
+    "compatibilityPassed": 93,
+    "failures": 0,
+    "productionBuild": "passed: Next.js Webpack with TypeScript",
+    "toolchain": "Existing dependencies and Node25.6.0; clean pinned toolchain install not tested",
+    "newModelCalls": 0
+  },
+  "publicSnapshotAdaptation": {
+    "changedExistingFiles": [
+      "README.md",
+      "docs/submission-framework-2026-10-18.md",
+      "tools/check-team-integration.mjs"
+    ],
+    "historyCopied": false,
+    "offlineTestPortability": "Three reviewed producer JSON fixtures retain original handoff SHA-256 values. Approval tests read these bytes instead of private Git history. Frozen gold and semantic/hash assertions remain unchanged.",
+    "initialCompatibilityFailures": "Private-history dependency exposed; all 93 pass after the offline loader adaptation."
+  },
+  "security": {
+    "knownCredentialCategoriesCompared": 7,
+    "knownCredentialMatches": 0,
+    "unreviewedSecretCandidates": 0,
+    "environmentSecretsIncluded": false,
+    "rawUserOrProviderLogsIncluded": false,
+    "oldCommitMetadataIncluded": false,
+    "limit": "Bounded local scan and prior image review are not proof against every unknown secret or a comprehensive legal review."
+  },
+  "modelEvidence": {
+    "source": "evals/repair-v28/",
+    "scope": "Exposed synthetic development evidence; not held-out accuracy. Complex false audit refusal remains."
+  },
+  "deployment": {
+    "existingWebsite": "https://offeranchor-hk.vercel.app",
+    "existingProfile": "extract-v2.24",
+    "snapshotProfile": "extract-v2.28",
+    "deployed": false,
+    "automaticGitDeploymentEnabled": false,
+    "originalCollaborationRepositoryRemainsPrivate": true
+  }
+}

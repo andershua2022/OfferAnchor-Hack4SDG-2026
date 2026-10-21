@@ -1,0 +1,704 @@
+{
+  "version": "development-2026-10-11",
+  "owner": "AI/DS",
+  "contractVersion": "2.0.0",
+  "classification": "AI-authored synthetic development material; not independent evaluation",
+  "humanApproval": false,
+  "realModelCalls": 0,
+  "usedAsPromptExamples": false,
+  "limits": "Authored extraction compatibility and proposed review focus only. No model accuracy or release acceptance. DASE owns independent labels/held-out assessment. Do not substitute these authored outputs in live execution.",
+  "cases": [
+    {
+      "caseId": "payer-applicant-zh",
+      "contrastGroup": "payer",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "dev_payer-applicant-zh",
+        "revision": 1,
+        "locale": "zh-Hant-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "advertisement",
+            "label": "Fictional development source 1",
+            "sequence": 1,
+            "text": "工作是整理訂單紀錄。"
+          },
+          {
+            "id": "E2",
+            "kind": "instruction",
+            "label": "Fictional development source 2",
+            "sequence": 2,
+            "text": "請用你自己的錢支付100港元，才能解鎖下一個任務。"
+          }
+        ]
+      },
+      "authoredExtraction": {
+        "actions": [
+          {
+            "id": "A1",
+            "actor": "applicant",
+            "verb": "pay",
+            "polarity": "requested",
+            "resource": "personal_money",
+            "recipient": "unknown",
+            "purpose": "要求求職者先動用自己的錢以解鎖任務。",
+            "citations": [
+              {
+                "evidenceId": "E2",
+                "quote": "請用你自己的錢支付100港元，才能解鎖下一個任務。",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "task_recharge"
+          }
+        ],
+        "claims": [
+          {
+            "id": "C1",
+            "kind": "advertised_duty",
+            "text": "原先列明整理訂單紀錄的工作。",
+            "status": "stated_in_input",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "工作是整理訂單紀錄。",
+                "occurrence": 1
+              }
+            ],
+            "relatedActionIds": []
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "D1",
+            "earlierClaimId": "C1",
+            "laterActionId": "A1",
+            "explanation": "原先的訂單紀錄工作，新增了動用求職者自己的錢的指令。"
+          }
+        ],
+        "relationships": [],
+        "unknowns": [
+          {
+            "id": "U1",
+            "kind": "employer_authorization",
+            "relatedActionIds": [],
+            "issue": "發訊者及指令的授權尚未獨立確認。",
+            "priority": "context"
+          }
+        ],
+        "questions": []
+      },
+      "expectedBoundary": "accepted",
+      "expectedGuidance": "pause_requested_action",
+      "reviewFocus": [
+        "The actor is the applicant, not the sender.",
+        "Explicit personal funds and task-unlock condition support task_recharge.",
+        "Retain the earlier duty and supported added-scope comparison."
+      ]
+    },
+    {
+      "caseId": "payer-company-zh",
+      "contrastGroup": "payer",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "dev_payer-company-zh",
+        "revision": 1,
+        "locale": "zh-Hant-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "advertisement",
+            "label": "Fictional development source 1",
+            "sequence": 1,
+            "text": "工作是整理訂單紀錄。"
+          },
+          {
+            "id": "E2",
+            "kind": "instruction",
+            "label": "Fictional development source 2",
+            "sequence": 2,
+            "text": "公司會用公司資金支付100港元，解鎖下一個任務。"
+          }
+        ]
+      },
+      "authoredExtraction": {
+        "actions": [
+          {
+            "id": "A1",
+            "actor": "employer",
+            "verb": "pay",
+            "polarity": "described",
+            "resource": "company_money",
+            "recipient": "unknown",
+            "purpose": "對方聲稱由公司資金付款；不代表付款已完成。",
+            "citations": [
+              {
+                "evidenceId": "E2",
+                "quote": "公司會用公司資金支付100港元，解鎖下一個任務。",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "company_funded_work"
+          }
+        ],
+        "claims": [
+          {
+            "id": "C1",
+            "kind": "advertised_duty",
+            "text": "原先列明整理訂單紀錄的工作。",
+            "status": "stated_in_input",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "工作是整理訂單紀錄。",
+                "occurrence": 1
+              }
+            ],
+            "relatedActionIds": []
+          }
+        ],
+        "comparisons": [],
+        "relationships": [],
+        "unknowns": [
+          {
+            "id": "U1",
+            "kind": "employer_authorization",
+            "relatedActionIds": [],
+            "issue": "發訊者及指令的授權尚未獨立確認。",
+            "priority": "context"
+          }
+        ],
+        "questions": []
+      },
+      "expectedBoundary": "accepted",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "reviewFocus": [
+        "Similar payment/task vocabulary with a company payer has different financial scope.",
+        "No applicant demand or added-personal-scope comparison.",
+        "This never establishes employer legitimacy."
+      ]
+    },
+    {
+      "caseId": "loan-request-en",
+      "contrastGroup": "polarity",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "dev_loan-request-en",
+        "revision": 1,
+        "locale": "en-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "instruction",
+            "label": "Fictional development source 1",
+            "sequence": 1,
+            "text": "Apply for a personal loan in your own name."
+          }
+        ]
+      },
+      "authoredExtraction": {
+        "actions": [
+          {
+            "id": "A1",
+            "actor": "applicant",
+            "verb": "borrow",
+            "polarity": "requested",
+            "resource": "personal_borrowing",
+            "recipient": "unknown",
+            "purpose": "A personal loan instruction, not a verified completed action.",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "Apply for a personal loan in your own name.",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "personal_borrowing"
+          }
+        ],
+        "claims": [],
+        "comparisons": [],
+        "relationships": [],
+        "unknowns": [
+          {
+            "id": "U1",
+            "kind": "employer_authorization",
+            "relatedActionIds": [],
+            "issue": "Sender and instruction authorization remain independently unconfirmed.",
+            "priority": "context"
+          }
+        ],
+        "questions": []
+      },
+      "expectedBoundary": "accepted",
+      "expectedGuidance": "pause_requested_action",
+      "reviewFocus": [
+        "Requested personal borrowing uses its matching resource/mechanism."
+      ]
+    },
+    {
+      "caseId": "loan-prohibition-en",
+      "contrastGroup": "polarity",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "dev_loan-prohibition-en",
+        "revision": 1,
+        "locale": "en-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "instruction",
+            "label": "Fictional development source 1",
+            "sequence": 1,
+            "text": "Do not apply for a personal loan in your own name."
+          }
+        ]
+      },
+      "authoredExtraction": {
+        "actions": [
+          {
+            "id": "A1",
+            "actor": "applicant",
+            "verb": "borrow",
+            "polarity": "prohibited",
+            "resource": "personal_borrowing",
+            "recipient": "unknown",
+            "purpose": "A full personal-borrowing prohibition, not a demand.",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "Do not apply for a personal loan in your own name.",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "personal_borrowing"
+          }
+        ],
+        "claims": [],
+        "comparisons": [],
+        "relationships": [],
+        "unknowns": [
+          {
+            "id": "U1",
+            "kind": "employer_authorization",
+            "relatedActionIds": [],
+            "issue": "Sender and instruction authorization remain independently unconfirmed.",
+            "priority": "context"
+          }
+        ],
+        "questions": []
+      },
+      "expectedBoundary": "accepted",
+      "expectedGuidance": "no_personal_financial_request_identified",
+      "reviewFocus": [
+        "The entire governing negation stays in the citation.",
+        "Borrowing vocabulary alone does not create a requested action or blocking question."
+      ]
+    },
+    {
+      "caseId": "promise-same-source-en",
+      "contrastGroup": "chronology",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "dev_promise-same-source-en",
+        "revision": 1,
+        "locale": "en-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "instruction",
+            "label": "Fictional development source 1",
+            "sequence": 1,
+            "text": "Apply for a personal loan in your own name. The company will pay your monthly loan repayments."
+          }
+        ]
+      },
+      "authoredExtraction": {
+        "actions": [
+          {
+            "id": "A1",
+            "actor": "applicant",
+            "verb": "borrow",
+            "polarity": "requested",
+            "resource": "personal_borrowing",
+            "recipient": "unknown",
+            "purpose": "A personal loan instruction, not a verified completed action.",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "Apply for a personal loan in your own name.",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "personal_borrowing"
+          }
+        ],
+        "claims": [
+          {
+            "id": "C1",
+            "kind": "repayment_promise",
+            "text": "The repayment statement remains an unverified promise.",
+            "status": "stated_in_input",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "The company will pay your monthly loan repayments.",
+                "occurrence": 1
+              }
+            ],
+            "relatedActionIds": [
+              "A1"
+            ]
+          }
+        ],
+        "comparisons": [],
+        "relationships": [],
+        "unknowns": [
+          {
+            "id": "U1",
+            "kind": "employer_authorization",
+            "relatedActionIds": [],
+            "issue": "Sender and instruction authorization remain independently unconfirmed.",
+            "priority": "context"
+          }
+        ],
+        "questions": []
+      },
+      "expectedBoundary": "accepted",
+      "expectedGuidance": "pause_requested_action",
+      "reviewFocus": [
+        "relatedActionIds associates the promise with borrowing.",
+        "Same-source prose order does not qualify for relationships."
+      ]
+    },
+    {
+      "caseId": "promise-later-source-en",
+      "contrastGroup": "chronology",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "dev_promise-later-source-en",
+        "revision": 1,
+        "locale": "en-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "instruction",
+            "label": "Fictional development source 1",
+            "sequence": 1,
+            "text": "Apply for a personal loan in your own name."
+          },
+          {
+            "id": "E2",
+            "kind": "reply",
+            "label": "Fictional development source 2",
+            "sequence": 2,
+            "text": "The company will pay your monthly loan repayments."
+          }
+        ]
+      },
+      "authoredExtraction": {
+        "actions": [
+          {
+            "id": "A1",
+            "actor": "applicant",
+            "verb": "borrow",
+            "polarity": "requested",
+            "resource": "personal_borrowing",
+            "recipient": "unknown",
+            "purpose": "A personal loan instruction, not a verified completed action.",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "Apply for a personal loan in your own name.",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "personal_borrowing"
+          }
+        ],
+        "claims": [
+          {
+            "id": "C1",
+            "kind": "repayment_promise",
+            "text": "The repayment statement remains an unverified promise.",
+            "status": "stated_in_input",
+            "citations": [
+              {
+                "evidenceId": "E2",
+                "quote": "The company will pay your monthly loan repayments.",
+                "occurrence": 1
+              }
+            ],
+            "relatedActionIds": [
+              "A1"
+            ]
+          }
+        ],
+        "comparisons": [],
+        "relationships": [
+          {
+            "id": "R1",
+            "kind": "clarifies",
+            "earlierItemId": "A1",
+            "laterItemId": "C1",
+            "explanation": "The later reply states a repayment arrangement for the earlier loan demand; it remains unverified."
+          }
+        ],
+        "unknowns": [
+          {
+            "id": "U1",
+            "kind": "employer_authorization",
+            "relatedActionIds": [],
+            "issue": "Sender and instruction authorization remain independently unconfirmed.",
+            "priority": "context"
+          }
+        ],
+        "questions": []
+      },
+      "expectedBoundary": "accepted",
+      "expectedGuidance": "pause_requested_action",
+      "reviewFocus": [
+        "Association is retained independently from a supported later-source clarification.",
+        "The promise is stated_in_input, never verified."
+      ]
+    },
+    {
+      "caseId": "origin-explicit-en",
+      "contrastGroup": "money-origin",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "dev_origin-explicit-en",
+        "revision": 1,
+        "locale": "en-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "instruction",
+            "label": "Fictional development source 1",
+            "sequence": 1,
+            "text": "Apply for a personal loan in your own name. Transfer the borrowed funds to the coordinator."
+          }
+        ]
+      },
+      "authoredExtraction": {
+        "actions": [
+          {
+            "id": "A1",
+            "actor": "applicant",
+            "verb": "borrow",
+            "polarity": "requested",
+            "resource": "personal_borrowing",
+            "recipient": "unknown",
+            "purpose": "A personal loan instruction, not a verified completed action.",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "Apply for a personal loan in your own name.",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "personal_borrowing"
+          },
+          {
+            "id": "A2",
+            "actor": "applicant",
+            "verb": "transfer",
+            "polarity": "requested",
+            "resource": "personal_borrowing",
+            "recipient": "unknown",
+            "purpose": "The explicit transfer uses the same borrowed proceeds.",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "Transfer the borrowed funds to the coordinator.",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "personal_borrowing"
+          }
+        ],
+        "claims": [],
+        "comparisons": [],
+        "relationships": [],
+        "unknowns": [
+          {
+            "id": "U1",
+            "kind": "employer_authorization",
+            "relatedActionIds": [],
+            "issue": "Sender and instruction authorization remain independently unconfirmed.",
+            "priority": "context"
+          }
+        ],
+        "questions": []
+      },
+      "expectedBoundary": "accepted",
+      "expectedGuidance": "pause_requested_action",
+      "reviewFocus": [
+        "Borrowed-money origin is explicit for both borrow and transfer.",
+        "No mechanism downgrade or invented missing-payer question."
+      ]
+    },
+    {
+      "caseId": "origin-missing-en",
+      "contrastGroup": "money-origin",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "dev_origin-missing-en",
+        "revision": 1,
+        "locale": "en-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "instruction",
+            "label": "Fictional development source 1",
+            "sequence": 1,
+            "text": "Transfer the funds to the coordinator."
+          }
+        ]
+      },
+      "authoredExtraction": {
+        "actions": [
+          {
+            "id": "A1",
+            "actor": "applicant",
+            "verb": "transfer",
+            "polarity": "requested",
+            "resource": "unknown",
+            "recipient": "unknown",
+            "purpose": "The applicant transfer is stated, but its funding source is absent.",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "Transfer the funds to the coordinator.",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "unclear"
+          }
+        ],
+        "claims": [],
+        "comparisons": [],
+        "relationships": [],
+        "unknowns": [
+          {
+            "id": "U1",
+            "kind": "employer_authorization",
+            "relatedActionIds": [],
+            "issue": "Sender and instruction authorization remain independently unconfirmed.",
+            "priority": "context"
+          },
+          {
+            "id": "U2",
+            "kind": "resource",
+            "relatedActionIds": [
+              "A1"
+            ],
+            "issue": "Which funds are being requested: personal, borrowed or company funds?",
+            "priority": "blocking"
+          }
+        ],
+        "questions": [
+          {
+            "id": "Q1",
+            "unknownId": "U2",
+            "text": "Are the funds personal, borrowed or company funds?"
+          }
+        ]
+      },
+      "expectedBoundary": "accepted",
+      "expectedGuidance": "clarify_before_action",
+      "reviewFocus": [
+        "Do not infer a loan origin from an unrelated example.",
+        "Preserve the genuine blocking resource unknown and safe clarification."
+      ]
+    },
+    {
+      "caseId": "loan-funded-pay-unsupported-en",
+      "contrastGroup": "contract-boundary",
+      "request": {
+        "contractVersion": "2.0.0",
+        "requestId": "dev_loan-funded-pay-unsupported-en",
+        "revision": 1,
+        "locale": "en-HK",
+        "clarificationsUsed": 0,
+        "evidence": [
+          {
+            "id": "E1",
+            "kind": "instruction",
+            "label": "Fictional development source 1",
+            "sequence": 1,
+            "text": "Apply for a personal loan in your own name. Pay the supplier using those loan proceeds."
+          }
+        ]
+      },
+      "authoredExtraction": {
+        "actions": [
+          {
+            "id": "A1",
+            "actor": "applicant",
+            "verb": "borrow",
+            "polarity": "requested",
+            "resource": "personal_borrowing",
+            "recipient": "unknown",
+            "purpose": "A personal loan instruction, not a verified completed action.",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "Apply for a personal loan in your own name.",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "personal_borrowing"
+          },
+          {
+            "id": "A2",
+            "actor": "applicant",
+            "verb": "pay",
+            "polarity": "requested",
+            "resource": "personal_borrowing",
+            "recipient": "third_party",
+            "purpose": "A stated pay action with explicit borrowed-money origin.",
+            "citations": [
+              {
+                "evidenceId": "E1",
+                "quote": "Pay the supplier using those loan proceeds.",
+                "occurrence": 1
+              }
+            ],
+            "mechanism": "personal_borrowing"
+          }
+        ],
+        "claims": [],
+        "comparisons": [],
+        "relationships": [],
+        "unknowns": [
+          {
+            "id": "U1",
+            "kind": "employer_authorization",
+            "relatedActionIds": [],
+            "issue": "Sender and instruction authorization remain independently unconfirmed.",
+            "priority": "context"
+          }
+        ],
+        "questions": []
+      },
+      "expectedBoundary": "accepted",
+      "expectedGuidance": "pause_requested_action",
+      "reviewFocus": [
+        "Producer semantic compatibility correction admits truthful pay with explicit loan proceeds.",
+        "Preserve actual pay and personal_borrowing fields; no transfer fabrication or funds rewriting.",
+        "Shared consumer acknowledgement is pending; these authored outputs are not independent labels."
+      ]
+    }
+  ],
+  "supersedes": "semantic-development-cases.json (preserved historical October 10 expectations)"
+}

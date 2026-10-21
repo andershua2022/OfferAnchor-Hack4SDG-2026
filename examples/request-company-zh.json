@@ -1,0 +1,23 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "fixture_company_zh",
+  "revision": 1,
+  "locale": "zh-Hant-HK",
+  "clarificationsUsed": 0,
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "advertisement",
+      "label": "Fictional internship advertisement",
+      "sequence": 1,
+      "text": "研究助理實習：每週整理產品研究試算表。"
+    },
+    {
+      "id": "E2",
+      "kind": "instruction",
+      "label": "Fictional latest instruction",
+      "sequence": 2,
+      "text": "請記錄產品訂單。僱主會直接以公司資金向供應商付款。不要使用個人資金、申請私人貸款或分享銀行一次性驗證碼。"
+    }
+  ]
+}

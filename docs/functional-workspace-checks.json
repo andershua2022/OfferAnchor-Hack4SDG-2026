@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-16",
+  "status": "local_unpublished",
+  "canonicalSource": "D:/桌面/OfferAnchor",
+  "githubMainChecked": "e83bbabe9e356e72b74b4933681fe08668267770",
+  "baseline": "2.2",
+  "contract": "2.0.0",
+  "observedChecks": {
+    "integrationSessionServerTests": {
+      "passed": 34,
+      "failed": 0
+    },
+    "existingOfflineAiReliabilityTests": {
+      "passed": 80,
+      "failed": 0
+    },
+    "productionBuild": "passed",
+    "typeScript": "passed",
+    "originalBrowserSmoke": "passed",
+    "workspaceBrowserSuite": "passed",
+    "finalPreviewPort": 4319,
+    "finalPreviewStatus": {
+      "http": 200,
+      "mode": "simulation",
+      "ready": true,
+      "accessRequired": false
+    },
+    "finalBrowserSanity": {
+      "clarificationForm": true,
+      "horizontalOverflow": false,
+      "unavailableDisablesAnalysis": true,
+      "pageErrors": []
+    },
+    "whitespaceDiff": "passed",
+    "browserSourceStorage": "none observed in localStorage or sessionStorage",
+    "browserExternalEvidenceRequests": "none observed",
+    "screenshotsInspected": [
+      ".local-data/function-completion-20261016/workspace-desktop.png",
+      ".local-data/function-completion-20261016/workspace-mobile.png",
+      "D:/桌面/SafePause/.playwright-mcp/final-functional-followup-desktop.png",
+      "D:/桌面/SafePause/.playwright-mcp/final-functional-followup-mobile.png"
+    ]
+  },
+  "runtime": {
+    "node": "24.15.0",
+    "browser": "Chrome 154.0.8037.99",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ]
+  },
+  "coverage": [
+    "Atomic first intake, stable non-reused source IDs, edit/delete/reorder invalidation",
+    "Preserved question provenance/budget, typed answers, later replies and user-reported outcomes",
+    "Exact authored clarification and denial continuations without replacing the session",
+    "Original action and claim quote selection; manually opened knowledge/source/route links",
+    "Cancellation, monotonic deadline, stale-response suppression and explicit retry",
+    "Bound validated incomplete responses retain safe codes on HTTP 422",
+    "Quote preference and protected footer parity across full, short, manual and print exports",
+    "Synthetic live-server gate, signed cookie, origin, shared cohort/global quotas and failed-attempt accounting",
+    "Synthetic live-labelled browser response preserves mode and provenance"
+  ],
+  "evidenceBoundary": {
+    "paidModelCalls": 0,
+    "realModelIntegrationAccepted": false,
+    "independentSemanticEvaluation": false,
+    "canonicalHumanContentApproval": false,
+    "newFunctionalWordingHumanApproval": false,
+    "physicalDeviceAcceptance": false,
+    "githubCommitOrPush": false,
+    "publicDeployment": false,
+    "agentBoardMcpAvailable": false,
+    "note": "Server tests inject synthetic provider and approval objects; browser live-mode checks use a synthetic HTTP response. These do not approve canonical content or establish real-model accuracy."
+  },
+  "preservedBoundaries": {
+    "aiExtractorOrCanonicalSchemasModified": false,
+    "promptVersion": "extract-v2.11",
+    "simulationPromptVersion": "extract-v2.0",
+    "reviewedLocales": {
+      "locales/en-HK.json": "c7370d68255304d6d09c332432ca1e8868bf6076c34126a585b3aea07fb79bd6",
+      "locales/zh-Hant-HK.json": "1056d06f5122707e589a4bdb5d80af0b707c4e6c1d31eefbcfe3b744ac364a62"
+    }
+  },
+  "remainingGates": [
+    "Recorded real source/card/route/localized-meaning approval and review of new functional wording",
+    "Private provider and access configuration plus an explicit bounded real-call authorization",
+    "Actual host/data-processing and distributed quota acceptance before public deployment",
+    "Independent semantic and real-user/device acceptance; engineering checks do not replace these"
+  ],
+  "knownLimitations": [
+    "Default simulation accepts only eight exact authored examples and their registered continuations; arbitrary edits return simulation_unsupported",
+    "Current canonical knowledge library remains draft and blocks live inference before a paid call",
+    "Rate counters are in process memory and reset on restart; controlled local/single-process demo only",
+    "No passive communications access, automatic external contact or financial operation"
+  ],
+  "sourceSha256": {
+    "app/fixture-preview.ts": "3a3f12a1b81c75f78fd8fff58c7271ec0c75fa6504d17594a82846a431cfacaf",
+    "app/analysis-client.ts": "82e04cf42f022d79e18b55ec5e8fc20865d0497936089cb15c97f7e147d0269e",
+    "app/workspace-status.ts": "b7f61a1b7545408d134657bd66ec85c7c3bd1bbd1f70478d7f4388beebc5e9a3",
+    "lib/server/workspace-api.ts": "78260469daf5c0114f743c22a57c0064600a4c9e550d50cd1f19f51b5c2bec29",
+    "app/api/analyze/route.ts": "f8f532f34929cadbb865ab30558761dc9664d517bcf2bcd4dcf239e2e9d595c0",
+    "app/api/session/route.ts": "6fb0cf48402c9d17403fec62aa6915cf312ef98f82fe1d7e251e27118f1e3c28",
+    "app/preview.tsx": "7752db1115e4a0c8416b0819b3268f831df45379e6a2f04f56e649a6a07a183b",
+    "app/preview-ui.tsx": "d77e3d8c4f6ed11d8b62e8b76ddb6b2470784b53f6a043578d67fb7311934f63"
+  }
+}

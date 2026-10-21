@@ -1,0 +1,298 @@
+{
+  "status": "Published; verified immutable staged deployment promoted and canonical production browser checked",
+  "date": "2026-10-19",
+  "sourceCommit": "eb620bf0ce78ca442e229c0fff75d7310f9316bc",
+  "deploymentId": "dpl_GmEc3yNGgZc9yAcY2xkVKrVLvVCj",
+  "productionUrl": "https://offeranchor-hk.vercel.app",
+  "baseCommit": "d80dd3c94a47d1e88fa2b36ffde1bbc604abb58d",
+  "scope": {
+    "sourceCheckedBilingualRecords": 24,
+    "distinctPrimaryUrls": 22,
+    "humanApprovedCoreGuides": 7,
+    "newHumanApprovalGranted": false,
+    "coreExtractionUsesPublicCases": false,
+    "semanticEmbeddings": false,
+    "sameOptionalPanelInLearnAndCheck": true
+  },
+  "protected": {
+    "coreContract": "2.0.0",
+    "corePrompt": "extract-v2.29",
+    "audit": "context-audit-1.8.0",
+    "frontendSourceChanged": false,
+    "modelBaseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "modelId": "qwen3.8-max",
+    "modelRegion": "cn-beijing",
+    "accountTrialActions": 5,
+    "accountTrialPeriod": "lifetime",
+    "sharedRawRequestAllowance": 60,
+    "sharedWindowSeconds": 86400
+  },
+  "localVerification": {
+    "integrationPassed": 440,
+    "integrationFailed": 0,
+    "aiCompatibilityPassed": 93,
+    "aiCompatibilityFailed": 0,
+    "typecheck": "passed",
+    "productionWebpackBuild": "passed",
+    "bilingualPositiveRetrievalQuestions": 48,
+    "reviewFindingsFixedWithRegressions": 3,
+    "accountBrowser": "passed; synthetic provider",
+    "attachmentBrowser": "passed; synthetic image provider",
+    "portableRecordBrowser": "passed; actual local ZIP download/reimport",
+    "sourceCheckedAnswerRenderer": {
+      "builtLocalBrowser": true,
+      "actualSavedStagedAnswersRendered": true,
+      "languages": [
+        "en-HK",
+        "zh-Hant-HK"
+      ],
+      "sourceCheckedStatusAccepted": true,
+      "extraPaidCalls": 0,
+      "pageErrors": []
+    }
+  },
+  "actualStagedServices": [
+    {
+      "id": "hays-en",
+      "kind": "knowledge",
+      "locale": "en-HK",
+      "http": 200,
+      "status": "complete",
+      "errorCode": null,
+      "answer": "Hays Hong Kong's published terms say it does not charge jobseekers for jobseeker services. [P_HAYS_FEES]\nThat gives applicants a company-specific comparison when someone claiming to be from Hays asks for a recruitment payment. [P_HAYS_FEES]\nOne company's policy, not a universal no-fee rule or endorsement. [P_HAYS_FEES]",
+      "sourceIds": [
+        "P_HAYS_FEES"
+      ],
+      "reviewStatus": [
+        "source_checked"
+      ],
+      "elapsedMs": 9233,
+      "actualUserAllowanceConsumed": 0,
+      "noAutomaticRetry": true,
+      "realStagedDeployment": true,
+      "question": "Does Hays charge jobseekers recruitment fees?"
+    },
+    {
+      "id": "hays-zh",
+      "kind": "knowledge",
+      "locale": "zh-Hant-HK",
+      "http": 200,
+      "status": "complete",
+      "errorCode": null,
+      "answer": "Hays 香港的求職者服務條款訂明，不向求職者收取該服務的費用。 [P_HAYS_FEES]\n這是一家公司的政策，並非所有香港職業介紹所均不得收費的通用規則。 [P_HAYS_FEES]\n有人自稱來自 Hays，亦不代表其身份或付款要求已獲核實。 [P_HAYS_FEES]",
+      "sourceIds": [
+        "P_HAYS_FEES"
+      ],
+      "reviewStatus": [
+        "source_checked"
+      ],
+      "elapsedMs": 9388,
+      "actualUserAllowanceConsumed": 0,
+      "noAutomaticRetry": true,
+      "realStagedDeployment": true,
+      "question": "Hays會不會向求職者收取仲介費？"
+    },
+    {
+      "id": "agency-zh",
+      "kind": "knowledge",
+      "locale": "zh-Hant-HK",
+      "http": 200,
+      "status": "complete",
+      "errorCode": null,
+      "answer": "勞工處表示，香港職業介紹所只可在成功介紹工作，且求職者已收到首月工資後收取訂明佣金，上限是首月實收工資的百分之十。 [P_AGENCY_COMMISSION]",
+      "sourceIds": [
+        "P_AGENCY_COMMISSION"
+      ],
+      "reviewStatus": [
+        "source_checked"
+      ],
+      "elapsedMs": 8696,
+      "actualUserAllowanceConsumed": 0,
+      "noAutomaticRetry": true,
+      "realStagedDeployment": true,
+      "question": "香港職業介紹所成功介紹工作後，佣金上限的一般規則是甚麼？"
+    },
+    {
+      "id": "identity-zh",
+      "kind": "knowledge",
+      "locale": "zh-Hant-HK",
+      "http": 200,
+      "status": "complete",
+      "errorCode": null,
+      "answer": "私隱專員公署個案 2024C01 涉及僱主在求職者接受聘用前收集身份證及銀行卡副本。 [P_ID_COPY_EARLY]\n公署指出，招聘階段與已接受聘用後對身份及出糧資料的需要不同。 [P_ID_COPY_EARLY]\n這是私隱合規個案，並非求職詐騙定罪，也不表示目前財務分析已能全面審查所有身份資料要求。 [P_ID_COPY_EARLY]",
+      "sourceIds": [
+        "P_ID_COPY_EARLY"
+      ],
+      "reviewStatus": [
+        "source_checked"
+      ],
+      "elapsedMs": 9566,
+      "actualUserAllowanceConsumed": 0,
+      "noAutomaticRetry": true,
+      "realStagedDeployment": true,
+      "question": "接受聘用之前收集身份證副本，私隱專員公署的個案說明甚麼？"
+    },
+    {
+      "id": "loan-en",
+      "kind": "knowledge",
+      "locale": "en-HK",
+      "http": 200,
+      "status": "complete",
+      "errorCode": null,
+      "answer": "A repayment promise does not change whose loan it is. [P_ADMIN_LOAN]\nCheck independently; a company repayment promise remains unverified. [K_PERSONAL_BORROWING]",
+      "sourceIds": [
+        "P_ADMIN_LOAN",
+        "K_PERSONAL_BORROWING"
+      ],
+      "reviewStatus": [
+        "source_checked",
+        "approved"
+      ],
+      "elapsedMs": 7936,
+      "actualUserAllowanceConsumed": 0,
+      "noAutomaticRetry": true,
+      "realStagedDeployment": true,
+      "question": "Why does a company repayment promise not change a loan in my name into company funding?"
+    },
+    {
+      "id": "unrelated",
+      "kind": "knowledge",
+      "http": 200,
+      "status": "incomplete",
+      "errorCode": "insufficient_evidence",
+      "sourceIds": [],
+      "expectedNoModelCall": true
+    },
+    {
+      "id": "web",
+      "kind": "web",
+      "http": 429,
+      "status": "rejected",
+      "errorCode": "quota_exceeded",
+      "elapsedMs": 4504,
+      "actualUserAllowanceConsumed": 0,
+      "noAutomaticRetry": true
+    },
+    {
+      "id": "web",
+      "kind": "web",
+      "http": 200,
+      "status": "sources_only",
+      "errorCode": null,
+      "sourceIds": [
+        "https://www1.jobs.gov.hk/0/en/information/jobtrap/",
+        "https://www.labour.gov.hk/eng/major/250503.htm",
+        "https://www.labour.gov.hk/"
+      ],
+      "elapsedMs": 8713,
+      "actualUserAllowanceConsumed": 0,
+      "noAutomaticRetry": true
+    },
+    {
+      "id": "F01",
+      "kind": "core-control",
+      "http": 200,
+      "status": "complete",
+      "errorCode": null,
+      "guidance": "pause_requested_action",
+      "promptVersion": "extract-v2.29",
+      "modelId": "qwen3.8-max",
+      "elapsedMs": 56687,
+      "actualUserAllowanceConsumed": 0,
+      "maximumRawModelRequests": 2,
+      "noAutomaticRetry": true
+    },
+    {
+      "id": "F02",
+      "kind": "core-control",
+      "http": 200,
+      "status": "complete",
+      "errorCode": null,
+      "guidance": "no_personal_financial_request_identified",
+      "promptVersion": "extract-v2.29",
+      "modelId": "qwen3.8-max",
+      "elapsedMs": 54548,
+      "actualUserAllowanceConsumed": 0,
+      "maximumRawModelRequests": 2,
+      "noAutomaticRetry": true
+    }
+  ],
+  "maximumRawModelRequestsForPaidValidation": 9,
+  "successfulFirecrawlSearches": 1,
+  "automaticModelOrSearchRetries": 0,
+  "blockedAttemptExplanation": "After five successful Q&A actions, an explicit Firecrawl test was blocked by the existing five-per-ten-minute owner-demo allowance before any search. After the window expired, the separate remaining test batch succeeded. No quota setting was raised or rotated; the blocked attempt is retained above.",
+  "stagedGuardChecks": {
+    "actualStagedRequests": true,
+    "cases": [
+      {
+        "id": "private-query",
+        "http": 200,
+        "errorCode": "private_query"
+      },
+      {
+        "id": "unauthorized",
+        "http": 403,
+        "errorCode": "unauthorized"
+      },
+      {
+        "id": "cross-origin",
+        "http": 403,
+        "errorCode": "unauthorized"
+      },
+      {
+        "id": "malformed",
+        "http": 400,
+        "errorCode": "invalid_input"
+      }
+    ],
+    "expectedPaidRequests": 0,
+    "automaticRetries": 0
+  },
+  "productionBrowser": {
+    "actualProductionBrowser": true,
+    "origin": "https://offeranchor-hk.vercel.app",
+    "landingHttp": 200,
+    "ctaToWorkspace": true,
+    "liveReady": true,
+    "trialPolicy": {
+      "limit": 5,
+      "period": "lifetime",
+      "unit": "ai_action_attempt"
+    },
+    "accountConfigured": true,
+    "emailDelivery": "public",
+    "googleAndEmailEntrancesVisible": true,
+    "cardReadersChecked": 24,
+    "sourceHrefsChecked": 24,
+    "actualZipDownloadAndReimport": true,
+    "privacyTerms": true,
+    "bilingualKeywords": true,
+    "categoryFilters": true,
+    "firecrawlHintsEnglishAndTraditionalChinese": true,
+    "narrowOverflow": false,
+    "paidRequests": 0,
+    "pageErrors": [],
+    "actualEmailDeliveryAndOAuthConsent": "Not repeated; this check confirms entrances only"
+  },
+  "privacy": {
+    "actualStagedBrowserAssetsScanned": 10,
+    "knownCredentialCategoriesCompared": 7,
+    "knownCredentialMatches": 0,
+    "protectedSourcePathsChanged": [],
+    "scannedLocally": true,
+    "credentialValuesPrintedOrUploaded": false
+  },
+  "initialProductionSmokeTransportFailure": {
+    "code": "ECONNRESET",
+    "operation": "Read-only Playwright APIRequest GET account status",
+    "resolution": "Repeated the zero-paid-call smoke using native browser fetch for session status; no product code change"
+  },
+  "limits": [
+    "Development cases and local regressions are not population accuracy or an independent held-out benchmark.",
+    "Real model checks ran on the exact immutable deployment before promotion; post-promotion checks were read-only/prepared-example browser checks.",
+    "No new real email delivery or human Google consent was performed; provider configuration/entrances and synthetic state regressions were checked.",
+    "The 24 records have source-checked provenance and owner authorization, not a fabricated human safety signature.",
+    "Earlier source-only/draft restrictions described in the initial audit snapshot are superseded only for this bounded optional Q&A scope.",
+    "Existing browser tabs should refresh to load the additive source_checked reference validation."
+  ]
+}

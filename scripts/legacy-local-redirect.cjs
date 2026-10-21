@@ -1,0 +1,5 @@
+const http=require('node:http');
+function localOrigin(value){const url=new URL(value);if(url.protocol!=='http:'||!['localhost','127.0.0.1','[::1]'].includes(url.hostname)||url.username||url.password||url.pathname!=='/'||url.search||url.hash)throw Error('Redirects are local development only');return url.origin;}
+function createRedirectServer(destination){const targetOrigin=localOrigin(destination);return http.createServer((request,response)=>{if(!['GET','HEAD'].includes(request.method)){response.writeHead(405,{'Allow':'GET, HEAD','Cache-Control':'no-store'});response.end();return;}try{const source=new URL(request.url,'http://localhost'),target=new URL(targetOrigin);target.pathname=source.pathname;target.search=source.search;response.writeHead(302,{Location:target.href,'Cache-Control':'no-store','Referrer-Policy':'no-referrer'});response.end();}catch{response.writeHead(400);response.end();}});}
+module.exports={createRedirectServer};
+if(require.main===module){const target=process.env.APP_ORIGIN||'http://localhost:3000';createRedirectServer(target).listen(4330,'localhost',()=>console.log('Legacy local preview redirects to the canonical application.'));}

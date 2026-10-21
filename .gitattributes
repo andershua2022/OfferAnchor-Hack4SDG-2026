@@ -1,0 +1,36 @@
+# Keep exact source/reference bytes on every OS; frozen checks bind literal bytes.
+* -text
+
+# Exact reviewed/applied bytes are part of the existing evidence contract.
+# Keep these files unchanged across Windows/macOS checkout and Git normalization.
+/docs/content-review-2026-10-17.md -text
+/knowledge/library.json -text
+/locales/en-HK.json -text
+/locales/zh-Hant-HK.json -text
+/supabase/migrations/*.sql -text
+/lib/analysis/prompt-candidate-v2.18.ts -text
+/lib/analysis/prompt-candidate-v2.19.ts -text
+/lib/analysis/prompt-candidate-v2.20.ts -text
+/lib/analysis/prompt-candidate-v2.21.ts -text
+/lib/analysis/prompt-candidate-v2.22.ts -text
+/lib/analysis/prompt-candidate-v2.23.ts -text
+/lib/analysis/prompt-candidate-v2.24.ts -text
+/lib/analysis/prompt-candidate-v2.25.ts -text
+/lib/server/compact-generation.ts -text
+/lib/server/context-generation.ts -text
+/lib/server/provider-source-schema.ts -text
+/lib/server/repayment-coverage.ts -text
+/lib/server/source-audit.ts -text
+/lib/server/source-fact-generation.ts -text
+/lib/server/source-role-constraints.ts -text
+/lib/server/source-unit-generation.ts -text
+/lib/server/source-unit-meaning-generation.ts -text
+
+# Submission source/fixture fingerprints must also survive cross-platform checkout.
+/lib/analysis/index.ts -text
+/lib/analysis/provider.ts -text
+/lib/contracts/index.ts -text
+/lib/analysis/prompt-candidate-v2.28.ts -text
+/lib/server/same-payment-events.ts -text
+/tests/analysis/runtime-prompt-overlay-2026-10-18.json -text
+/evals/repair-v28/cases.json -text

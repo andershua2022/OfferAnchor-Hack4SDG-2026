@@ -1,0 +1,18 @@
+import {CANDIDATE219_SYSTEM_PROMPT} from './prompt-candidate-v2.19.ts';
+
+export const CANDIDATE220_PROMPT_VERSION='extract-v2.20';
+export const CANDIDATE220_AUDIT_VERSION='context-audit-1.1.0';
+const semanticDecisions=[
+ 'Apply these source decisions before the inherited profile instructions. A payment amount, currency, applicant performer or work-unlock condition does not establish personal funding. Without stated funding, select unresolved_pay/unresolved_transfer; keep the unknown funding rather than inventing own funds. task_pay/task_transfer require explicit personal funds AND the work/earnings condition in selected units. Explicit company funds remain company-funded.',
+ 'Distinguish absence of a requirement from prohibition: "No payment or borrowing is required" is not "Do not pay or borrow". Do not create prohibited financial actions from not required wording alone. Explicit prohibitions still require their financial actions. Preserve an independent meeting, scheduling or other sole current work request when there is no material financial action; absence-of-payment context cannot replace that work.',
+ 'Actor is the source-supported performer, independent of recipient candidate restrictions. If the company itself explicitly performs a payment or transfer, employer is the actor even without the literal word employer. Company funding alone does not establish the performer. The bounded recipient vocabulary applies ONLY to recipient, never actor. Do not turn an explicit company performer into unknown or infer a receiver from that performer.',
+ 'Preserve material earlier funding and contrary terms before optional history/current work. For earlier advertised duties, a representative earlier duty supporting the retained comparison is sufficient; do not require a separate row for every older duty, repeated description or past commission. Keep material financial instructions, repayment and later denial/withdrawal under the inherited priority rules.',
+].join('\n\n');
+export const CANDIDATE220_SYSTEM_PROMPT=semanticDecisions+'\n\n'+CANDIDATE219_SYSTEM_PROMPT;
+export const CANDIDATE220_AUDIT_GUIDANCE=[
+ CANDIDATE220_AUDIT_VERSION+': additionally check factual funding, modality and actor support; conservative guidance does not excuse a wrong slot or a missing material fact.',
+ 'Funding must be supported by the selected source units: amount/currency, applicant performer and unlock conditions alone never establish personal money. Reject task_* or other personal-funds operations when funding is unstated; unresolved_* preserves that unknown. Explicit company funding must not be changed to personal funding.',
+ 'Check not required versus prohibited. A statement that no payment or borrowing is required does not itself forbid those acts and cannot support invented prohibited financial actions. Preserve independent sole current work such as an actual meeting/scheduling instruction when finance is absent. Explicit financial prohibitions still require coverage.',
+ 'Check actor separately from recipient: an explicit company performer supports employer actor, including when the recipient whitelist lacks employer. Do not accept unknown actor merely because employer is unavailable as a recipient. Receiver binding remains independently source-supported and cannot be borrowed from the sender/performer.',
+ 'Retain material earlier funding and contrary terms before optional history/current work. One representative source-supported earlier advertised duty is sufficient for the retained comparison; do not demand every additional earlier duty or optional commission history as another context row. This does not excuse missing material funding, financial actions, repayment or later denial/withdrawal.',
+].join('\n\n');

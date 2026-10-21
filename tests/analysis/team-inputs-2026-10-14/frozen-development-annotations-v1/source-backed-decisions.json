@@ -1,0 +1,508 @@
+[
+  {
+    "caseId": "DEV01",
+    "guidance": "pause_requested_action",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "borrow",
+        "polarity": "requested",
+        "resource": "personal_borrowing",
+        "mechanism": "personal_borrowing",
+        "citation_ranges": "E1:0:126"
+      },
+      {
+        "gold_action_id": "GA2",
+        "actor": "applicant",
+        "verb": "transfer",
+        "polarity": "requested",
+        "resource": "personal_borrowing",
+        "mechanism": "personal_borrowing",
+        "citation_ranges": "E1:0:126"
+      }
+    ],
+    "promiseTreatment": "repayment claim not verified",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "Verify with your bank or an independent channel whether a personal loan and onward transfer was requested for this job.",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Transferred loan proceeds use personal_borrowing, not personal_money."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV02",
+    "guidance": "no_personal_financial_request_identified",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "borrow",
+        "polarity": "prohibited",
+        "resource": "personal_borrowing",
+        "mechanism": "personal_borrowing",
+        "citation_ranges": "E1:0:95"
+      },
+      {
+        "gold_action_id": "GA2",
+        "actor": "applicant",
+        "verb": "share_otp",
+        "polarity": "prohibited",
+        "resource": "account_control",
+        "mechanism": "credential_control",
+        "citation_ranges": "E1:0:95"
+      },
+      {
+        "gold_action_id": "GA_COMPANY",
+        "actor": "employer",
+        "verb": "pay",
+        "polarity": "described",
+        "resource": "company_money",
+        "mechanism": "company_funded_work",
+        "citation_ranges": "E1:0:95"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "none",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Borrow prohibition uses personal_borrowing; OTP prohibition uses credential_control; explicit company payment is separately described."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV03",
+    "guidance": "pause_requested_action",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "pay",
+        "polarity": "requested",
+        "resource": "personal_money",
+        "mechanism": "task_recharge",
+        "citation_ranges": "E1:0:67"
+      }
+    ],
+    "promiseTreatment": "unlock/commission claim not verified",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "Verify with your bank or an independent channel whether a personal payment to unlock tasks/commission was requested.",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Source-backed development review candidate; retain the original case-level interpretation. No independent/human approval is asserted."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV04",
+    "guidance": "no_personal_financial_request_identified",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "share_account_details",
+        "polarity": "requested",
+        "resource": "account_information",
+        "mechanism": "payroll_information",
+        "citation_ranges": "E1:0:133"
+      },
+      {
+        "gold_action_id": "GA2",
+        "actor": "applicant",
+        "verb": "share_otp",
+        "polarity": "prohibited",
+        "resource": "account_control",
+        "mechanism": "credential_control",
+        "citation_ranges": "E1:0:133"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "portal identity unresolved",
+    "independentQuestionMeaning": "none",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Payroll information and prohibited OTP control are distinct. Identity uncertainty stays contextual, not a blocking personal-funding unknown."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV05",
+    "guidance": "clarify_before_action",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "unknown",
+        "verb": "pay",
+        "polarity": "uncertain",
+        "resource": "unknown",
+        "mechanism": "unclear",
+        "citation_ranges": "E1:0:87"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "payer unknown|resource/funds unknown",
+    "independentQuestionMeaning": "Clarify who pays and which funds before any payment action.",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Payer/funds remain unknown, with a relevant clarification. No personal funding is invented."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV06",
+    "guidance": "no_personal_financial_request_identified",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA_FRIEND",
+        "actor": "third_party",
+        "verb": "borrow",
+        "polarity": "described",
+        "resource": "personal_borrowing",
+        "mechanism": "personal_borrowing",
+        "citation_ranges": "E1:0:45"
+      },
+      {
+        "gold_action_id": "GA_WORK",
+        "actor": "applicant",
+        "verb": "perform_work",
+        "polarity": "described",
+        "resource": "none",
+        "mechanism": "none",
+        "citation_ranges": "E1:46:93"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "none",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Retain source-described third-party borrowing and ordinary work without turning them into an applicant financial demand. The speaker describes a friend’s past borrowing request; this is not a request for the applicant to borrow. The claimed fake-job nature remains source text.",
+      "Retain source-described third-party borrowing and ordinary work without turning them into an applicant financial demand. The speaker describes preparing a spreadsheet. No payment/borrowing demand is directed at the speaker. Include this explicit work action for complete action alignment, not a new financial warning."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV07",
+    "guidance": "pause_requested_action",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "borrow",
+        "polarity": "requested",
+        "resource": "personal_borrowing",
+        "mechanism": "personal_borrowing",
+        "citation_ranges": "E1:0:81"
+      }
+    ],
+    "promiseTreatment": "website does not prove repayment",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "Verify with your bank or an independent channel whether a personal loan for this job was requested; a website is not repayment proof.",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Source-backed development review candidate; retain the original case-level interpretation. No independent/human approval is asserted."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV08",
+    "guidance": "no_personal_financial_request_identified",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA_WORK",
+        "actor": "applicant",
+        "verb": "perform_work",
+        "polarity": "requested",
+        "resource": "none",
+        "mechanism": "none",
+        "citation_ranges": "E1:34:66"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "none",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Retain requested ordinary work; no financial request/prohibition is inferred from no requirement. The applicant is asked to schedule a meeting, an ordinary work action. No payment or borrowing is required; no personal-payment/borrowing prohibition is invented."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV09",
+    "guidance": "pause_requested_action",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "pay",
+        "polarity": "requested",
+        "resource": "personal_money",
+        "mechanism": "task_recharge",
+        "citation_ranges": "E1:0:102"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "Verify with your bank or an independent channel whether a personal unlock payment was requested.",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Source-backed development review candidate; retain the original case-level interpretation. No independent/human approval is asserted."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV10",
+    "guidance": "pause_requested_action",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "borrow",
+        "polarity": "requested",
+        "resource": "personal_borrowing",
+        "mechanism": "personal_borrowing",
+        "citation_ranges": "E1:0:66"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "recipient unknown",
+    "independentQuestionMeaning": "Verify with your bank or an independent channel whether a personal loan was requested; unknown recipient does not reduce pause to clarify-only.",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Source-backed development review candidate; retain the original case-level interpretation. No independent/human approval is asserted."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV11",
+    "guidance": "no_personal_financial_request_identified",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "borrow",
+        "polarity": "prohibited",
+        "resource": "personal_borrowing",
+        "mechanism": "personal_borrowing",
+        "citation_ranges": "E1:0:60"
+      },
+      {
+        "gold_action_id": "GA_COMPANY",
+        "actor": "employer",
+        "verb": "pay",
+        "polarity": "described",
+        "resource": "company_money",
+        "mechanism": "company_funded_work",
+        "citation_ranges": "E1:0:60"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "none",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Borrow prohibition and described company payment are separate actions."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV12",
+    "guidance": "no_personal_financial_request_identified",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "borrow",
+        "polarity": "prohibited",
+        "resource": "personal_borrowing",
+        "mechanism": "personal_borrowing",
+        "citation_ranges": "E1:0:33"
+      },
+      {
+        "gold_action_id": "GA2",
+        "actor": "applicant",
+        "verb": "share_otp",
+        "polarity": "prohibited",
+        "resource": "account_control",
+        "mechanism": "credential_control",
+        "citation_ranges": "E1:0:33"
+      },
+      {
+        "gold_action_id": "GA_COMPANY",
+        "actor": "employer",
+        "verb": "pay",
+        "polarity": "described",
+        "resource": "company_money",
+        "mechanism": "company_funded_work",
+        "citation_ranges": "E1:0:33"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "none",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Borrow/OTP prohibitions retain action-specific mechanisms; explicit company payment is separate."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV13",
+    "guidance": "no_personal_financial_request_identified",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "pay",
+        "polarity": "requested",
+        "resource": "personal_money",
+        "mechanism": "ordinary_work_expense",
+        "citation_ranges": "E1:0:157"
+      }
+    ],
+    "promiseTreatment": "reimbursement policy unverified",
+    "criticalUnknowns": "reimbursement policy not independently verified",
+    "independentQuestionMeaning": "none",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Source-backed development review candidate; retain the original case-level interpretation. No independent/human approval is asserted."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV14",
+    "guidance": "pause_requested_action",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "share_otp",
+        "polarity": "requested",
+        "resource": "account_control",
+        "mechanism": "credential_control",
+        "citation_ranges": "E1:0:84"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "Verify with your bank or an independent channel whether sharing a banking OTP for recruiter login/control was requested.",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Source-backed development review candidate; retain the original case-level interpretation. No independent/human approval is asserted."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV15",
+    "guidance": "pause_requested_action",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "transfer",
+        "polarity": "requested",
+        "resource": "personal_money",
+        "mechanism": "task_recharge",
+        "citation_ranges": "E3:0:195|E4:0:112"
+      }
+    ],
+    "promiseTreatment": "return with commission claim not verified",
+    "criticalUnknowns": "sender later denies personal-money request",
+    "independentQuestionMeaning": "Verify with your bank or an independent channel; preserve both the earlier personal transfer demand and the later denial — pause has priority.",
+    "contradictionExpected": true,
+    "decisionNotes": [
+      "Source-backed development review candidate; retain the original case-level interpretation. No independent/human approval is asserted."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV16",
+    "guidance": "pause_requested_action",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "transfer",
+        "polarity": "requested",
+        "resource": "personal_money",
+        "mechanism": "task_recharge",
+        "citation_ranges": "E3:0:195|E4:0:103"
+      }
+    ],
+    "promiseTreatment": "E3 return of amount with commission remains unverified; E4 completed transfer is user_reported and does not confirm recovery",
+    "criticalUnknowns": "recovery not confirmed by bank/official",
+    "independentQuestionMeaning": "Verify with your bank or an independent help route; completed transfer is user_reported — do not promise recovery.",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Use task_recharge for E3, preserve its unverified return-with-commission promise and E4 user-reported action without confirmed recovery."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV17",
+    "guidance": "no_personal_financial_request_identified",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA2",
+        "actor": "applicant",
+        "verb": "pay",
+        "polarity": "prohibited",
+        "resource": "personal_money",
+        "mechanism": "none",
+        "citation_ranges": "E1:0:64"
+      },
+      {
+        "gold_action_id": "GA_COMPANY",
+        "actor": "employer",
+        "verb": "pay",
+        "polarity": "described",
+        "resource": "company_money",
+        "mechanism": "company_funded_work",
+        "citation_ranges": "E1:0:64"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "none",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Remove unsupported borrowing; personal-money prohibition uses mechanism none; retain explicit described employer payment."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  },
+  {
+    "caseId": "DEV18",
+    "guidance": "no_personal_financial_request_identified",
+    "expectedActions": [
+      {
+        "gold_action_id": "GA1",
+        "actor": "applicant",
+        "verb": "share_otp",
+        "polarity": "prohibited",
+        "resource": "account_control",
+        "mechanism": "credential_control",
+        "citation_ranges": "E1:0:98"
+      },
+      {
+        "gold_action_id": "GA_FUNDS",
+        "actor": "employer",
+        "verb": "other",
+        "polarity": "described",
+        "resource": "company_money",
+        "mechanism": "company_funded_work",
+        "citation_ranges": "E1:33:64"
+      }
+    ],
+    "promiseTreatment": "none",
+    "criticalUnknowns": "none",
+    "independentQuestionMeaning": "none",
+    "contradictionExpected": false,
+    "decisionNotes": [
+      "Retain OTP prohibition and described company-funds use with verb other; remove invented pay/prohibited action. Surrogate/UTF-16 control variant of DEV02. OTP prohibited. Context: E1:33:64 says the employer uses company funds. Retain company-funding context without inventing an explicit pay/transfer verb. Employer authorization remains contextual, not blocking.",
+      "Retain OTP prohibition and described company-funds use with verb other; remove invented pay/prohibited action. The employer is described as using company funds. This is not an explicit pay/transfer or verified payment. No personal payment is required is not a prohibition."
+    ],
+    "classification": "Design_agent_assisted_reference_fixed_not_independent_gold"
+  }
+]

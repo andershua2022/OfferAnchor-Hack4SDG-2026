@@ -1,0 +1,42 @@
+{
+  "recordDate": "2026-10-17",
+  "status": "consumer_approved_overlay",
+  "scope": "human_content_approval_and_localized_meaning_only",
+  "approvalRecord": {
+    "path": "docs/content-review-2026-10-17.md",
+    "sha256": "c347e04fb4b3837fe82920374d860dc504d6249af634ec6be0295eb404701532"
+  },
+  "producerSnapshot": {
+    "path": "tests/analysis/module-handoff.json",
+    "commit": "e83bbabe9e356e72b74b4933681fe08668267770",
+    "recordDate": "2026-10-15",
+    "libraryVersion": "draft-0.2.0"
+  },
+  "files": {
+    "knowledge/library.json": "df0ae77d80bcdbf9157fa661ecc877f68149a192d735a935be17f788e4b767f9",
+    "locales/en-HK.json": "2e946433ad78eca0514b78e837cc7564cce5ab64c129f4bda43ba09f847281b9",
+    "locales/zh-Hant-HK.json": "1056d06f5122707e589a4bdb5d80af0b707c4e6c1d31eefbcfe3b744ac364a62"
+  },
+  "approvedLocaleChanges": [
+    {
+      "locale": "en-HK",
+      "key": "knowledge.cards.K_TASK_RECHARGE.question",
+      "before": "Pause this payment. Why is your own money required before tasks or earnings? Ask an independent adviser to help check through a reliable channel you found yourself.",
+      "after": "Pause this payment. Why is your own money required before tasks or earnings? Ask an independent adviser to help you check using a reliable channel you found yourself."
+    }
+  ],
+  "approvedItems": [
+    "K_TASK_RECHARGE",
+    "K_PERSONAL_BORROWING",
+    "K_COMPANY_PAID",
+    "K_PAYROLL",
+    "K_UNKNOWN",
+    "K_ALREADY_ACTED",
+    "K_ORDINARY_EXPENSE",
+    "ADCC_18222",
+    "SCAMETER",
+    "LABOUR_GUIDANCE",
+    "COMPANY_SEARCH"
+  ],
+  "boundary": "This dated overlay records the user-authorized human content approval and its exact active bytes. It does not replace or rewrite the producer snapshot, the Design language-review self-report, source evidence, app acceptance, live operation, independent evaluation, or effectiveness."
+}

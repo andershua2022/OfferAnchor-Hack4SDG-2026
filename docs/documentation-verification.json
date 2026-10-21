@@ -1,0 +1,479 @@
+{
+  "reviewFinalizedOn": "2026-10-06",
+  "verifiedAtUtc": "2026-10-12T08:45:58.724934+00:00",
+  "artifactRoot": "OfferAnchor",
+  "baseline": "2.2",
+  "documentationAndFixtureChecks": {
+    "baseline": "2.2",
+    "contractVersion": "2.0.0",
+    "schemasChecked": 5,
+    "simulationRequestResponsePairs": 8,
+    "canonicalFixtureCitations": 30,
+    "rawProviderFixture": 1,
+    "boundFailureFixture": 1,
+    "unboundFailureFixture": 1,
+    "developmentInputRecords": 18,
+    "provisionalDevelopmentBaseFamilies": 14,
+    "controlInputRecords": 10,
+    "provisionalControlBaseFamilies": 6,
+    "draftCards": 7,
+    "draftRoutes": 4,
+    "localeKeyPairs": 72,
+    "invalidArtifactMutationsRejected": 32,
+    "workPackagesChecked": 15,
+    "startupAssignmentsChecked": 5,
+    "preapprovedOwnerPackages": 15,
+    "dependencyCycles": 0,
+    "blankCsvTemplates": 4,
+    "applicationManifestPresent": false,
+    "singleOwnerPublicFiles": 85,
+    "ownershipGapsOrOverlaps": 0,
+    "markdownFilesChecked": 40,
+    "localLinksChecked": 286,
+    "anchorsChecked": 35,
+    "brokenLocalLinks": 0,
+    "englishProseAndFilenames": "passed",
+    "limits": "Documentation/schema/authored fixture compatibility only. No app/controller/live-model/held-out/student/device/processor effectiveness result."
+  },
+  "componentChecks": {
+    "command": "node --test --test-reporter=tap tests/analysis-runner.test.mjs",
+    "tests": 14,
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "syntaxChecks": {
+    "javascriptFiles": 2,
+    "pythonCheckerParsed": true
+  },
+  "actualCommands": [
+    "python -X utf8 tools/verify-project.py",
+    "node --test tests/analysis-runner.test.mjs",
+    "node --check lib/reliability/analysis-runner.mjs",
+    "node --check tests/analysis-runner.test.mjs"
+  ],
+  "notRunOrEstablished": [
+    "student_application_build",
+    "product_API_and_browser_controller",
+    "live_inference_provider",
+    "semantic_accuracy",
+    "independent_gold_annotations",
+    "held_out_quality",
+    "student_usefulness_or_adoption",
+    "physical_phone_tests",
+    "sensitive_processor_handling",
+    "commercial_demand_or_partnership"
+  ],
+  "approvalBoundary": "Library and locales remain authored drafts. No human approval, user acceptance, deployment or live effectiveness is inferred.",
+  "coordinationReviewedOn": "2026-10-07",
+  "agentCoordinationChecks": {
+    "roleStartupPromptsChecked": 5,
+    "uniquePlannedTasks": 15,
+    "taskPathPatternsCheckedAgainstRoleOwnership": 87,
+    "crossRoleTaskPathDisagreements": 0,
+    "missingOrDuplicateTaskIds": 0,
+    "sharedClaimAndReservationRulesChecked": 7,
+    "liveTaskAuthority": null,
+    "actualHumanMappingsConfirmed": 0,
+    "boundary": "Static role/task/document audit. No deployed lock, real claim, teammate-agent run or human assignment inferred."
+  },
+  "componentCheckObservationBoundary": "Component/syntax check entries retained from the 6 October review; component code unchanged and not rerun for this documentation-only coordination clarification.",
+  "coordinationAuditLocation": "Local archived review script; not an installed runtime claim service or automatic teammate-agent enforcement.",
+  "latestCoordinationCheckpoint": {
+    "clientDate": "2026-10-09",
+    "checkedAtUtc": "2026-10-09T13:51:31.974708+00:00",
+    "coordinationRevision": "team-2026-10-09",
+    "integrationAndDispatcherRole": "AI-DS",
+    "memberIdentifiers": [
+      "CS",
+      "AI-DS",
+      "DASE",
+      "Design",
+      "Communication"
+    ],
+    "personalDetailsRequired": false,
+    "actualApprovalRequired": true,
+    "sharedBaselineChecks": {
+      "baseline": "2.1",
+      "contractVersion": "2.0.0",
+      "schemasChecked": 5,
+      "simulationRequestResponsePairs": 8,
+      "canonicalFixtureCitations": 30,
+      "rawProviderFixture": 1,
+      "boundFailureFixture": 1,
+      "unboundFailureFixture": 1,
+      "developmentInputRecords": 18,
+      "provisionalDevelopmentBaseFamilies": 14,
+      "controlInputRecords": 10,
+      "provisionalControlBaseFamilies": 6,
+      "draftCards": 7,
+      "draftRoutes": 4,
+      "localeKeyPairs": 72,
+      "invalidArtifactMutationsRejected": 32,
+      "workPackagesChecked": 15,
+      "dependencyCycles": 0,
+      "blankCsvTemplates": 4,
+      "singleOwnerPublicFiles": 83,
+      "ownershipGapsOrOverlaps": 0,
+      "markdownFilesChecked": 39,
+      "localLinksChecked": 248,
+      "anchorsChecked": 1,
+      "brokenLocalLinks": 0,
+      "englishProseAndFilenames": "passed",
+      "limits": "Documentation/schema/authored fixture compatibility only. No app/controller/live-model/held-out/student/device/processor effectiveness result."
+    },
+    "localAiBaselineChecks": {
+      "baseline": "2.1",
+      "contractVersion": "2.0.0",
+      "schemasChecked": 5,
+      "simulationRequestResponsePairs": 8,
+      "canonicalFixtureCitations": 30,
+      "rawProviderFixture": 1,
+      "boundFailureFixture": 1,
+      "unboundFailureFixture": 1,
+      "developmentInputRecords": 18,
+      "provisionalDevelopmentBaseFamilies": 14,
+      "controlInputRecords": 10,
+      "provisionalControlBaseFamilies": 6,
+      "draftCards": 7,
+      "draftRoutes": 4,
+      "localeKeyPairs": 72,
+      "invalidArtifactMutationsRejected": 32,
+      "workPackagesChecked": 15,
+      "dependencyCycles": 0,
+      "blankCsvTemplates": 4,
+      "singleOwnerPublicFiles": 117,
+      "ownershipGapsOrOverlaps": 0,
+      "markdownFilesChecked": 39,
+      "localLinksChecked": 268,
+      "anchorsChecked": 1,
+      "brokenLocalLinks": 0,
+      "englishProseAndFilenames": "passed",
+      "limits": "Documentation/schema/authored fixture compatibility only. No app/controller/live-model/held-out/student/device/processor effectiveness result."
+    },
+    "componentChecks": {
+      "tests": 14,
+      "passed": 14,
+      "failed": 0,
+      "command": "node --test --test-reporter=spec tests/analysis-runner.test.mjs"
+    },
+    "extraChecks": {
+      "twoMarkdownIssueTemplatesValidFrontmatter": true,
+      "professionIdentifiersAndIntegrationMetadataConsistent": true,
+      "capacityInformationOptionalWithoutWeakeningActualApprovals": true,
+      "concurrentFileEditsProtected": true,
+      "allProductCodeSchemasFixturesKnowledgeLocalesPreserved": true,
+      "oldAiExperimentRecordsPreserved": true
+    },
+    "readOnlyGitHubObservation": {
+      "repository": "andershua2022/OfferAnchor",
+      "private": true,
+      "defaultBranch": "main",
+      "observedCommit": "280b32b6d8423042d04e84e96b8777a2df740b6e",
+      "observedFiles": 80,
+      "truncated": false,
+      "newCoordinationPublished": false
+    },
+    "review": {
+      "date": "2026-10-09",
+      "reviewer": "ai_ds_readonly_review",
+      "scope": "Shared team coordination documents, role/path boundaries, templates and startup rules in OfferAnchor and its AI worktree; focused follow-up on the optional-capacity correction.",
+      "initialFindingsInScope": 1,
+      "resolvedFinding": "WP01 and Communication previously retained mandatory capacity-information wording; both now explicitly treat names, handles and numeric hours as optional planning information without weakening actual grants, boundary acknowledgements, independent review or consumer acceptance.",
+      "remainingFindingsInScope": 0,
+      "method": "Read-only engineering review and focused recheck of the actual corrected files; no private data, network, model calls or reviewer writes.",
+      "humanAcceptance": false,
+      "consumerAcceptance": false,
+      "limits": "Bounded consistency review only; no guarantee of runtime effectiveness or actual teammate compliance."
+    },
+    "boundary": "Document/schema/authored fixture/component checks and bounded engineering review only. No new model call, application build, human content approval, consuming-owner acceptance, issue creation, commit, push or deployment."
+  },
+  "latestStartupCheckpoint": {
+    "checkedAtUtc": "2026-10-10T15:29:40.912960+00:00",
+    "coordinationRevision": "team-2026-10-10",
+    "approvalReference": "TEAM-START-2026-10-10",
+    "verificationStatus": "passed",
+    "sharedBaselineChecks": {
+      "baseline": "2.1",
+      "contractVersion": "2.0.0",
+      "schemasChecked": 5,
+      "simulationRequestResponsePairs": 8,
+      "canonicalFixtureCitations": 30,
+      "rawProviderFixture": 1,
+      "boundFailureFixture": 1,
+      "unboundFailureFixture": 1,
+      "developmentInputRecords": 18,
+      "provisionalDevelopmentBaseFamilies": 14,
+      "controlInputRecords": 10,
+      "provisionalControlBaseFamilies": 6,
+      "draftCards": 7,
+      "draftRoutes": 4,
+      "localeKeyPairs": 72,
+      "invalidArtifactMutationsRejected": 32,
+      "workPackagesChecked": 15,
+      "startupAssignmentsChecked": 5,
+      "preapprovedOwnerPackages": 15,
+      "dependencyCycles": 0,
+      "blankCsvTemplates": 4,
+      "applicationManifestPresent": false,
+      "singleOwnerPublicFiles": 85,
+      "ownershipGapsOrOverlaps": 0,
+      "markdownFilesChecked": 40,
+      "localLinksChecked": 250,
+      "anchorsChecked": 1,
+      "brokenLocalLinks": 0,
+      "englishProseAndFilenames": "passed",
+      "limits": "Documentation/schema/authored fixture compatibility only. No app/controller/live-model/held-out/student/device/processor effectiveness result."
+    },
+    "componentChecks": {
+      "command": "node --test --test-reporter=tap tests/analysis-runner.test.mjs",
+      "tests": 14,
+      "passed": 14,
+      "failed": 0
+    },
+    "syntaxChecks": {
+      "javascriptFiles": 2,
+      "pythonCheckerParsed": true
+    },
+    "startupFilesystemRegressionChecks": {
+      "command": "python -B -X utf8 tools/verify-project-startup-test.py",
+      "tests": 5,
+      "passed": 5,
+      "failed": 0,
+      "redBeforeFix": "Three regression failures reproduced before the fix: ignored local artifacts, populated development CSV, malformed non-template row."
+    },
+    "startupCorruptionsRejected": [
+      "duplicate_profession",
+      "wrong_package_owner",
+      "missing_initial_actions",
+      "cross_owner_reservation",
+      "wrong_private_reservation",
+      "unapproved_startup",
+      "wrong_issue_route"
+    ],
+    "futureOwnerPathSamplesChecked": 88,
+    "roleIssuesVerified": [
+      {
+        "id": "START-CS",
+        "url": "https://github.com/andershua2022/OfferAnchor/issues/1"
+      },
+      {
+        "id": "START-AI-DS",
+        "url": "https://github.com/andershua2022/OfferAnchor/issues/2"
+      },
+      {
+        "id": "START-DASE",
+        "url": "https://github.com/andershua2022/OfferAnchor/issues/3"
+      },
+      {
+        "id": "START-Design",
+        "url": "https://github.com/andershua2022/OfferAnchor/issues/4"
+      },
+      {
+        "id": "START-Communication",
+        "url": "https://github.com/andershua2022/OfferAnchor/issues/5"
+      }
+    ],
+    "preservationChecks": {
+      "originalTrackedFiles": 83,
+      "unmodifiedOriginalFilesHashChecked": 62,
+      "schemasFixturesKnowledgeLocalesDevelopmentInputsAndComponentCodeUnchanged": true,
+      "newPublicFiles": [
+        "docs/start-now.md",
+        "tools/verify-project-startup-test.py"
+      ]
+    },
+    "approvalBoundary": "Five existing-scope standing assignments are authorized, not executed or accepted. Personal AI code, prompts, raw/private material remain unpublished.",
+    "notEstablished": [
+      "teammate_agent_execution",
+      "active_primary_writer_claim",
+      "application_build",
+      "live_model_success",
+      "human_content_review",
+      "consumer_acceptance",
+      "semantic_or_student_effectiveness",
+      "deployment"
+    ],
+    "historicalRecordsBoundary": "Earlier dated checks/remote observations remain history. This checkpoint supersedes their coordination/publication state, not their observed historical results.",
+    "independentEngineeringReview": {
+      "reviewer": "startup_grant_review",
+      "method": "Read-only task/document review, then focused recheck of two verifier fixes. No private data or model calls.",
+      "initialImportantFindings": 2,
+      "resolved": [
+        "Ignored local build/private files were treated as public source.",
+        "All CSV artifacts were incorrectly forced to stay blank."
+      ],
+      "remainingBlockingFindings": 0,
+      "boundary": "Engineering consistency review only; not human product/content approval, teammate execution or consumer acceptance."
+    }
+  },
+  "previousTopLevelVerification": {
+    "baseline": "2.1",
+    "verifiedAtUtc": "2026-10-07T02:48:28.047029+00:00",
+    "reviewFinalizedOn": "2026-10-06",
+    "documentationAndFixtureChecks": {
+      "baseline": "2.1",
+      "contractVersion": "2.0.0",
+      "schemasChecked": 5,
+      "simulationRequestResponsePairs": 8,
+      "canonicalFixtureCitations": 30,
+      "rawProviderFixture": 1,
+      "boundFailureFixture": 1,
+      "unboundFailureFixture": 1,
+      "developmentInputRecords": 18,
+      "provisionalDevelopmentBaseFamilies": 14,
+      "controlInputRecords": 10,
+      "provisionalControlBaseFamilies": 6,
+      "draftCards": 7,
+      "draftRoutes": 4,
+      "localeKeyPairs": 72,
+      "invalidArtifactMutationsRejected": 32,
+      "workPackagesChecked": 15,
+      "dependencyCycles": 0,
+      "blankCsvTemplates": 4,
+      "singleOwnerPublicFiles": 81,
+      "ownershipGapsOrOverlaps": 0,
+      "markdownFilesChecked": 39,
+      "localLinksChecked": 242,
+      "anchorsChecked": 1,
+      "brokenLocalLinks": 0,
+      "englishProseAndFilenames": "passed",
+      "limits": "Documentation/schema/authored fixture compatibility only. No app/controller/live-model/held-out/student/device/processor effectiveness result."
+    }
+  },
+  "scopeRevisionReviewedOn": "2026-10-11",
+  "scopeUpdate20261011": {
+    "verifiedAtUtc": "2026-10-12T07:32:14.767292+00:00",
+    "decision": "D20",
+    "coordinationRevision": "team-2026-10-11",
+    "publicationState": "local_only_not_committed_or_pushed",
+    "documentationAndFixtureChecks": {
+      "baseline": "2.2",
+      "contractVersion": "2.0.0",
+      "schemasChecked": 5,
+      "simulationRequestResponsePairs": 8,
+      "canonicalFixtureCitations": 30,
+      "rawProviderFixture": 1,
+      "boundFailureFixture": 1,
+      "unboundFailureFixture": 1,
+      "developmentInputRecords": 18,
+      "provisionalDevelopmentBaseFamilies": 14,
+      "controlInputRecords": 10,
+      "provisionalControlBaseFamilies": 6,
+      "draftCards": 7,
+      "draftRoutes": 4,
+      "localeKeyPairs": 72,
+      "invalidArtifactMutationsRejected": 32,
+      "workPackagesChecked": 15,
+      "startupAssignmentsChecked": 5,
+      "preapprovedOwnerPackages": 15,
+      "dependencyCycles": 0,
+      "blankCsvTemplates": 4,
+      "applicationManifestPresent": false,
+      "singleOwnerPublicFiles": 85,
+      "ownershipGapsOrOverlaps": 0,
+      "markdownFilesChecked": 40,
+      "localLinksChecked": 262,
+      "anchorsChecked": 11,
+      "brokenLocalLinks": 0,
+      "englishProseAndFilenames": "passed",
+      "limits": "Documentation/schema/authored fixture compatibility only. No app/controller/live-model/held-out/student/device/processor effectiveness result."
+    },
+    "startupVerifierRegression": {
+      "observedAtUtc": "2026-10-11T16:07:35.9557450Z",
+      "checksPassed": 5,
+      "command": "python -B -X utf8 tools/verify-project-startup-test.py",
+      "boundary": "Isolated fictional Git copies only; no model or app correctness result",
+      "exitCode": 0
+    },
+    "boundary": "Fresh local documentation/schema/fixture/startup checks only. Earlier named entries remain historical. No product/model/user effectiveness, human approval, GitHub publication or new runtime feature is established."
+  },
+  "sharedPublication20261012": {
+    "verifiedAtUtc": "2026-10-12T08:45:58.910696+00:00",
+    "decisions": [
+      "D20",
+      "D21",
+      "D22"
+    ],
+    "documentationAndFixtureChecks": {
+      "baseline": "2.2",
+      "contractVersion": "2.0.0",
+      "schemasChecked": 5,
+      "simulationRequestResponsePairs": 8,
+      "canonicalFixtureCitations": 30,
+      "rawProviderFixture": 1,
+      "boundFailureFixture": 1,
+      "unboundFailureFixture": 1,
+      "developmentInputRecords": 18,
+      "provisionalDevelopmentBaseFamilies": 14,
+      "controlInputRecords": 10,
+      "provisionalControlBaseFamilies": 6,
+      "draftCards": 7,
+      "draftRoutes": 4,
+      "localeKeyPairs": 72,
+      "invalidArtifactMutationsRejected": 32,
+      "workPackagesChecked": 15,
+      "startupAssignmentsChecked": 5,
+      "preapprovedOwnerPackages": 15,
+      "dependencyCycles": 0,
+      "blankCsvTemplates": 4,
+      "applicationManifestPresent": false,
+      "singleOwnerPublicFiles": 85,
+      "ownershipGapsOrOverlaps": 0,
+      "markdownFilesChecked": 40,
+      "localLinksChecked": 286,
+      "anchorsChecked": 35,
+      "brokenLocalLinks": 0,
+      "englishProseAndFilenames": "passed",
+      "limits": "Documentation/schema/authored fixture compatibility only. No app/controller/live-model/held-out/student/device/processor effectiveness result."
+    },
+    "startupVerifierRegression": {
+      "command": "python -B -X utf8 tools/verify-project-startup-test.py",
+      "checksPassed": 5,
+      "exitCode": 0,
+      "observedAtUtc": "2026-10-12T08:45:58.469787+00:00",
+      "boundary": "Isolated fictional Git-copy regression checks only"
+    },
+    "componentChecks": {
+      "command": "node --test --test-reporter=tap tests/analysis-runner.test.mjs",
+      "tests": 14,
+      "passed": 14,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    "actualCommands": [
+      {
+        "command": "python -B -X utf8 tools/verify-project.py",
+        "startedAtUtc": "2026-10-12T08:45:52.633953+00:00",
+        "completedAtUtc": "2026-10-12T08:45:53.225630+00:00",
+        "exitCode": 0
+      },
+      {
+        "command": "python -B -X utf8 tools/verify-project-startup-test.py",
+        "startedAtUtc": "2026-10-12T08:45:53.225642+00:00",
+        "completedAtUtc": "2026-10-12T08:45:58.469787+00:00",
+        "exitCode": 0
+      },
+      {
+        "command": "node --test --test-reporter=tap tests/analysis-runner.test.mjs",
+        "startedAtUtc": "2026-10-12T08:45:58.469804+00:00",
+        "completedAtUtc": "2026-10-12T08:45:58.724182+00:00",
+        "exitCode": 0
+      }
+    ],
+    "ownershipAndInterfaceChecks": {
+      "packagesCompared": 15,
+      "startupAssignmentsUnchanged": 5,
+      "fileOwnershipUnchanged": true,
+      "privateReservationsUnchanged": true,
+      "runtimeFixturePathsUnchanged": true
+    },
+    "remoteParentFetched": "eca907aa8a8b3bda5e1bfd43701d4fa1f30847cc",
+    "publicationState": "published_verified",
+    "boundary": "Fresh documentation/fixture/component compatibility checks only; no model inference, application integration, human content acceptance or independent user evaluation.",
+    "publishedCommit": "f1f0d735361cc451a9e434ec0f18730eaf8109f4",
+    "remoteVerifiedAtUtc": "2026-10-12T08:57:27.165942+00:00"
+  }
+}

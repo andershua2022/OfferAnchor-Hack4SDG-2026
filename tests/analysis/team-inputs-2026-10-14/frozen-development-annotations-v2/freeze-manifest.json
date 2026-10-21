@@ -1,0 +1,26 @@
+{
+  "version": "OfferAnchor-development-annotations-frozen-v2",
+  "frozenAtUtc": "2026-10-14T15:33:51Z",
+  "files": {
+    "adjudicated-annotations.csv": "d6b5cde6b4f4f248da3c0cc8f71bd1d913e7d649d1e3f9ca92d3b42ee7b1f0fa",
+    "canonical-action-check-inputs.json": "bf343f4bb57862ec40a171477b0fe11b719e87337c684019f31ee6f7a022dbcd",
+    "canonical-action-check-results.json": "1ddd9b8f028d1e7e402c9a3631c8bc6f4f7ea014ff18d2f4bb948404fd4a2709",
+    "canonical-selected-inputs.json": "522f07ab12c3c71efaf1ac460641110ebc85588358eeb83024289ac72539603c",
+    "change-log.json": "84eda8d3485168845faad7cf45ee1aaf51bbc3e120c55c6357b308c931cce17c",
+    "checks.json": "670eaa41f05e7b5baa8b94822b2156dfbca3604ad3f75600cbdabde67cf5f464",
+    "confirmation-record.json": "7348ab7061e6c3e2b1897e325cd4c4abce8a1f9aca02e3923afa21ce0c4f194b",
+    "freeze-record.json": "95ebe796a4b4ee831f19867460900ce1c4599e3ce70879a69a95cd5e1086f951",
+    "frozen-development-split.csv": "991360e24cd71a1a51227cd55d9578bcb23a6f861f6692ba3ed0fa59cc2b0910",
+    "README.md": "7c3144d15c8c6807554541cab79dd720f40d9e2ae770bce595534bcbcbbc947c",
+    "source-backed-decisions.json": "c87e5edcce83a337053a13aed9ba291adb7894805fb812fb8b7b134d3850c1d0"
+  },
+  "scope": "development_annotations",
+  "developmentAnnotationFreezeCompleted": true,
+  "supersedes": "OfferAnchor-development-annotations-frozen-v1",
+  "changedCases": [
+    "DEV03"
+  ],
+  "DEV03DisputeStatus": "resolved_in_Design_frozen_reference_v2",
+  "consumerImportAcknowledgement": "pending exact v2 consumption",
+  "accuracyClaim": null
+}

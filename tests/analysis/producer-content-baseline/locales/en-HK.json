@@ -1,0 +1,147 @@
+{
+  "app": {
+    "name": "OfferAnchor",
+    "tagline": "Understand the offer. Check the next step.",
+    "instruction": "Paste the new job instruction you want to understand.",
+    "simulation": "Synthetic example: simulation, not live analysis.",
+    "promise": "Check recruitment and onboarding requests before you act.",
+    "coverage": "Current coverage: personal payments, personal borrowing and bank-account control. Other requests still need independent checking."
+  },
+  "input": {
+    "latest": "Latest instruction",
+    "context": "Add advertisement or offer (optional)",
+    "analyse": "Analyse selected text",
+    "edit": "Edit source",
+    "delete": "Delete source",
+    "note": "Add a correction or clarification",
+    "reply": "Add a later reply",
+    "outcome": "Add my contact results or action report",
+    "limit": "This session has reached its evidence limit. Export or start a new session; earlier messages will not be removed automatically.",
+    "changed": "Material changed. Analyse again before exporting.",
+    "clear": "Clear this session",
+    "language": "Language",
+    "languageChanged": "Language changed. Analyse again before exporting; original quotations keep their language.",
+    "sourcePassage": "Original passage",
+    "sourceHighlight": "The highlighted words are from your current selected source.",
+    "sourceUntranslated": "Quotations stay in the original language.",
+    "addSource": "Add optional context",
+    "sourceLabel": "Source label",
+    "saveChanges": "Save changes",
+    "keepCurrent": "Keep current material",
+    "deleteTitle": "Delete this selected source?",
+    "deleteBody": "This changes the selected material and makes its previous result and edited brief out of date.",
+    "clearTitle": "Clear this session?",
+    "clearBody": "Export any current brief you want to keep first. Clearing does not delete exported copies or processor records.",
+    "counter": "{used} / {limit}"
+  },
+  "state": {
+    "editing": "Ready to analyse",
+    "processing": "Analysing selected material",
+    "delayed": "This is taking longer. You may cancel.",
+    "complete": "This analysis is complete; its contents still need independent checking",
+    "incomplete": "This analysis could not be completed. Do not treat it as a safety finding.",
+    "cancel": "Cancel",
+    "retry": "Retry manually",
+    "questionsExhausted": "Both clarification questions have been used. Unknowns remain listed. You can still add your own note or later reply.",
+    "back": "Back"
+  },
+  "guidance": {
+    "pause_requested_action": "Pause this personal payment, borrowing or account-control action and check independently.",
+    "clarify_before_action": "Clarify the details affecting personal financial exposure before deciding what to do next.",
+    "no_personal_financial_request_identified": "No personal payment, borrowing or bank-account control request covered by this tool was identified in your selected text. This analysis covers only that text: the sender’s identity, promises and the job remain independently unverified. Other data requests still need separate checking.",
+    "unknown": "Unknown",
+    "claim": "A statement in the text, not independently verified",
+    "noScopedQuestion": "Which reliable company channel, found independently, can confirm the duties and this instruction?"
+  },
+  "brief": {
+    "question": "A question for independent checking",
+    "details": "View the full evidence brief",
+    "copy": "Copy the checking brief",
+    "print": "Print brief",
+    "manual": "Select and copy manually",
+    "includeQuotes": "Include supporting quotations",
+    "edited": "Body edited by the user; added text is not automatically evidence-verified.",
+    "boundary": "Prepared from selected material. Employer identity, repayment and outside events are not independently verified. Unresolved checks remain listed. Copying, using a checking channel or a contact report does not establish verification.",
+    "simulation": "SIMULATION: authored synthetic result, not a live model analysis.",
+    "bank": "If you already acted, contact your bank through a channel you independently obtain and seek appropriate official help. This tool cannot recover funds.",
+    "copied": "Brief copied, including its protected notice.",
+    "copyFailed": "Automatic copy did not work. Select and copy the complete brief and its notice below.",
+    "unavailable": "No current complete result is available to export. Analyse the current material first.",
+    "protectedNotice": "Protected notice — included in every export",
+    "revision": "Selected material revision {revision}"
+  },
+  "privacy": {
+    "notice": "Selected text is sent to the application server and, in live mode, a model provider. Remove unnecessary personal details. Review the stated processor handling before submitting sensitive material.",
+    "loss": "Clearing removes working state here, not exports or provider/host records. Reloading may lose your draft.",
+    "draftLost": "This page may lose working material when reloaded or closed. Export any current brief you want to keep."
+  },
+  "errors": {
+    "invalid_input": "Check the required source and the limits on entries, text length and data size.",
+    "unauthorized": "Use authorized demonstration access.",
+    "quota_exceeded": "The demo limit was reached. Wait before a manual retry.",
+    "configuration_unavailable": "Live analysis is not configured or approved for this use.",
+    "provider_error": "The service could not produce a usable analysis.",
+    "timeout": "The analysis reached its deadline.",
+    "invalid_output": "The returned analysis could not be validated.",
+    "invalid_citation": "Supporting passages could not be verified.",
+    "cancelled": "Analysis cancelled.",
+    "simulation_unsupported": "Simulation supports only the named unchanged examples.",
+    "fieldRequired": "Paste the latest instruction to continue.",
+    "fieldLength": "This entry exceeds the text limit. Shorten it before continuing; nothing is removed automatically.",
+    "totalLength": "The selected material exceeds the total text limit. Review your sources before continuing.",
+    "sourceCount": "All eight source slots are in use. Review your sources or start a new session.",
+    "invalidText": "Some characters could not be read. Correct or paste the affected text again.",
+    "labelLength": "Shorten this source label before continuing.",
+    "summary": "Review the highlighted fields before continuing."
+  },
+  "knowledge": {
+    "cards": {
+      "K_TASK_RECHARGE": {
+        "title": "Your money is requested before tasks or withdrawals",
+        "question": "Pause this payment. Why is your own money required before tasks or earnings? Ask an independent adviser to help check through a reliable channel you found yourself."
+      },
+      "K_PERSONAL_BORROWING": {
+        "title": "Personal borrowing or use of borrowed funds is requested",
+        "question": "Pause this borrowing, transfer or payment using personal borrowing proceeds. Why does the work require borrowing in your own name, or using existing borrowed funds? Check independently; a company repayment promise remains unverified."
+      },
+      "K_COMPANY_PAID": {
+        "title": "The text describes company payment or prohibits personal payment",
+        "question": "Which costs are paid directly by the company? Check through a company channel you found independently; a payment statement is not confirmation."
+      },
+      "K_PAYROLL": {
+        "title": "Payroll details are not bank-account control",
+        "question": "Independently check who is requesting the information and why. Do not disclose banking passwords or one-time passwords (OTPs) to them, or hand over account control."
+      },
+      "K_UNKNOWN": {
+        "title": "Some details still need independent checking",
+        "question": "Who pays or borrows, and whose money is used? Is payment required for tasks or withdrawal? Clarify missing or conflicting details that affect personal financial exposure."
+      },
+      "K_ALREADY_ACTED": {
+        "title": "You report that you have already acted",
+        "question": "What payment, borrowing or account action have you taken? Seek help through your bank app opened independently or the contact details on your card. Call 18222 for anti-scam advice; suspected victims should report at a police station."
+      },
+      "K_ORDINARY_EXPENSE": {
+        "title": "A work expense is not necessarily a task payment",
+        "question": "What is the expense for, and who pays it? Independently check the expense policy and reimbursement conditions; a reimbursement promise is neither confirmation nor permission to pay."
+      }
+    },
+    "routes": {
+      "ADCC_18222": {
+        "label": "Anti-scam advice: 18222",
+        "scope": "24-hour advice, not a crime report or employer certification. Suspected victims should report at a police station; call 999 for emergencies."
+      },
+      "SCAMETER": {
+        "label": "Scameter official checking service",
+        "scope": "Open the official service yourself to check suspicious details. 'No record' does not mean risk-free and is not employer certification."
+      },
+      "LABOUR_GUIDANCE": {
+        "label": "Labour Department: job-trap guidance",
+        "scope": "General job-trap and checking advice; it does not authenticate a particular job or employer."
+      },
+      "COMPANY_SEARCH": {
+        "label": "Companies Registry: company-search information",
+        "scope": "Check registration information. A company's existence does not authorize this recruiter or payment instruction. Check official access conditions and fees."
+      }
+    }
+  }
+}

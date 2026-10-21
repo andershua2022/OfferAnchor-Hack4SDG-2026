@@ -1,0 +1,307 @@
+{
+  "libraryVersion": "draft-0.2.0",
+  "status": "draft",
+  "humanApprovalRequiredForLiveUse": true,
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://www.police.gov.hk/ppp_tc/01_about_us/cp_ye.html"
+    },
+    {
+      "id": "S02",
+      "url": "https://www.adcc.gov.hk/zh-cn/alerts-detail/alerts-2038471984935432194.html"
+    },
+    {
+      "id": "S03",
+      "url": "https://www.adcc.gov.hk/zh-cn/alerts-detail/alerts-2044683469105754113.html"
+    },
+    {
+      "id": "S04",
+      "url": "https://www1.jobs.gov.hk/0/tc/information/jobtrap/"
+    },
+    {
+      "id": "S06",
+      "url": "https://cyberdefender.hk/zh-cn/scameter/"
+    },
+    {
+      "id": "S07",
+      "url": "https://www.adcc.gov.hk/zh-hk/contact-us.html"
+    },
+    {
+      "id": "S08",
+      "url": "https://www.cr.gov.hk/en/electronic/e-servicesportal/e-search.htm"
+    },
+    {
+      "id": "S10",
+      "url": "https://www.ocbc.com.hk/cmh/files/2024Q2JobScamE.pdf"
+    }
+  ],
+  "cards": [
+    {
+      "id": "K_TASK_RECHARGE",
+      "title": "Your money is requested before tasks or withdrawals",
+      "tags": [
+        "task_recharge"
+      ],
+      "dangerousRelationships": [
+        "Applicant requested to pay to unlock work or earnings."
+      ],
+      "benignControls": [
+        "Company pays business costs directly."
+      ],
+      "questions": [
+        "Pause this payment. Why is your own money required before tasks or earnings? Ask an independent adviser to help check through a reliable channel you found yourself."
+      ],
+      "routeIds": [
+        "ADCC_18222",
+        "LABOUR_GUIDANCE"
+      ],
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S04",
+        "S10"
+      ],
+      "contentType": "source-inspired product synthesis",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.cards.K_TASK_RECHARGE",
+      "localizedMeaningApproved": false
+    },
+    {
+      "id": "K_PERSONAL_BORROWING",
+      "title": "Personal borrowing or use of borrowed funds is requested",
+      "tags": [
+        "personal_borrowing"
+      ],
+      "dangerousRelationships": [
+        "Applicant requested to borrow in own name, transfer personal borrowing proceeds or pay using explicitly linked personal borrowing proceeds."
+      ],
+      "benignControls": [
+        "Company-funded purchases; borrowing explicitly prohibited."
+      ],
+      "questions": [
+        "Pause this borrowing, transfer or payment using personal borrowing proceeds. Why does the work require borrowing in your own name, or using existing borrowed funds? Check independently; a company repayment promise remains unverified."
+      ],
+      "routeIds": [
+        "ADCC_18222",
+        "COMPANY_SEARCH"
+      ],
+      "sourceIds": [
+        "S03",
+        "S04"
+      ],
+      "contentType": "source-inspired product synthesis",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.cards.K_PERSONAL_BORROWING",
+      "localizedMeaningApproved": false
+    },
+    {
+      "id": "K_COMPANY_PAID",
+      "title": "The text describes company payment or prohibits personal payment",
+      "tags": [
+        "benign_control"
+      ],
+      "dangerousRelationships": [],
+      "benignControls": [
+        "A prohibition is not a requested action."
+      ],
+      "questions": [
+        "Which costs are paid directly by the company? Check through a company channel you found independently; a payment statement is not confirmation."
+      ],
+      "routeIds": [
+        "LABOUR_GUIDANCE"
+      ],
+      "sourceIds": [
+        "S04"
+      ],
+      "contentType": "source-inspired product synthesis",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.cards.K_COMPANY_PAID",
+      "localizedMeaningApproved": false
+    },
+    {
+      "id": "K_PAYROLL",
+      "title": "Payroll details are not bank-account control",
+      "tags": [
+        "payroll_control"
+      ],
+      "dangerousRelationships": [
+        "Applicant requested to disclose a banking OTP or hand over account control: pause the requested disclosure and verify independently."
+      ],
+      "benignControls": [
+        "Account details for payroll do not by themselves establish account control or a safe employer."
+      ],
+      "questions": [
+        "Independently check who is requesting the information and why. Do not disclose banking passwords or one-time passwords (OTPs) to them, or hand over account control."
+      ],
+      "routeIds": [
+        "SCAMETER",
+        "LABOUR_GUIDANCE"
+      ],
+      "sourceIds": [
+        "S04",
+        "S06",
+        "S10"
+      ],
+      "contentType": "source-inspired product synthesis",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.cards.K_PAYROLL",
+      "localizedMeaningApproved": false
+    },
+    {
+      "id": "K_UNKNOWN",
+      "title": "Some details still need independent checking",
+      "tags": [
+        "unknown_context"
+      ],
+      "dangerousRelationships": [],
+      "benignControls": [
+        "A changed duty without a financial demand is not a fraud finding."
+      ],
+      "questions": [
+        "Who pays or borrows, and whose money is used? Is payment required for tasks or withdrawal? Clarify missing or conflicting details that affect personal financial exposure."
+      ],
+      "routeIds": [
+        "LABOUR_GUIDANCE"
+      ],
+      "sourceIds": [
+        "S04"
+      ],
+      "contentType": "source-inspired product synthesis",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.cards.K_UNKNOWN",
+      "localizedMeaningApproved": false
+    },
+    {
+      "id": "K_ALREADY_ACTED",
+      "title": "You report that you have already acted",
+      "tags": [
+        "already_acted"
+      ],
+      "dangerousRelationships": [],
+      "benignControls": [
+        "User report is not official confirmation or recovered funds."
+      ],
+      "questions": [
+        "What payment, borrowing or account action have you taken? Seek help through your bank app opened independently or the contact details on your card. Call 18222 for anti-scam advice; suspected victims should report at a police station."
+      ],
+      "routeIds": [
+        "ADCC_18222"
+      ],
+      "sourceIds": [
+        "S07"
+      ],
+      "contentType": "source-inspired product synthesis",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.cards.K_ALREADY_ACTED",
+      "localizedMeaningApproved": false
+    },
+    {
+      "id": "K_ORDINARY_EXPENSE",
+      "title": "A work expense is not necessarily a task payment",
+      "tags": [
+        "ordinary_work_expense"
+      ],
+      "dangerousRelationships": [],
+      "benignControls": [
+        "A transport or similar work expense is not by itself payment to unlock tasks or earnings."
+      ],
+      "questions": [
+        "What is the expense for, and who pays it? Independently check the expense policy and reimbursement conditions; a reimbursement promise is neither confirmation nor permission to pay."
+      ],
+      "routeIds": [
+        "LABOUR_GUIDANCE"
+      ],
+      "sourceIds": [
+        "S04"
+      ],
+      "contentType": "source-inspired product synthesis; authored boundary control",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.cards.K_ORDINARY_EXPENSE",
+      "localizedMeaningApproved": false
+    }
+  ],
+  "routes": [
+    {
+      "id": "ADCC_18222",
+      "type": "consultation",
+      "label": "Anti-scam advice: 18222",
+      "sourceId": "S07",
+      "url": "https://www.adcc.gov.hk/zh-hk/contact-us.html",
+      "telephone": "18222",
+      "scope": "24-hour advice, not a crime report or employer certification. Suspected victims should report at a police station; call 999 for emergencies.",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.routes.ADCC_18222",
+      "localizedMeaningApproved": false
+    },
+    {
+      "id": "SCAMETER",
+      "type": "manual_check",
+      "label": "Scameter official checking service",
+      "sourceId": "S06",
+      "url": "https://cyberdefender.hk/zh-cn/scameter/",
+      "telephone": null,
+      "scope": "Open the official service yourself to check suspicious details. 'No record' does not mean risk-free and is not employer certification.",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.routes.SCAMETER",
+      "localizedMeaningApproved": false
+    },
+    {
+      "id": "LABOUR_GUIDANCE",
+      "type": "guidance",
+      "label": "Labour Department: job-trap guidance",
+      "sourceId": "S04",
+      "url": "https://www1.jobs.gov.hk/0/tc/information/jobtrap/",
+      "telephone": null,
+      "scope": "General job-trap and checking advice; it does not authenticate a particular job or employer.",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.routes.LABOUR_GUIDANCE",
+      "localizedMeaningApproved": false
+    },
+    {
+      "id": "COMPANY_SEARCH",
+      "type": "manual_check",
+      "label": "Companies Registry: company-search information",
+      "sourceId": "S08",
+      "url": "https://www.cr.gov.hk/en/electronic/e-servicesportal/e-search.htm",
+      "telephone": null,
+      "scope": "Check registration information. A company's existence does not authorize this recruiter or payment instruction. Check official access conditions and fees.",
+      "checkedOn": "2026-10-05",
+      "reviewedBy": "research-agent",
+      "approvalStatus": "draft",
+      "humanReviewer": null,
+      "localeKey": "knowledge.routes.COMPANY_SEARCH",
+      "localizedMeaningApproved": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "fixture_missing_payer_en",
+  "revision": 1,
+  "locale": "en-HK",
+  "clarificationsUsed": 0,
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "instruction",
+      "label": "Fictional ambiguous instruction",
+      "sequence": 1,
+      "text": "Arrange the payment for tomorrow. We have not explained who pays or which funds to use."
+    }
+  ]
+}

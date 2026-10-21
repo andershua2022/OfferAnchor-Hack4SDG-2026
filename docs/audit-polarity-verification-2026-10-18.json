@@ -1,0 +1,179 @@
+{
+  "experiment": "withdrawal-versus-denial audit prompt revision",
+  "baselineSourceCommit": "7d8f8cf5d9c9baed7f9c5e7ba234b250b0a6995a",
+  "generationProfile": "extract-v2.28",
+  "baselineAudit": "context-audit-1.7.0",
+  "candidateAudit": "context-audit-1.8.0",
+  "candidateAdapter": "source-context-roles-events-1.3.0",
+  "provider": "user-authorized private Volc gateway; qwen3.8-max; json_object",
+  "officialAlibabaProviderRetested": false,
+  "pairedAuditChecks": [
+    {
+      "id": "non_denial_withdrawal",
+      "expected": "complete",
+      "oldAudit": "complete",
+      "newAudit": "complete",
+      "identicalAuditUserPayload": true,
+      "oldFindings": {
+        "unsupported": [],
+        "missing": []
+      },
+      "newFindings": {
+        "unsupported": [],
+        "missing": []
+      }
+    },
+    {
+      "id": "genuine_denial",
+      "expected": "incomplete",
+      "oldAudit": "complete",
+      "newAudit": "incomplete",
+      "identicalAuditUserPayload": true,
+      "oldFindings": {
+        "unsupported": [],
+        "missing": []
+      },
+      "newFindings": {
+        "unsupported": [],
+        "missing": [
+          {
+            "unitId": "E4_u1",
+            "kind": "instruction_denial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "omitted_withdrawal",
+      "expected": "incomplete",
+      "oldAudit": "incomplete",
+      "newAudit": "incomplete",
+      "identicalAuditUserPayload": true,
+      "oldFindings": {
+        "unsupported": [],
+        "missing": [
+          {
+            "unitId": "E4_u1",
+            "kind": "instruction_denial"
+          }
+        ]
+      },
+      "newFindings": {
+        "unsupported": [],
+        "missing": [
+          {
+            "unitId": "E4_u1",
+            "kind": "instruction_update"
+          },
+          {
+            "unitId": "E4_u1",
+            "kind": "instruction_denial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "normal_company",
+      "expected": "complete",
+      "oldAudit": "complete",
+      "newAudit": "complete",
+      "identicalAuditUserPayload": true,
+      "oldFindings": {
+        "unsupported": [],
+        "missing": []
+      },
+      "newFindings": {
+        "unsupported": [],
+        "missing": []
+      }
+    },
+    {
+      "id": "omitted_promise",
+      "expected": "incomplete",
+      "oldAudit": "incomplete",
+      "newAudit": "incomplete",
+      "identicalAuditUserPayload": true,
+      "oldFindings": {
+        "unsupported": [],
+        "missing": [
+          {
+            "unitId": "E3_u1",
+            "kind": "repayment_promise"
+          }
+        ]
+      },
+      "newFindings": {
+        "unsupported": [],
+        "missing": [
+          {
+            "unitId": "E3_u1",
+            "kind": "repayment_promise"
+          }
+        ]
+      }
+    }
+  ],
+  "fullCandidateAttempts": [
+    {
+      "id": "full_RR06_1",
+      "status": "complete",
+      "guidance": "pause_requested_action",
+      "elapsedMs": 42283,
+      "totalTokens": 7125,
+      "rawRequests": 2
+    },
+    {
+      "id": "full_RR06_2",
+      "status": "complete",
+      "guidance": "pause_requested_action",
+      "elapsedMs": 43023,
+      "totalTokens": 7125,
+      "rawRequests": 2
+    },
+    {
+      "id": "full_RR03",
+      "status": "complete",
+      "guidance": "no_personal_financial_request_identified",
+      "elapsedMs": 46913,
+      "totalTokens": 6919,
+      "rawRequests": 2
+    }
+  ],
+  "billing": {
+    "rawRequests": 16,
+    "inputTokens": 37596,
+    "outputTokens": 13648,
+    "totalTokens": 51244,
+    "unknownUsageRequests": 0,
+    "automaticRetries": 0,
+    "costCny": null,
+    "costLimit": "Actual gateway unit rates not verified; no Alibaba tariff substituted."
+  },
+  "setupFailures": {
+    "baselineAttemptsWithZeroOutboundRequests": 5,
+    "cause": "Separate baseline/candidate knowledge modules maintain distinct loaded-instance WeakSets. Correct baseline loader used for its first actual requests; zero-call errors are not model outcomes.",
+    "retainedIn": "ignored local original observations"
+  },
+  "sourceReview": "Developer/agent whole-extraction review; no independent held-out accuracy.",
+  "offlineVerification": {
+    "integrationPassed": 360,
+    "compatibilityPassed": 93,
+    "productionWebpackBuild": "passed including TypeScript",
+    "originalGoldUnchanged": true,
+    "frontendUnchanged": true,
+    "strictValidatorsUnchanged": true,
+    "generationPromptUnchanged": true
+  },
+  "limits": [
+    "The previous false-denial failure did not recur in this fresh old-audit replay, so elimination of stochastic false refusal is not causally established.",
+    "The new audit caught one genuine-denial semantic error missed by the old audit in this bounded comparison.",
+    "Two successful full RR06 attempts repeat one exposed case, not two independent cases.",
+    "Full candidate attempts took approximately 42-47 seconds, near the 50-second model budget.",
+    "Official team Alibaba json_schema and hosted runtime have not been retested with this audit revision."
+  ],
+  "recommendation": {
+    "publicRepository": "Worth a separately reviewed source update with this bounded evidence and limits, after owner authorization.",
+    "productionWebsite": "Do not replace yet solely from this experiment; validate identical complex and normal controls with the official team provider and an isolated preview first.",
+    "publishedOrDeployed": false
+  }
+}

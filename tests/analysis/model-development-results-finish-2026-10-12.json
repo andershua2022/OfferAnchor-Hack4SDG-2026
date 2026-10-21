@@ -1,0 +1,94 @@
+{
+  "project": "OfferAnchor",
+  "recordDate": "2026-10-12",
+  "syntheticOnly": true,
+  "independentEvaluation": false,
+  "releaseApproved": false,
+  "activePromptVersion": "extract-v2.7",
+  "configuredModelId": "qwen3.8-max",
+  "backendIdentityVerified": false,
+  "newAttempts": 12,
+  "previousCumulativeAttempts": 46,
+  "cumulativeAttempts": 58,
+  "automaticRetries": 0,
+  "thisTurnSelfImposedMaximum": 12,
+  "thisTurnClosed": true,
+  "usage": {
+    "inputTokens": 38734,
+    "outputTokens": 4808,
+    "totalTokens": 43542
+  },
+  "gatewayTariffVerified": false,
+  "costAmount": null,
+  "interpretation": "Per-round structural acceptance only; different prompts and case selections cannot be pooled as semantic accuracy. These are exposed extraction probes, not a full live-product assessment.",
+  "rounds": [
+    {
+      "promptVersion": "extract-v2.9",
+      "promptSha256": "be00f642a622988854d29e4554e133c863a51a04024862cbc9003942b1d9e84a",
+      "runtimePromoted": false,
+      "newAttempts": 8,
+      "acceptedStructure": 7
+    },
+    {
+      "promptVersion": "extract-v2.10",
+      "promptSha256": "da750f0b1e9eba23784f1351c1dbeac00c40372e3818134f8b7034324cc2c367",
+      "runtimePromoted": false,
+      "newAttempts": 4,
+      "acceptedStructure": 3
+    }
+  ],
+  "producerDevelopmentInspection": {
+    "independentLabels": false,
+    "improvementsObserved": [
+      {
+        "caseId": "task-en",
+        "version": "extract-v2.9",
+        "finding": "Coordinator recipient stays unknown and repayment assurance remains an unverified promise."
+      },
+      {
+        "caseId": "DEV04",
+        "version": "extract-v2.9",
+        "finding": "Payroll portal recipient stays unknown rather than becoming a verified employer."
+      },
+      {
+        "caseId": "loan-funded-pay-en",
+        "version": "extract-v2.9",
+        "finding": "Explicit borrowed-money payment retains the personal-borrowing mechanism."
+      },
+      {
+        "caseId": "payer-company-zh",
+        "version": "extract-v2.9",
+        "finding": "Chinese company funding remains a normal contrast rather than personal funding."
+      },
+      {
+        "caseId": "company-en",
+        "version": "extract-v2.10",
+        "finding": "Current instruction is no longer an advertised duty; earlier offer duty and contextual authority uncertainty are preserved."
+      },
+      {
+        "caseId": "DEV13",
+        "version": "extract-v2.10",
+        "finding": "Normal reimbursable expense remains the ordinary-expense contrast."
+      }
+    ],
+    "remainingMeaningIssues": [
+      {
+        "caseId": "DEV09",
+        "version": "extract-v2.9",
+        "finding": "Bare pay-to-unlock wording still invents personal funding; structural acceptance does not catch that entailment error."
+      },
+      {
+        "caseId": "DEV09",
+        "version": "extract-v2.10",
+        "finding": "Resource unknown and a relevant clarification are improved, but task_recharge is incompatible with unknown funding. invalid_output/mechanism correctly blocks the result; the validator was not relaxed."
+      },
+      {
+        "caseId": "task-denial-en",
+        "version": "extract-v2.10",
+        "finding": "Repayment promise and the actual retrospective denial remain, but a cancellation is expanded into a new prohibited transfer, its relation is overinterpreted, and the earlier offer duty is omitted. This passes structural checks and still fails producer meaning inspection."
+      }
+    ]
+  },
+  "nextAcceptance": "Keep later candidates unpromoted. Any later revision must preserve unknown funding and distinguish withdrawal from prohibition; freeze source/profile/content after real owner decisions, then obtain fresh independent meaning/safety labels.",
+  "safeFailureBoundary": "Malformed tuples/reference selection fail incomplete; source/citation guards do not prove that every natural-language interpretation is entailed."
+}

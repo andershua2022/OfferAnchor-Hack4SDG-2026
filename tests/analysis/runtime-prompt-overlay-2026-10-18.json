@@ -1,0 +1,124 @@
+{
+  "recordDate": "2026-10-18",
+  "scope": "Local repair profile: unified per-source role capabilities and reject-only same-payment consistency; public contract/citations/policy and frozen producer gold unchanged; not deployed",
+  "producerPromptVersion": "extract-v2.11",
+  "activePromptVersion": "extract-v2.28",
+  "historicalProducerManifest": "tests/analysis/module-handoff.json",
+  "indexBeforeSha256": "33e9423fd093db4bf8ba3f656ee25e735e165eccb402aacea5e96da0a9eb1b9b",
+  "indexAfterSha256": "c190fa882a4a95ed27c63073882412584a7fd258a3b14f512f419bf1d5aacdda",
+  "candidateFile": "lib/analysis/prompt-candidate-v2.28.ts",
+  "candidateSha256": "436c9bc0cd9f46aac5a4c66a35095c52156a63086f8a7337d88e3370b445163a",
+  "oldImport": "import { CANDIDATE211_PROMPT_VERSION as PROMPT_VERSION, CANDIDATE211_SYSTEM_PROMPT as SYSTEM_PROMPT } from './prompt-candidate-v2.11.ts';",
+  "newImport": "import { CANDIDATE228_PROMPT_VERSION as PROMPT_VERSION, CANDIDATE228_SYSTEM_PROMPT as SYSTEM_PROMPT } from './prompt-candidate-v2.28.ts';",
+  "liveAcceptance": "local repair verification pending; no production or independent accuracy acceptance",
+  "responseBoundary": {
+    "path": "lib/contracts/index.ts",
+    "beforeSha256": "d11223c03ddbf3abc1c1d16012d663d10b1233c8026dfddf770ccb1d72d3cfc5",
+    "afterSha256": "2968fb6b18b55ed8835b0338aed82c775c30880b5dffc67774d3ad879cbc680f",
+    "oldExpression": "out.provenance.promptVersion === (out.mode === 'simulation' ? 'extract-v2.0' : 'extract-v2.11')",
+    "newExpression": "(out.mode === 'simulation' ? out.provenance.promptVersion === 'extract-v2.0' : ['extract-v2.11', 'extract-v2.12', 'extract-v2.13', 'extract-v2.14', 'extract-v2.15', 'extract-v2.16', 'extract-v2.17', 'extract-v2.18', 'extract-v2.19', 'extract-v2.20', 'extract-v2.21', 'extract-v2.22', 'extract-v2.23', 'extract-v2.24', 'extract-v2.25', 'extract-v2.28'].includes(out.provenance.promptVersion))",
+    "meaning": "only declared prompt provenance revision compatibility; all semantic/citation/schema checks unchanged"
+  },
+  "deploymentGenerationAdapter": {
+    "id": "source-context-roles-events-1.2.0",
+    "wire": "Unchanged financial/context arrays and strict source validation, shared per-source role capabilities in generation/audit, finite explicit-same-payment hints and reject-only consistency guards; no row rewrite or hidden repair",
+    "directGenericCompatibility": "Profile24 requires createSourceBoundProvider and source-unit catalogue; generic provider is incompatible.",
+    "files": {
+      "lib/server/compact-generation.ts": "d67082f9ce1941efcf97b73ad65f37e941cb5bdabdba038f583b46ac714b1379",
+      "lib/server/provider-source-schema.ts": "6c5966987c7088f8f9d5a94dc4a109f09b8c4476b158c134f8b678eb4b3ef774",
+      "lib/server/source-audit.ts": "e75b8f7bf2f9900f32dc41219fd5b5d1c9d34572c43206a63bcfb1a70ae59961",
+      "lib/server/source-fact-generation.ts": "e094b78d790f2741429a278a8825d038c66873e7d4425eb2aa50c9e895c4b16e",
+      "lib/server/source-unit-generation.ts": "bca82ba1f00d8887e0b787ca4dd484c18ba0eee28cd58edfa8e8391b794baec6",
+      "lib/server/source-unit-meaning-generation.ts": "1bfa946d8efc0b82e6b30b2a62dfb4f7215f6582e752fc09c2c6208c680088d7",
+      "lib/server/context-generation.ts": "a6a88ebb5a820f5d1fb5d8d1894286ef835f8971de035fd06e46af618a33ccbd",
+      "lib/server/source-role-constraints.ts": "655a63bf9545506fa147fb4acbf36a23c5744da9e45c34c62205a4965d4c6bcd",
+      "lib/analysis/prompt-candidate-v2.18.ts": "acf9c9015c72dae74935923ee2a04ed06d70b2fd0315ce9f67744a8cf56ae890",
+      "lib/analysis/prompt-candidate-v2.19.ts": "7de48d007c42054412cc7b71a450591993f31a3299e2a0a90bb431712d4f8d0b",
+      "lib/analysis/prompt-candidate-v2.20.ts": "985efd7c9eccb48bd59f848569e0a0aeb4d4e1eda3c117a0c0eb982735e01aa9",
+      "lib/analysis/prompt-candidate-v2.21.ts": "a41090dad21fdb55d5441149b85b48e109f1dfe2ffafc3799a96312a52091409",
+      "lib/analysis/prompt-candidate-v2.22.ts": "8e9da91b6bbc5fb52ebca0e40b90860f116968bb5466c4dd883bc941df1e81b4",
+      "lib/server/repayment-coverage.ts": "ecc27dc9178bb8509b935411b038c406dce208c980caa7e4e00ebeb943ffcde6",
+      "lib/analysis/prompt-candidate-v2.23.ts": "8d7231afd82fd486a266113289bb865aebeae6991dfb0b2e8957b655a9943029",
+      "lib/analysis/prompt-candidate-v2.24.ts": "1e36f25289edbf8f80a24cbedba5a9458aafd654da4a77ec41647546fb6313ee",
+      "lib/analysis/prompt-candidate-v2.25.ts": "79d3f3ba7edefecefa94a203b558667b30e85a9d38478bfbe46d3ad72d8d08d5",
+      "lib/analysis/prompt-candidate-v2.28.ts": "436c9bc0cd9f46aac5a4c66a35095c52156a63086f8a7337d88e3370b445163a",
+      "lib/server/same-payment-events.ts": "14355bba13ab9125996d907b71d0d707012be4b11fa78488836174a23304cee1"
+    },
+    "activeByDefault": true,
+    "testedPromptVersion": "extract-v2.28",
+    "acceptance": "submission_guard_revision; official_prior_context_error_now_rejected_offline; fresh_RR06_false_audit_rejection_retained; no_general_accuracy_acceptance",
+    "candidateFile": "lib/analysis/prompt-candidate-v2.28.ts",
+    "candidateSha256": "436c9bc0cd9f46aac5a4c66a35095c52156a63086f8a7337d88e3370b445163a",
+    "sourceAuditVersion": "context-audit-1.7.0",
+    "maxRawRequestsPerExtraction": 2,
+    "sourceUnitLimit": 192,
+    "roleVocabularyLimit": "Conservative representation filter; missing marker is not proof of unstated role, and marker presence is not receiver binding. The unchanged source audit may still miss errors.",
+    "generationThinkingBudget": 1024,
+    "auditThinkingBudget": 768,
+    "repaymentCoverageVersion": "repayment-coverage-1.0.0",
+    "repaymentCoverageLimit": "Reject-only finite phrase coverage. It can miss unlisted promises or abstain on negated/quoted unrelated text; no semantic accuracy or correct-event guarantee.",
+    "promiseFundingGuardVersion": "promise-funding-1.0.0"
+  },
+  "providerInputAuditOverlay": {
+    "path": "lib/analysis/provider.ts",
+    "beforeSha256": "6f93cb0d601ee8ce9c1f1791bf8c79b361b6619007a3c7f5977f3b54318e89cb",
+    "afterSha256": "b1d33e7f5b6b06128ee5d1119bf41ad1f80dc462fa13cbc352124949d6f5a905",
+    "patches": [
+      {
+        "before": "export interface ProviderAdapter {\n  readonly modelId: string;\n  readonly region: string;\n  extract(\n    input: {\n      request: AnalyzeRequest;\n      systemPrompt: string;\n      outputSchema: object;\n      promptVersion: string;\n",
+        "after": "export interface ProviderAdapter {\n  readonly modelId: string;\n  readonly region: string;\n  readonly maxRequestsPerExtraction?: 1 | 2;\n  extract(\n    input: {\n      request: AnalyzeRequest;\n      systemPrompt: string;\n      outputSchema: object;\n      promptVersion: string;\n      auditCandidate?: unknown;\n"
+      },
+      {
+        "before": "                    evidence: input.request.evidence,\n",
+        "after": "                    evidence: input.request.evidence,\n                    ...(input.auditCandidate === undefined\n                      ? {}\n                      : { auditCandidate: input.auditCandidate }),\n"
+      },
+      {
+        "before": "  temperature: number | null;\n}",
+        "after": "  temperature: number | null;\n  thinkingBudget?: number;\n}"
+      },
+      {
+        "before": "requireConfig(isRecord(value) && Object.keys(value).length === 8);",
+        "after": "requireConfig(isRecord(value) && (Object.keys(value).length === 8 || Object.keys(value).length === 9 && Object.hasOwn(value, 'thinkingBudget')));"
+      },
+      {
+        "before": "value.timeoutMs <= 25000,",
+        "after": "value.timeoutMs <= 50000,"
+      },
+      {
+        "before": "    const url = new URL(value.apiBaseUrl);",
+        "after": "    if (Object.hasOwn(value, 'thinkingBudget')) {\n      requireConfig(typeof value.thinkingBudget === 'number' && Number.isSafeInteger(value.thinkingBudget) && value.thinkingBudget >= 128 && value.thinkingBudget <= 2048 && /^qwen3\\.8-(?:max|flash)(?:-0902|-2026-09-02)?$/.test(value.modelId));\n    }\n    const url = new URL(value.apiBaseUrl);"
+      },
+      {
+        "before": "              messages: [",
+        "after": "              ...(cfg.thinkingBudget === undefined ? {} : { enable_thinking: true, thinking_budget: cfg.thinkingBudget }),\n              messages: ["
+      }
+    ],
+    "scope": "Optional audit candidate, conservative raw-call quota, and bounded documented Qwen3.8 thinking budget with finite50s provider ceiling; endpoint/auth guards unchanged; legacy callers remain nonthinking."
+  },
+  "indexRuntimePatches": [
+    {
+      "before": "  library: ReferenceLibrary;\n  onObservation?:",
+      "after": "  library: ReferenceLibrary;\n  timeoutMs?: number;\n  onObservation?:"
+    },
+    {
+      "before": "    library: context.library,\n    onObservation,",
+      "after": "    library: context.library,\n    timeoutMs: context.timeoutMs,\n    onObservation,"
+    },
+    {
+      "before": "  const started = performance.now(),",
+      "after": "  const timeoutMs = context.timeoutMs ?? 28000;\n  const started = performance.now(),"
+    },
+    {
+      "before": "    requireLoadedLibrary(context.library);",
+      "after": "    if (!Number.isSafeInteger(timeoutMs) || timeoutMs < 1 || timeoutMs > 53000)\n      throw new AnalysisFailure('configuration_unavailable');\n    requireLoadedLibrary(context.library);"
+    },
+    {
+      "before": "        28000,",
+      "after": "        timeoutMs,"
+    },
+    {
+      "before": "performance.now() - started >= 28000",
+      "after": "performance.now() - started >= timeoutMs"
+    }
+  ]
+}

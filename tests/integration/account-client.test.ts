@@ -1,0 +1,6 @@
+import assert from 'node:assert/strict';
+import {test} from 'node:test';
+const modulePromise=import('../../frontend/workspace/account-client').catch(()=>null);
+const user={id:'6c97aa7e-4a3e-4a5a-b896-6785fc3c190a',name:'Alex Example',email:'synthetic@example.invalid',provider:'google'};
+test('workspace account state requires a valid verified-profile envelope without tokens',async()=>{const mod=await modulePromise;assert.ok(mod);assert.ok(mod.parseAccountState({configured:true,authenticated:true,user,emailDelivery:'restricted'}));for(const bad of [{configured:true,authenticated:true,user:{...user,id:'demo_alex'},emailDelivery:'restricted'},{configured:true,authenticated:true,user:{...user,access_token:'must-never-arrive'},emailDelivery:'restricted'},{configured:true,authenticated:false,user,emailDelivery:'restricted'}])assert.equal(mod.parseAccountState(bad),null);});
+test('unavailable auth cannot be accepted as a verified account or confused with a demo profile',async()=>{const mod=await modulePromise;assert.ok(mod);assert.ok(mod.parseAccountState({configured:false,authenticated:false,user:null,emailDelivery:'unavailable'}));assert.equal(mod.parseAccountState({configured:false,authenticated:true,user,emailDelivery:'restricted'}),null);});

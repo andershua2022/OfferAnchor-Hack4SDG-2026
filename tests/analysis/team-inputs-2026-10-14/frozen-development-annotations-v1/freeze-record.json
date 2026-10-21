@@ -1,0 +1,33 @@
+{
+  "version": "OfferAnchor-development-annotations-frozen-v1",
+  "frozenAtUtc": "2026-10-13T16:59:41Z",
+  "frozenAtAsiaShanghai": "2026-10-14T00:59:41+08:00",
+  "scope": "Public exposed synthetic development annotations only",
+  "records": 18,
+  "actionRows": 28,
+  "baseFamilies": 14,
+  "controlRecords": 10,
+  "controlFamilies": 6,
+  "developmentAnnotationFreezeCompleted": true,
+  "developmentSplitFrozen": true,
+  "confirmationBasis": "Design member’s actual report of prior teammate confirmations and adoption of the corrected labels",
+  "independentPassConfirmation": "member_reported_not_agent_witnessed",
+  "adjudicationMethod": "AI-assisted, adopted per Design member report",
+  "independentBenchmarkEstablished": false,
+  "heldoutFrozen": false,
+  "releaseConfigurationFrozen": false,
+  "applicationReleaseFrozen": false,
+  "DSConsumerImportAcknowledged": false,
+  "modelCalls": 0,
+  "heldoutRead": false,
+  "sourceMain": "d6f2f884a40449946a2b6fd98b8d526b3eec8737",
+  "sourcePR7": "25b6f094b4b89cd018c153bd1cdb2e4517994c58",
+  "sourceRepairCommit": "aaed2afeeda53ff477d93fe1d82647d456df95fb",
+  "sourceFixedReferenceCommit": "03dfef27dc14f0314b069df273b9706452cb3544",
+  "sourceIndependentRoundBlobs": {
+    "Communication": "010fdac305da92e879ac0568d57fff00dea87829",
+    "DASE": "f1ce498304612629fa6659051946ea082403168c"
+  },
+  "ownership": "Published only in Design-owned paths; DASE can consume/mirror exact files into its evaluation paths. No original role round or other owner branch is overwritten.",
+  "changeRule": "Never rewrite v1. A material label/text/grouping/partition change requires a new version with rationale and affected evaluation boundary."
+}

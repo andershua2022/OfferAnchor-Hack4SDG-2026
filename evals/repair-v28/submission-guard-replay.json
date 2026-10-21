@@ -1,0 +1,146 @@
+{
+  "guard": "promise-funding-1.0.0",
+  "adapter": "source-context-roles-events-1.2.0",
+  "networkCalls": 0,
+  "replayedAttempts": 15,
+  "scope": "Offline replay of saved fictional raw responses through current registered engine; not new model generation or accuracy evidence",
+  "oldPrivateOutputsPreserved": true,
+  "oldOfficialAcceptedFundingErrorNowRejectedBeforeAudit": true,
+  "rows": [
+    {
+      "batch": "private_v28",
+      "caseId": "RR01",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR02",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR03",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR04",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR05",
+      "beforeStatus": "incomplete",
+      "afterStatus": "incomplete",
+      "previousCompleteExtractionPreserved": null,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR06",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR07",
+      "beforeStatus": "incomplete",
+      "afterStatus": "incomplete",
+      "previousCompleteExtractionPreserved": null,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR08",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR09",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR10",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR11",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "private_v28",
+      "caseId": "RR12",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "official_v28_before_guard",
+      "caseId": "RR01",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "official_v28_before_guard",
+      "caseId": "RR03",
+      "beforeStatus": "complete",
+      "afterStatus": "complete",
+      "previousCompleteExtractionPreserved": true,
+      "replayedResponses": 2,
+      "networkCalls": 0
+    },
+    {
+      "batch": "official_v28_before_guard",
+      "caseId": "RR06",
+      "beforeStatus": "complete",
+      "afterStatus": "incomplete",
+      "previousCompleteExtractionPreserved": null,
+      "replayedResponses": 1,
+      "networkCalls": 0
+    }
+  ]
+}

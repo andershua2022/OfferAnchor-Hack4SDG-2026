@@ -1,0 +1,78 @@
+{
+  "contractVersion": "2.0.0",
+  "matching": "exact ordered evidence fields, locale and clarification counter; ignore only requestId/revision",
+  "fixtures": [
+    {
+      "fixtureId": "task-en",
+      "requestFile": "request-task-en.json",
+      "responseFile": "response-task-en.json",
+      "purpose": "Student-relevant staged payment hero; no factual victim conversation.",
+      "classification": "authored synthetic simulation; human review pending",
+      "sessionInitialization": "new_session",
+      "seededClarificationsUsed": 0
+    },
+    {
+      "fixtureId": "task-zh",
+      "requestFile": "request-task-zh.json",
+      "responseFile": "response-task-zh.json",
+      "purpose": "Traditional Chinese counterpart with original-language quotations.",
+      "classification": "authored synthetic simulation; human review pending",
+      "sessionInitialization": "new_session",
+      "seededClarificationsUsed": 0
+    },
+    {
+      "fixtureId": "company-en",
+      "requestFile": "request-company-en.json",
+      "responseFile": "response-company-en.json",
+      "purpose": "Matched vocabulary with company payer and explicit prohibition.",
+      "classification": "authored synthetic simulation; human review pending",
+      "sessionInitialization": "new_session",
+      "seededClarificationsUsed": 0
+    },
+    {
+      "fixtureId": "company-zh",
+      "requestFile": "request-company-zh.json",
+      "responseFile": "response-company-zh.json",
+      "purpose": "Traditional Chinese benign/prohibition counterpart.",
+      "classification": "authored synthetic simulation; human review pending",
+      "sessionInitialization": "new_session",
+      "seededClarificationsUsed": 0
+    },
+    {
+      "fixtureId": "missing-payer-en",
+      "requestFile": "request-missing-payer-en.json",
+      "responseFile": "response-missing-payer-en.json",
+      "purpose": "One critical clarification; authorization is contextual.",
+      "classification": "authored synthetic simulation; human review pending",
+      "sessionInitialization": "new_session",
+      "seededClarificationsUsed": 0
+    },
+    {
+      "fixtureId": "funding-note-en",
+      "requestFile": "request-funding-note-en.json",
+      "responseFile": "response-funding-note-en.json",
+      "purpose": "Correction of genuinely ambiguous payer; original source preserved.",
+      "classification": "authored synthetic simulation; human review pending",
+      "sessionInitialization": "seeded_demo_stage",
+      "seededClarificationsUsed": 1
+    },
+    {
+      "fixtureId": "task-denial-en",
+      "requestFile": "request-task-denial-en.json",
+      "responseFile": "response-task-denial-en.json",
+      "purpose": "Later denial cannot clear the earlier cited personal demand.",
+      "classification": "authored synthetic simulation; human review pending",
+      "sessionInitialization": "seeded_demo_stage",
+      "seededClarificationsUsed": 0
+    },
+    {
+      "fixtureId": "loan-en",
+      "requestFile": "request-personal-loan.json",
+      "responseFile": "response-personal-loan.json",
+      "purpose": "Secondary personal borrowing and repayment-promise mechanism.",
+      "classification": "authored synthetic simulation; human review pending",
+      "sessionInitialization": "new_session",
+      "seededClarificationsUsed": 0
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "project": "OfferAnchor",
+  "recordDate": "2026-10-15",
+  "classification": "AI/DS actual v2 intake; Design decision, not a new independent annotation pass",
+  "activeReferenceVersion": "OfferAnchor-development-annotations-frozen-v2",
+  "sourceCommit": "e42b87c8953aa9c339790bd83fe9f0124ff42325",
+  "issues": [],
+  "historicalIssues": [
+    {
+      "id": "DEV03_UNSPECIFIED_FUNDS",
+      "caseId": "DEV03",
+      "referenceVersion": "OfferAnchor-development-annotations-frozen-v1",
+      "inputSha256": "c84b12f1edafe0bd867407320f4162c6bd5e6f244e4e329338a902ee80eaab8f",
+      "ownerRole": "Design",
+      "reviewingRole": "DASE",
+      "status": "owner_adjudication_pending",
+      "sourceText": "Pay HKD 2800 to unlock the next tasks and withdraw your commission.",
+      "frozenExpectation": {
+        "resource": "personal_money",
+        "mechanism": "task_recharge",
+        "guidance": "pause_requested_action",
+        "criticalUnknowns": "none"
+      },
+      "currentContractInterpretation": {
+        "actor": "applicant",
+        "resource": "unknown",
+        "mechanism": "unclear",
+        "guidance": "clarify_before_action",
+        "criticalUnknowns": [
+          "resource/funds unknown"
+        ]
+      },
+      "reason": "The text identifies an applicant payment condition but not ownership/origin of funds. extract-v2.11 deliberately does not infer personal_money. Treat this as an annotation/standard disagreement, not a proven model error. Keep the payment condition visible and ask whose funds are used.",
+      "resolution": "Design and DASE review the interpretation. Preserve frozen v1. Any corrected annotation must have a new version and recorded rationale. Until then block an overall pass-rate claim from this reference; do not drop DEV03 from the denominator."
+    }
+  ],
+  "resolvedIssues": [
+    {
+      "id": "DEV03_UNSPECIFIED_FUNDS",
+      "caseId": "DEV03",
+      "status": "resolved_by_Design_v2_imported_by_AI_DS",
+      "referenceVersion": "OfferAnchor-development-annotations-frozen-v2",
+      "inputSha256": "c84b12f1edafe0bd867407320f4162c6bd5e6f244e4e329338a902ee80eaab8f",
+      "sourceChangeLog": "frozen-development-annotations-v2/change-log.json",
+      "DesignDecisionReceipt": "https://github.com/andershua2022/OfferAnchor/issues/3#issuecomment-6165980821",
+      "DASEExactV2ImportAcknowledged": false,
+      "CSAppVerified": false,
+      "accuracyClaim": null
+    }
+  ]
+}

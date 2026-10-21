@@ -1,0 +1,12 @@
+import {test,afterEach} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createProviderAdapter,type ProviderConfig} from '../../lib/analysis/provider.ts';
+const original=globalThis.fetch;afterEach(()=>{globalThis.fetch=original;});
+const config:ProviderConfig={apiBaseUrl:'https://dashscope.aliyuncs.com/compatible-mode/v1',apiKey:'synthetic-unit-key',modelId:'qwen3.8-max',region:'cn-beijing',responseMode:'json_object',maxOutputTokens:2400,timeoutMs:25000,temperature:null};
+const input={request:JSON.parse(readFileSync('examples/request-personal-loan.json','utf8')),systemPrompt:'Synthetic transport check',outputSchema:{type:'object'},promptVersion:'extract-v2.16'};
+function capture(){let body:any=null;globalThis.fetch=async(_url,init)=>{body=JSON.parse(String(init?.body));return Response.json({choices:[{finish_reason:'stop',message:{content:'{}'}}],usage:{prompt_tokens:10,completion_tokens:20}});};return ()=>body;}
+test('bounded Qwen thinking serializes only its documented parameters',async()=>{const body=capture();await createProviderAdapter({...config,thinkingBudget:1024,timeoutMs:50000}).extract(input,new AbortController().signal);assert.equal(body().enable_thinking,true);assert.equal(body().thinking_budget,1024);assert.equal(Object.hasOwn(body(),'reasoning_effort'),false);assert.equal(body().model,'qwen3.8-max');});
+test('legacy callers retain the explicit nonthinking request profile',async()=>{const body=capture();await createProviderAdapter(config).extract(input,new AbortController().signal);assert.equal(body().enable_thinking,false);assert.equal(Object.hasOwn(body(),'thinking_budget'),false);});
+test('thinking budgets cannot enable unsupported models or unbounded resource usage',()=>{for(const thinkingBudget of [0,-1,127,2049,1.5,NaN,Infinity,'1024',undefined])assert.throws(()=>createProviderAdapter({...config,thinkingBudget} as ProviderConfig));assert.throws(()=>createProviderAdapter({...config,thinkingBudget:1024,modelId:'glm-5.3'}));assert.throws(()=>createProviderAdapter({...config,thinkingBudget:1024,unexpected:'field'} as ProviderConfig));assert.throws(()=>createProviderAdapter({...config,timeoutMs:50001}));});
+test('the revised server budget still has an exact finite upper bound',()=>{assert.doesNotThrow(()=>createProviderAdapter({...config,timeoutMs:50000}));assert.throws(()=>createProviderAdapter({...config,timeoutMs:0}));});

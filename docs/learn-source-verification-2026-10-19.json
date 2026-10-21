@@ -1,0 +1,292 @@
+{
+  "status": "Published; same staged deployment promoted and production browser checked",
+  "date": "2026-10-19",
+  "baseCommit": "ee0d282cecc3e80cda65ead23a560f98640bb9a2",
+  "corePrompt": "extract-v2.29",
+  "audit": "context-audit-1.8.0",
+  "publicSourceRecords": 24,
+  "uniqueSourceUrls": 22,
+  "kinds": {
+    "reported_case": 8,
+    "company_practice": 4,
+    "official_guidance": 12
+  },
+  "approvedCoreCards": 7,
+  "publishedRecordsHumanReview": "pending; not used as approved model answer passages",
+  "integration": {
+    "passed": 373,
+    "failed": 0
+  },
+  "compatibility": {
+    "passed": 93,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "webpackBuild": "passed",
+  "browser": {
+    "actualLocalHttp": true,
+    "publishedCards": 24,
+    "cardReadersChecked": 24,
+    "sourceHrefsChecked": 24,
+    "bilingualKeywords": true,
+    "categoryFilters": true,
+    "firecrawlHintsEnglishAndTraditionalChinese": true,
+    "narrowOverflow": false,
+    "paidRequests": 0,
+    "pageErrors": []
+  },
+  "portableRecordBrowser": "passed actual ZIP download, read and reimport; corrupt import preserves input",
+  "officialSourceBrowser": [
+    {
+      "id": "PCPD-2024C01",
+      "url": "https://www.pcpd.org.hk/english/enforcement/case_notes/casenotes_2.php?content_nature=&content_type=&id=2024C01&msg_id2=565",
+      "http": 200,
+      "bodyCharacters": 6575,
+      "expectedTermPresent": true
+    },
+    {
+      "id": "PCPD-2018C10",
+      "url": "https://www.pcpd.org.hk/english/enforcement/case_notes/casenotes_2.php?content_nature=34&content_type=&id=2018C10&msg_id2=497",
+      "http": 200,
+      "bodyCharacters": 5537,
+      "expectedTermPresent": true
+    },
+    {
+      "id": "PCPD-2019DB03",
+      "url": "https://www.pcpd.org.hk/english/enforcement/case_notes/casenotes_2.php?content_nature=&content_type=&id=2019DB03&msg_id2=549",
+      "http": 200,
+      "bodyCharacters": 4793,
+      "expectedTermPresent": true
+    },
+    {
+      "id": "PCPD-FAQ",
+      "url": "https://www.pcpd.org.hk/english/data_privacy_law/code_of_practices/code_faq_1.html",
+      "http": 200,
+      "bodyCharacters": 4637,
+      "expectedTermPresent": true
+    },
+    {
+      "id": "PCPD-20260129",
+      "url": "https://www.pcpd.org.hk/tc_chi/news_events/media_statements/press_20260129.html",
+      "http": 200,
+      "bodyCharacters": 1895,
+      "expectedTermPresent": true
+    },
+    {
+      "id": "FBI",
+      "url": "https://www.ic3.gov/PSA/2024/PSA240604",
+      "http": 200,
+      "bodyCharacters": 1766,
+      "expectedTermPresent": true
+    }
+  ],
+  "actualProductionAuxiliaryChecksBeforeThisRelease": [
+    {
+      "kind": "knowledge",
+      "http": 200,
+      "status": "complete",
+      "errorCode": null,
+      "referenceCount": 1,
+      "references": [
+        {
+          "id": "K_PERSONAL_BORROWING",
+          "url": "https://www.adcc.gov.hk/zh-cn/alerts-detail/alerts-2044683469105754113.html",
+          "reviewStatus": "approved",
+          "contentType": "team_synthesis"
+        }
+      ],
+      "elapsedMs": 8569,
+      "realProduction": true,
+      "realUserAllowanceConsumed": 0,
+      "automaticRetries": 0
+    },
+    {
+      "kind": "web",
+      "http": 200,
+      "status": "sources_only",
+      "errorCode": null,
+      "referenceCount": 3,
+      "references": [
+        {
+          "id": "W1",
+          "url": "https://www.labour.gov.hk/eng/major/300403.htm",
+          "reviewStatus": "unreviewed",
+          "contentType": "search_snippet"
+        },
+        {
+          "id": "W2",
+          "url": "https://www.fdh.labour.gov.hk/res/pdf/FSTB_Employers_Guide_Borrowing_Issue_CN_EN.pdf",
+          "reviewStatus": "unreviewed",
+          "contentType": "search_snippet"
+        },
+        {
+          "id": "W3",
+          "url": "https://www.labour.gov.hk/eng/public/wcp/Bankruptcy_eng.pdf",
+          "reviewStatus": "unreviewed",
+          "contentType": "search_snippet"
+        }
+      ],
+      "elapsedMs": 5451,
+      "realProduction": true,
+      "realUserAllowanceConsumed": 0,
+      "automaticRetries": 0
+    }
+  ],
+  "protectedSourceDiffEmpty": true,
+  "cssAndLayoutUnchanged": true,
+  "provider": "team official Alibaba Model Studio Beijing qwen3.8-max",
+  "accountLifetimeActions": 5,
+  "globalRawBudget": 60,
+  "semanticSearchImplemented": false,
+  "fdicArchive": {
+    "http": 200,
+    "pdfParsed": true,
+    "sourceContentConfirmed": true
+  },
+  "privacy": {
+    "knownCredentialMatches": 0,
+    "unreviewedPatterns": 0,
+    "newPrivateEmails": 0,
+    "prohibitedTrackedPaths": [],
+    "trackedFilesScanned": 520,
+    "publicHistoryBlobsScannedBeforeCommit": 512,
+    "staticFilesScanned": 65,
+    "credentialValuesPrintedOrUploaded": false,
+    "publicHistoryBlobsScannedAtCodeCommit": 525
+  },
+  "rollout": {
+    "codeCommit": "6dccd051cf77003aa2b1d749c7ed1deca857c298",
+    "deploymentId": "dpl_9ky4frbwSWLmU9QHNWEmb33z3AXR",
+    "immutableDeploymentUrl": "https://offeranchor-6ryzgqtqr-andershuang2022-8069.vercel.app",
+    "productionUrl": "https://offeranchor-hk.vercel.app",
+    "sameTestedDeploymentPromoted": true,
+    "previousDeploymentRetained": "dpl_A9WRv9oi9PFi3TZXyN23mLxaYJzE",
+    "stagedUi": {
+      "realStagedHttp": true,
+      "target": "https://offeranchor-6ryzgqtqr-andershuang2022-8069.vercel.app",
+      "landingHttp": 200,
+      "workspaceHttp": 200,
+      "loginHttp": 200,
+      "clientSourceRecords": 24,
+      "firecrawlHintPresent": true,
+      "fdicLinkPresent": true,
+      "accountConfigured": true,
+      "emailDelivery": "public",
+      "trialPolicy": {
+        "limit": 5,
+        "period": "lifetime",
+        "unit": "ai_action_attempt"
+      },
+      "paidRequests": 0
+    },
+    "stagedActualKnowledgeAndBroadWeb": [
+      {
+        "kind": "knowledge",
+        "http": 200,
+        "status": "complete",
+        "errorCode": null,
+        "referenceCount": 1,
+        "references": [
+          {
+            "id": "K_PERSONAL_BORROWING",
+            "url": "https://www.adcc.gov.hk/zh-cn/alerts-detail/alerts-2044683469105754113.html",
+            "reviewStatus": "approved",
+            "contentType": "team_synthesis"
+          }
+        ],
+        "elapsedMs": 8228,
+        "realStagedDeployment": true,
+        "deploymentUrl": "https://offeranchor-6ryzgqtqr-andershuang2022-8069.vercel.app",
+        "realUserAllowanceConsumed": 0,
+        "automaticRetries": 0
+      },
+      {
+        "kind": "web",
+        "http": 200,
+        "status": "incomplete",
+        "errorCode": "insufficient_evidence",
+        "referenceCount": 0,
+        "references": [],
+        "elapsedMs": 10948,
+        "realStagedDeployment": true,
+        "deploymentUrl": "https://offeranchor-6ryzgqtqr-andershuang2022-8069.vercel.app",
+        "realUserAllowanceConsumed": 0,
+        "automaticRetries": 0
+      }
+    ],
+    "stagedActualSpecificWeb": [
+      {
+        "kind": "web",
+        "http": 200,
+        "status": "sources_only",
+        "errorCode": null,
+        "referenceCount": 3,
+        "references": [
+          {
+            "id": "W1",
+            "url": "https://www1.jobs.gov.hk/0/en/information/jobtrap/",
+            "reviewStatus": "unreviewed",
+            "contentType": "search_snippet"
+          },
+          {
+            "id": "W2",
+            "url": "https://www.labour.gov.hk/eng/major/250503.htm",
+            "reviewStatus": "unreviewed",
+            "contentType": "search_snippet"
+          },
+          {
+            "id": "W3",
+            "url": "https://www.labour.gov.hk/",
+            "reviewStatus": "unreviewed",
+            "contentType": "search_snippet"
+          }
+        ],
+        "elapsedMs": 5930,
+        "realStagedDeployment": true,
+        "deploymentUrl": "https://offeranchor-6ryzgqtqr-andershuang2022-8069.vercel.app",
+        "realUserAllowanceConsumed": 0,
+        "automaticRetries": 0
+      }
+    ],
+    "productionBrowser": {
+      "actualProductionBrowser": true,
+      "origin": "https://offeranchor-hk.vercel.app",
+      "landingHttp": 200,
+      "ctaToWorkspace": true,
+      "liveReady": true,
+      "trialPolicy": {
+        "limit": 5,
+        "period": "lifetime",
+        "unit": "ai_action_attempt"
+      },
+      "accountConfigured": true,
+      "emailDelivery": "public",
+      "googleAndEmailEntrancesVisible": true,
+      "cardReadersChecked": 24,
+      "sourceHrefsChecked": 24,
+      "bilingualKeywords": true,
+      "categoryFilters": true,
+      "firecrawlHintsEnglishAndTraditionalChinese": true,
+      "narrowOverflow": false,
+      "paidRequests": 0,
+      "pageErrors": [],
+      "actualEmailDeliveryAndOAuthConsent": "Not repeated; this check confirms entrances only"
+    },
+    "originalTeamRepositoryStillPrivate": true,
+    "productionModelConfig": {
+      "provider": "team official Alibaba Model Studio",
+      "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "modelId": "qwen3.8-max",
+      "region": "cn-beijing",
+      "responseMode": "json_schema",
+      "accountLifetimeActions": 5,
+      "sharedRawRequestsPer24Hours": 60
+    },
+    "limits": [
+      "Published summaries retain editorial-review-pending status; seven core approvals do not approve these new summaries.",
+      "One broad web query returned insufficient evidence; a separate specific employment-traps query returned three official sources. Results depend on the query and allowed domains.",
+      "Login entry and configured delivery were checked; user OAuth consent and actual mailbox delivery were not repeated in this release.",
+      "The Learn release does not establish a new core-model accuracy estimate; semantic search is not implemented."
+    ]
+  }
+}

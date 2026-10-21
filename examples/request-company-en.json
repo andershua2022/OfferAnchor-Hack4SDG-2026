@@ -1,0 +1,23 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "fixture_company_en",
+  "revision": 1,
+  "locale": "en-HK",
+  "clarificationsUsed": 0,
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "advertisement",
+      "label": "Fictional internship advertisement",
+      "sequence": 1,
+      "text": "Research assistant internship: prepare a weekly product research spreadsheet."
+    },
+    {
+      "id": "E2",
+      "kind": "instruction",
+      "label": "Fictional latest instruction",
+      "sequence": 2,
+      "text": "Record the product order. The employer will transfer company funds directly to the supplier. Do not use your own money, take a personal loan or share a banking OTP."
+    }
+  ]
+}

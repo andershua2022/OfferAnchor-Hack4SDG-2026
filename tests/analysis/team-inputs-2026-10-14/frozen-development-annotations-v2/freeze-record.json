@@ -1,0 +1,85 @@
+{
+  "version": "OfferAnchor-development-annotations-frozen-v2",
+  "frozenAtUtc": "2026-10-14T15:33:51Z",
+  "frozenAtAsiaShanghai": "2026-10-14T23:33:51+08:00",
+  "scope": "Public exposed synthetic development annotations only",
+  "records": 18,
+  "actionRows": 28,
+  "baseFamilies": 14,
+  "controlRecords": 10,
+  "controlFamilies": 6,
+  "developmentAnnotationFreezeCompleted": true,
+  "developmentSplitFrozen": true,
+  "confirmationBasis": "Actual Design chat decision plus DASE GitHub receipt 6165980821; unchanged v1 provenance inherited",
+  "independentPassConfirmation": "member_reported_not_agent_witnessed",
+  "adjudicationMethod": "AI-assisted, adopted per Design member report",
+  "independentBenchmarkEstablished": false,
+  "heldoutFrozen": false,
+  "releaseConfigurationFrozen": false,
+  "applicationReleaseFrozen": false,
+  "DSConsumerImportAcknowledged": false,
+  "modelCalls": 0,
+  "heldoutRead": false,
+  "sourceMain": "d6f2f884a40449946a2b6fd98b8d526b3eec8737",
+  "sourcePR7": "25b6f094b4b89cd018c153bd1cdb2e4517994c58",
+  "sourceRepairCommit": "aaed2afeeda53ff477d93fe1d82647d456df95fb",
+  "sourceFixedReferenceCommit": "03dfef27dc14f0314b069df273b9706452cb3544",
+  "sourceIndependentRoundBlobs": {
+    "Communication": "010fdac305da92e879ac0568d57fff00dea87829",
+    "DASE": "f1ce498304612629fa6659051946ea082403168c"
+  },
+  "ownership": "Published only in Design-owned paths; DASE can consume/mirror exact files into its evaluation paths. No original role round or other owner branch is overwritten.",
+  "changeRule": "Never rewrite v1 or v2. A further material change requires a new declared version with rationale and evaluation boundary.",
+  "supersedes": "OfferAnchor-development-annotations-frozen-v1",
+  "sourceDesignCommit": "14645fb0a71c61de2fd31ecc6cc8cee332910c30",
+  "sourceV1Directory": "design/review-2026-10-14/frozen-development-annotations-v1",
+  "sourceV1FileIdentities": {
+    "adjudicated-annotations.csv": {
+      "sha256": "8e162419349afb7c54d2b14b0cf0aed5331792106a43e63974a32d83c959e4c0",
+      "gitBlob": "fcdd11a16d763ae9c75e7c989458112dea7ab426"
+    },
+    "canonical-selected-inputs.json": {
+      "sha256": "522f07ab12c3c71efaf1ac460641110ebc85588358eeb83024289ac72539603c",
+      "gitBlob": "9bff50ed6f410610b498ab5f8426b834c9415f00"
+    },
+    "checks.json": {
+      "sha256": "7de69dd5d626516f9033fbfb4590b85c943f58c7560abfef37f7dccdf99f4753",
+      "gitBlob": "9b748011a327b79666138b6ef0db2d3e262e4d94"
+    },
+    "confirmation-record.json": {
+      "sha256": "88f43022a854c50263d86d78eb56ec3ee4df94227d294b9b389a04a63715b766",
+      "gitBlob": "6bc183448a64590f1342d9650e81a8dcee3366fc"
+    },
+    "freeze-manifest.json": {
+      "sha256": "e4bddfb1d4b4ac10809a1f16815e78867c15077c37859eb87f4df83101e63fff",
+      "gitBlob": "0c139a398f1d02d043e6cf74bd17b667de053bc6"
+    },
+    "freeze-record.json": {
+      "sha256": "4737e597314d6ca56a07c24762425adc3fd5549f79fa6781e09ff3252f5fe1cc",
+      "gitBlob": "989e8f4423025258ffac799989a6876819715447"
+    },
+    "frozen-development-split.csv": {
+      "sha256": "02be740c4aec8cf4ae5d9851ed12d63c0dc067e138a9192c54f9ab798f736f9c",
+      "gitBlob": "0bd9d536541f0d1d6027698c0d84e5155ea2b87b"
+    },
+    "README.md": {
+      "sha256": "1161dd3a8bd0b4627881c0689e9880edb8e3fb2b2d8ba099264d0fe09f0bcf20",
+      "gitBlob": "5358dff1c3310b5ac62c0ceb5bf1a4a7105f1033"
+    },
+    "source-backed-decisions.json": {
+      "sha256": "51ff986ab9917af740181dbd65d61d1f55bf59010c8aa98cadbae7baa3e6f0ff",
+      "gitBlob": "876952fabc132d15c1131b43a0fe20547d4127b4"
+    }
+  },
+  "changedCases": [
+    "DEV03"
+  ],
+  "DEV03DisputeStatus": "resolved_in_Design_frozen_reference_v2",
+  "consumerImportAcknowledgements": {
+    "DASE": "pending exact v2 import",
+    "AI-DS": "pending exact v2 import",
+    "CS": "pending actual application verification"
+  },
+  "accuracyClaim": null,
+  "checkedModuleRef": "3d324e6269e7ed28f6501435b0b6c784fd901864"
+}

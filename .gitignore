@@ -1,0 +1,49 @@
+# Local coding-agent guidance (intentionally not shared through Git)
+/AGENTS.md
+
+# Credentials and environment files; retain safe templates
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# JavaScript dependencies and generated output
+node_modules/
+.next/
+out/
+dist/
+build/
+.vercel/
+*.tsbuildinfo
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Test output and logs
+coverage/
+playwright-report/
+test-results/
+*.log
+
+# Local runtime data and raw participant material
+/.local-data/
+/data/private/
+/data/raw/
+/uploads/
+/tmp/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local browser inspection artifacts
+/.playwright-mcp/

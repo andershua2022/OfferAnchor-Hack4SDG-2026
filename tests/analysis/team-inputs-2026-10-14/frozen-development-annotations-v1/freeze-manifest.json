@@ -1,0 +1,16 @@
+{
+  "version": "OfferAnchor-development-annotations-frozen-v1",
+  "frozenAtUtc": "2026-10-13T16:59:41Z",
+  "files": {
+    "adjudicated-annotations.csv": "8e162419349afb7c54d2b14b0cf0aed5331792106a43e63974a32d83c959e4c0",
+    "canonical-selected-inputs.json": "522f07ab12c3c71efaf1ac460641110ebc85588358eeb83024289ac72539603c",
+    "checks.json": "7de69dd5d626516f9033fbfb4590b85c943f58c7560abfef37f7dccdf99f4753",
+    "confirmation-record.json": "88f43022a854c50263d86d78eb56ec3ee4df94227d294b9b389a04a63715b766",
+    "freeze-record.json": "4737e597314d6ca56a07c24762425adc3fd5549f79fa6781e09ff3252f5fe1cc",
+    "frozen-development-split.csv": "02be740c4aec8cf4ae5d9851ed12d63c0dc067e138a9192c54f9ab798f736f9c",
+    "README.md": "1161dd3a8bd0b4627881c0689e9880edb8e3fb2b2d8ba099264d0fe09f0bcf20",
+    "source-backed-decisions.json": "51ff986ab9917af740181dbd65d61d1f55bf59010c8aa98cadbae7baa3e6f0ff"
+  },
+  "scope": "development_annotations",
+  "developmentAnnotationFreezeCompleted": true
+}

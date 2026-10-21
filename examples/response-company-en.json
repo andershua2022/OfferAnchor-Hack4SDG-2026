@@ -1,0 +1,90 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "fixture_company_en",
+  "revision": 1,
+  "status": "complete",
+  "mode": "simulation",
+  "extraction": {
+    "actions": [
+      {
+        "id": "A1",
+        "actor": "employer",
+        "verb": "transfer",
+        "polarity": "described",
+        "resource": "company_money",
+        "recipient": "third_party",
+        "purpose": "Employer pays the supplier, not the applicant.",
+        "mechanism": "company_funded_work",
+        "citations": [
+          {
+            "evidenceId": "E2",
+            "start": 26,
+            "end": 92,
+            "quote": "The employer will transfer company funds directly to the supplier."
+          }
+        ]
+      },
+      {
+        "id": "A2",
+        "actor": "applicant",
+        "verb": "borrow",
+        "polarity": "prohibited",
+        "resource": "personal_borrowing",
+        "recipient": "unknown",
+        "purpose": "Personal borrowing is prohibited.",
+        "mechanism": "personal_borrowing",
+        "citations": [
+          {
+            "evidenceId": "E2",
+            "start": 93,
+            "end": 164,
+            "quote": "Do not use your own money, take a personal loan or share a banking OTP."
+          }
+        ]
+      },
+      {
+        "id": "A3",
+        "actor": "applicant",
+        "verb": "share_otp",
+        "polarity": "prohibited",
+        "resource": "account_control",
+        "recipient": "unknown",
+        "purpose": "Banking OTP sharing is prohibited.",
+        "mechanism": "credential_control",
+        "citations": [
+          {
+            "evidenceId": "E2",
+            "start": 93,
+            "end": 164,
+            "quote": "Do not use your own money, take a personal loan or share a banking OTP."
+          }
+        ]
+      }
+    ],
+    "claims": [],
+    "comparisons": [],
+    "relationships": [],
+    "unknowns": [
+      {
+        "id": "U1",
+        "kind": "employer_authorization",
+        "relatedActionIds": [],
+        "issue": "Sender authorization is not independently established.",
+        "priority": "context"
+      }
+    ],
+    "questions": []
+  },
+  "guidance": "no_personal_financial_request_identified",
+  "referenceIds": [
+    "K_COMPANY_PAID"
+  ],
+  "routeIds": [
+    "LABOUR_GUIDANCE"
+  ],
+  "provenance": {
+    "modelId": null,
+    "promptVersion": "extract-v2.0",
+    "libraryVersion": "draft-0.2.0"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-19",
+  "generation": "extract-v2.28",
+  "audit": "context-audit-1.8.0",
+  "adapter": "source-context-roles-events-1.3.0",
+  "sameRuntimeAsPreviousLocalCandidate": true,
+  "runtimeChangesThisRound": [],
+  "preDispatchSourceFreezeSha256": "255d932e396fb0745786ce61fb323f8c801bdbd5fcdea0dd8694a70056a0fbd4",
+  "developmentOnly": true,
+  "uniqueSyntheticSourceScenarios": 4,
+  "attemptsByProvider": {
+    "volc": 4,
+    "ali": 2
+  },
+  "results": [
+    {
+      "caseId": "F01",
+      "status": "complete",
+      "guidance": "pause_requested_action",
+      "rawRequests": 2,
+      "totalTokens": 7125,
+      "elapsedMs": 40125,
+      "citations": 5,
+      "provider": "volc",
+      "sourceCorrectComplete": true
+    },
+    {
+      "caseId": "F02",
+      "status": "complete",
+      "guidance": "no_personal_financial_request_identified",
+      "rawRequests": 2,
+      "totalTokens": 6919,
+      "elapsedMs": 42250,
+      "citations": 5,
+      "provider": "volc",
+      "sourceCorrectComplete": true
+    },
+    {
+      "caseId": "F03",
+      "status": "complete",
+      "guidance": "pause_requested_action",
+      "rawRequests": 2,
+      "totalTokens": 7157,
+      "elapsedMs": 39699,
+      "citations": 5,
+      "provider": "volc",
+      "sourceCorrectComplete": true
+    },
+    {
+      "caseId": "F04",
+      "status": "complete",
+      "guidance": "pause_requested_action",
+      "rawRequests": 2,
+      "totalTokens": 7141,
+      "elapsedMs": 40226,
+      "citations": 5,
+      "provider": "volc",
+      "sourceCorrectComplete": true
+    },
+    {
+      "caseId": "F01",
+      "status": "complete",
+      "guidance": "pause_requested_action",
+      "rawRequests": 2,
+      "totalTokens": 7125,
+      "elapsedMs": 42005,
+      "citations": 5,
+      "provider": "ali",
+      "sourceCorrectComplete": true
+    },
+    {
+      "caseId": "F02",
+      "status": "complete",
+      "guidance": "no_personal_financial_request_identified",
+      "rawRequests": 2,
+      "totalTokens": 6977,
+      "elapsedMs": 41492,
+      "citations": 7,
+      "provider": "ali",
+      "sourceCorrectComplete": true
+    }
+  ],
+  "billing": {
+    "volc": {
+      "rawRequests": 8,
+      "inputTokens": 20628,
+      "outputTokens": 7714,
+      "totalTokens": 28342,
+      "unknownUsageRequests": 0
+    },
+    "ali": {
+      "rawRequests": 4,
+      "inputTokens": 10221,
+      "outputTokens": 3881,
+      "totalTokens": 14102,
+      "unknownUsageRequests": 0
+    },
+    "combinedRawRequests": 12,
+    "combinedTokens": 42444,
+    "automaticRetries": 0,
+    "costCny": null,
+    "note": "Actual current rates/invoices not verified; do not use a shared price across providers."
+  },
+  "transport": {
+    "volc": "private gateway, json_object",
+    "ali": "official team Beijing endpoint, json_schema",
+    "requestedModel": "qwen3.8-max",
+    "returnedModelLabel": "qwen3.8-max in both",
+    "interchangeabilityProven": false,
+    "observedDifference": "Normal control includes extra source-supported context under Alibaba; no extra financial event or changed risk verdict.",
+    "officialDocumentation": "https://help.aliyun.com/zh/model-studio/qwen-structured-output"
+  },
+  "verification": {
+    "integrationPassed": 360,
+    "compatibilityPassed": 93,
+    "workspaceBrowser": "passed on isolated port3110; simulation HTTP and explicitly synthetic live responses",
+    "runtimeBuild": "Previously passed production Webpack build, with the exact same runtime source. Built app started successfully in this round.",
+    "physicalMobileDeviceTested": false,
+    "newRealLoginOrQuotaExhaustionTested": false,
+    "frontendChanged": false,
+    "publicSchemaChanged": false,
+    "frozenGoldChanged": false,
+    "strictAuditValidationChanged": false
+  },
+  "interpretation": {
+    "supportsControlledTrialSourceUpdate": true,
+    "supportsControlledTrialDeploymentCandidate": true,
+    "generalAccuracyProven": false,
+    "latencyNote": "About40-42s; limited margin under existing50s model budget.",
+    "history": "18 October failures and comparisons remain separate and preserved; do not pool these repeated exposed scenarios as independent accuracy."
+  },
+  "recommendation": {
+    "publicRepository": "Ready for a separately authorized reviewed update with this evidence and limitations.",
+    "website": "Reasonable controlled-trial deployment candidate. Validate the deployment preview origin/session routes before switching the public alias; no production deployment performed here.",
+    "releaseStage": "source-and-local-preview verified; deployment preview and actual-public acceptance remain for a later authorized release."
+  },
+  "sharedSourceOrDeploymentWritten": false
+}

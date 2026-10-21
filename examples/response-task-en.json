@@ -1,0 +1,121 @@
+{
+  "contractVersion": "2.0.0",
+  "requestId": "fixture_task_en",
+  "revision": 1,
+  "status": "complete",
+  "mode": "simulation",
+  "extraction": {
+    "actions": [
+      {
+        "id": "A1",
+        "actor": "applicant",
+        "verb": "transfer",
+        "polarity": "requested",
+        "resource": "personal_money",
+        "recipient": "third_party",
+        "purpose": "Personal funds requested as a prerequisite to tasks/commission.",
+        "mechanism": "task_recharge",
+        "citations": [
+          {
+            "evidenceId": "E3",
+            "start": 76,
+            "end": 152,
+            "quote": "Use HKD 2800 from your own funds and transfer it to the coordinator account."
+          },
+          {
+            "evidenceId": "E3",
+            "start": 0,
+            "end": 75,
+            "quote": "To release the next batch and commission, complete the product order first."
+          }
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "advertised_duty",
+        "text": "Research spreadsheet work.",
+        "status": "stated_in_input",
+        "citations": [
+          {
+            "evidenceId": "E1",
+            "start": 31,
+            "end": 77,
+            "quote": "prepare a weekly product research spreadsheet."
+          }
+        ],
+        "relatedActionIds": []
+      },
+      {
+        "id": "C2",
+        "kind": "repayment_promise",
+        "text": "Return of money/commission is an unverified sender promise.",
+        "status": "stated_in_input",
+        "citations": [
+          {
+            "evidenceId": "E3",
+            "start": 153,
+            "end": 195,
+            "quote": "We will return the amount with commission."
+          }
+        ],
+        "relatedActionIds": []
+      },
+      {
+        "id": "C3",
+        "kind": "other",
+        "text": "Earlier commission is only stated in selected material.",
+        "status": "stated_in_input",
+        "citations": [
+          {
+            "evidenceId": "E2",
+            "start": 50,
+            "end": 105,
+            "quote": "The earlier commission is shown as paid in the message."
+          }
+        ],
+        "relatedActionIds": []
+      }
+    ],
+    "comparisons": [
+      {
+        "id": "D1",
+        "earlierClaimId": "C1",
+        "laterActionId": "A1",
+        "explanation": "Advertised research work becomes a personally funded transfer prerequisite."
+      }
+    ],
+    "relationships": [],
+    "unknowns": [
+      {
+        "id": "U1",
+        "kind": "employer_authorization",
+        "relatedActionIds": [],
+        "issue": "Sender authorization is not independently established.",
+        "priority": "context"
+      },
+      {
+        "id": "U2",
+        "kind": "repayment_verification",
+        "relatedActionIds": [],
+        "issue": "The return/commission promise is unverified.",
+        "priority": "context"
+      }
+    ],
+    "questions": []
+  },
+  "guidance": "pause_requested_action",
+  "referenceIds": [
+    "K_TASK_RECHARGE"
+  ],
+  "routeIds": [
+    "ADCC_18222",
+    "LABOUR_GUIDANCE"
+  ],
+  "provenance": {
+    "modelId": null,
+    "promptVersion": "extract-v2.0",
+    "libraryVersion": "draft-0.2.0"
+  }
+}
